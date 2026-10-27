@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0058",
+  "source_complaint": "Nearby Sounds Too Loud",
+  "terms": [
+    {
+      "term": "nearby sounds",
+      "meaning": "Sounds originating close to the hearing-aid user."
+    },
+    {
+      "term": "excessive loudness",
+      "meaning": "Sound perceived by the user as louder than comfortable."
+    },
+    {
+      "term": "close conversation",
+      "meaning": "Speech from a person standing or sitting near the user."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

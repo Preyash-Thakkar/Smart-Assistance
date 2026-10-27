@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 4,
+  "complaint_text_exact": "Nearby Sounds are loud",
+  "provisional_complaint_id": "PROV-CMP-0004",
+  "topic_title": "Loudness",
+  "topic_id_exact": "66add6ac8d19f934bd07c673",
+  "mapping_note": "Provisional local ID; reconcile with canonical complaint master before production ingestion."
+}

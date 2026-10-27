@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0054",
+  "source_complaint": "Crowd Noise Too Loud",
+  "terms": [
+    {
+      "term": "crowd noise",
+      "meaning": "Combined sound from multiple people in the same environment."
+    },
+    {
+      "term": "crowd chatter",
+      "meaning": "Several people speaking at once."
+    },
+    {
+      "term": "excessive loudness",
+      "meaning": "Crowd sound perceived as louder than comfortable."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

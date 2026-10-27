@@ -1,0 +1,18 @@
+{
+  "batch": 26,
+  "language": "English",
+  "terms": [
+    {
+      "term": "loud sounds",
+      "meaning": "high-volume environmental or other sounds heard while wearing the hearing aid"
+    },
+    {
+      "term": "over-amplification",
+      "meaning": "sound amplification that makes loud sounds excessively intense"
+    },
+    {
+      "term": "loudness",
+      "meaning": "the perceived strength or volume of a sound"
+    }
+  ]
+}

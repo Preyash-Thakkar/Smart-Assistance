@@ -1,0 +1,18 @@
+{
+  "status": "provisional",
+  "id_policy": "PROV-CMP-#### uses the 1-indexed source complaint row; reconcile to canonical IDs before production.",
+  "topics": [
+    {
+      "topic_id": "66add6ac8d19f934bd07c673",
+      "topic_name": "Loudness"
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "PROV-CMP-0062",
+      "source_row": 62,
+      "source_question": "Running Water/Fan Sounds Too Loud",
+      "topic_id": "66add6ac8d19f934bd07c673"
+    }
+  ]
+}

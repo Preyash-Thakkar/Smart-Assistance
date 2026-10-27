@@ -1,0 +1,18 @@
+{
+  "batch": 38,
+  "language": "English",
+  "terms": [
+    {
+      "term": "speech",
+      "meaning": "spoken words or conversation heard through the hearing aid"
+    },
+    {
+      "term": "faint speech",
+      "meaning": "voices perceived as too quiet to follow comfortably"
+    },
+    {
+      "term": "speech audibility",
+      "meaning": "how easily spoken words can be heard"
+    }
+  ]
+}

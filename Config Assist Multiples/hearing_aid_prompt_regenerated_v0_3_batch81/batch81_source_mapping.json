@@ -1,0 +1,412 @@
+{
+  "batch": 81,
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 81,
+  "source_question": "Wind Noise Too Loud",
+  "source_topic_id": "66b060d95c6674686e02d026",
+  "source_topic_name": "Noise",
+  "canonical_complaint_id_present_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0081",
+  "utterance_mapping": [
+    {
+      "utt_id": "B81-EN-001",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-002",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-003",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-004",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-005",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-006",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-007",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-008",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-009",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-010",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-011",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-012",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-013",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-014",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-015",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-016",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-017",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-018",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-019",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-020",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-021",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-022",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-023",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-024",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-025",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-026",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-027",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-028",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-029",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-030",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-031",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-032",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-033",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-034",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-035",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-036",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-037",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-038",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-039",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-040",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-041",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-042",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": null
+    },
+    {
+      "utt_id": "B81-EN-043",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-001"
+    },
+    {
+      "utt_id": "B81-EN-044",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-004"
+    },
+    {
+      "utt_id": "B81-EN-045",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-008"
+    },
+    {
+      "utt_id": "B81-EN-046",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-009"
+    },
+    {
+      "utt_id": "B81-EN-047",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-014"
+    },
+    {
+      "utt_id": "B81-EN-048",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-020"
+    },
+    {
+      "utt_id": "B81-EN-049",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-032"
+    },
+    {
+      "utt_id": "B81-EN-050",
+      "source_row_1_indexed": 81,
+      "source_question": "Wind Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "complaint_id": "PROV-CMP-0081",
+      "source_utt_id": "B81-EN-040"
+    }
+  ]
+}

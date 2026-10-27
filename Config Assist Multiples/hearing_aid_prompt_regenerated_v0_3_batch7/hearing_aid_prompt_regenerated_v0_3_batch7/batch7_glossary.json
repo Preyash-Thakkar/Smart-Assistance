@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "own chewing sounds",
+      "meaning": "Sounds the user hears from their own chewing while eating."
+    },
+    {
+      "term": "crunching",
+      "meaning": "A crisp or crunchy food sound; use only when the utterance mentions or implies it."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer pain, distortion, or a specific device fault."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

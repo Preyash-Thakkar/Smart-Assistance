@@ -1,0 +1,18 @@
+{
+  "status": "provisional",
+  "id_policy": "PROV-CMP-#### uses the 1-indexed source complaint row; reconcile to canonical IDs before production.",
+  "topics": [
+    {
+      "topic_id": "66b060e25c6674686e02d02c",
+      "topic_name": "Own Voice"
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "PROV-CMP-0067",
+      "source_row": 67,
+      "source_question": "Own Voice Boomy/Loud",
+      "topic_id": "66b060e25c6674686e02d02c"
+    }
+  ]
+}

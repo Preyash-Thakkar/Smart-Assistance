@@ -1,0 +1,25 @@
+{
+  "batch": 82,
+  "source_row_1_indexed": 82,
+  "source_question": "Crowd Noise Too Loud",
+  "provisional_complaint_id": "PROV-CMP-0082",
+  "topic_id": "66b060d95c6674686e02d026",
+  "checks": {
+    "utterance_count_50": true,
+    "clean_count_42": true,
+    "noisy_count_8": true,
+    "jsonl_records_parse": true,
+    "schema_consistent": true,
+    "same_complaint_and_topic": true,
+    "normalized_exact_duplicates_absent": true,
+    "noisy_source_links_valid": true,
+    "canonical_complaint_id_missing_noted": true
+  },
+  "limitations": [
+    "Native-speaker review not performed.",
+    "Hearing-care domain-expert review not performed.",
+    "Embedding-based semantic similarity review not performed.",
+    "Model evaluation not performed.",
+    "Naturalness and label-confidence scores are synthetic estimates, not human ratings."
+  ]
+}

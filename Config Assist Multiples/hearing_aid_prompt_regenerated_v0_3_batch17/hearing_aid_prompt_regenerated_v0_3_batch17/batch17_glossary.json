@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "ambient noise / ambience",
+      "meaning": "Background environmental sound present in a room or place."
+    },
+    {
+      "term": "soft background noise",
+      "meaning": "Low-level environmental sound that is perceived as too noticeable; this does not imply it is objectively loud."
+    },
+    {
+      "term": "prominent",
+      "meaning": "Standing out perceptually relative to other sounds."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

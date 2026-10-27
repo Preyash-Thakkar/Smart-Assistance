@@ -1,0 +1,13 @@
+{
+  "status": "provisional",
+  "topic": {
+    "topic_id": "66b060f15c6674686e02d038",
+    "title": "General Sound"
+  },
+  "complaint": {
+    "complaint_id": "PROV-CMP-0013",
+    "source_row_1_indexed": 13,
+    "title": "Sounds are mechanical or Artificial "
+  },
+  "note": "Current batch mapping only; not the complete canonical taxonomy."
+}

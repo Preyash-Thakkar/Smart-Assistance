@@ -1,0 +1,19 @@
+{
+  "status": "provisional",
+  "version": "0.3",
+  "source_complaints_file": "test.complains (1)(1).json",
+  "source_topics_file": "test.topics(1).json",
+  "topic_id_to_name": {
+    "66b060d95c6674686e02d026": "Noise"
+  },
+  "provisional_complaints": [
+    {
+      "complaint_id": "PROV-CMP-0054",
+      "source_row_1_indexed": 54,
+      "question": "Crowd Noise Too Loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "topic_name": "Noise"
+    }
+  ],
+  "note": "Provisional per-batch taxonomy extract. Reconcile complaint IDs and topic labels with the canonical taxonomy before production."
+}

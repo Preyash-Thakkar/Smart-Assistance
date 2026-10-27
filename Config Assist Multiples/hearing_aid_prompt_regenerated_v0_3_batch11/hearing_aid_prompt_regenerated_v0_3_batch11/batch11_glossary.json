@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "tinny",
+      "meaning": "A thin, small, metallic-sounding quality."
+    },
+    {
+      "term": "metallic",
+      "meaning": "A sound quality resembling metal; not a diagnosis of device malfunction."
+    },
+    {
+      "term": "sharp",
+      "meaning": "A piercing or overly bright perceived sound quality in this complaint context."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

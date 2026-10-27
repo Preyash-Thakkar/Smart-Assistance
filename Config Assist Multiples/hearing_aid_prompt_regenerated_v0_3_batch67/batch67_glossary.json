@@ -1,0 +1,18 @@
+{
+  "batch": 67,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "The user's own voice as heard by the user while speaking with the hearing aid."
+    },
+    {
+      "term": "boomy",
+      "meaning": "A user-described sound quality perceived as overly resonant, bass-heavy, or rumbling."
+    },
+    {
+      "term": "too loud",
+      "meaning": "The user's own voice is perceived as excessively loud while using the hearing aid; no technical cause is inferred."
+    }
+  ]
+}

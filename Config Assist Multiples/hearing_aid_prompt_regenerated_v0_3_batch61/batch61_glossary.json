@@ -1,0 +1,18 @@
+{
+  "batch": 61,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "own chewing sounds",
+      "meaning": "Sounds the user hears from their own chewing while wearing the hearing aid."
+    },
+    {
+      "term": "too loud",
+      "meaning": "The user's own chewing sounds are perceived as excessively loud or prominent."
+    },
+    {
+      "term": "hearing aid",
+      "meaning": "The hearing device referenced in the complaint; this dataset does not infer a cause."
+    }
+  ]
+}

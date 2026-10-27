@@ -1,0 +1,18 @@
+{
+  "batch": 21,
+  "language": "English",
+  "terms": [
+    {
+      "term": "street noise",
+      "meaning": "general sound from the street environment"
+    },
+    {
+      "term": "traffic noise",
+      "meaning": "sound from vehicles moving along roads"
+    },
+    {
+      "term": "too loud",
+      "meaning": "the user perceives street or traffic sound as excessively loud through the hearing aid"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "batch": 46,
+  "language": "English",
+  "terms": [
+    {
+      "term": "artificial sound",
+      "meaning": "sound perceived as unnatural or unlike its real-world source"
+    },
+    {
+      "term": "mechanical sound quality",
+      "meaning": "sound perceived as machine-like or robotic"
+    },
+    {
+      "term": "processed audio",
+      "meaning": "audio perceived as electronically altered rather than natural"
+    }
+  ]
+}

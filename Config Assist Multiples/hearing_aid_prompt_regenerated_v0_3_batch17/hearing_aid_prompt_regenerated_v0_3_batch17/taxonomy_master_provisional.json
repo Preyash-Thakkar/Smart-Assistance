@@ -1,0 +1,13 @@
+{
+  "status": "provisional",
+  "topic": {
+    "topic_id": "66b060d95c6674686e02d026",
+    "title": "Noise"
+  },
+  "complaint": {
+    "complaint_id": "PROV-CMP-0017",
+    "source_row_1_indexed": 17,
+    "title": " Sound in noise is uncomfortable"
+  },
+  "note": "Current batch mapping only; not the complete canonical taxonomy."
+}

@@ -1,0 +1,18 @@
+{
+  "batch": 36,
+  "language": "English",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "the user's perception of their own voice while speaking"
+    },
+    {
+      "term": "thin voice",
+      "meaning": "sound perceived as weak, lightweight, or lacking fullness"
+    },
+    {
+      "term": "vocal body",
+      "meaning": "the perceived fullness or depth of a voice"
+    }
+  ]
+}

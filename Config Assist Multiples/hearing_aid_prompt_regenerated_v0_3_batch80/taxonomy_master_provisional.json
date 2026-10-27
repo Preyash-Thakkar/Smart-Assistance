@@ -1,0 +1,40 @@
+{
+  "status": "provisional",
+  "id_policy": "PROV-CMP-#### uses the 1-indexed source complaint row; reconcile to canonical IDs before production.",
+  "topics": [
+    {
+      "topic_id": "66add6ac8d19f934bd07c673",
+      "topic_name": "Loudness"
+    },
+    {
+      "topic_id": "66b060d95c6674686e02d026",
+      "topic_name": "Noise"
+    },
+    {
+      "topic_id": "66b060e25c6674686e02d02c",
+      "topic_name": "Own Voice"
+    },
+    {
+      "topic_id": "66b060e85c6674686e02d032",
+      "topic_name": "Speech"
+    },
+    {
+      "topic_id": "66b060f15c6674686e02d038",
+      "topic_name": "General Sound"
+    },
+    {
+      "topic_id": "66b061095c6674686e02d03e",
+      "topic_name": "Feedback"
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "PROV-CMP-0077",
+      "source_row": 77,
+      "source_question": "Sounds Distorted",
+      "topic_id": "66b060f15c6674686e02d038"
+    }
+  ],
+  "latest_batch": 80,
+  "note": "Taxonomy remains provisional; source complaint rows do not provide a canonical complaint ID."
+}

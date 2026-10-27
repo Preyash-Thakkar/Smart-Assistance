@@ -1,0 +1,23 @@
+{
+  "batch": "1",
+  "cell": {
+    "complaint_id": "PROV-CMP-0001",
+    "source_complaint_text": "All Soft Sound are too Soft",
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "topic": "Loudness",
+    "language": "English"
+  },
+  "source_complaint_row": 1,
+  "generated_utterance_count": 50,
+  "natural_base_utterance_count": 42,
+  "asr_variant_count": 8,
+  "exact_normalized_duplicates_remaining": 0,
+  "duplicates_removed_before_finalization": 0,
+  "under_covered_axes": [
+    "No non-English or romanized transliteration coverage in this cell.",
+    "Region coverage is limited to Indian English/general; no US/UK/Australian variants in this first cell.",
+    "No multi-turn follow-up snippets in this batch.",
+    "All rows are synthetic and require human review; semantic similarity was not measured with embeddings."
+  ],
+  "quality_status": "Draft batch only; not approved for production training."
+}

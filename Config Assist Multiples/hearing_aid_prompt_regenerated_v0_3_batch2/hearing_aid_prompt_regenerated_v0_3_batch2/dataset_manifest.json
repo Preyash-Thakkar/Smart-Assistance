@@ -1,0 +1,44 @@
+{
+  "dataset_name": "Hearing-Aid AI Complaint Dataset",
+  "version": "0.3-prompt-based-batch-2",
+  "created_at_utc": "2026-10-09T09:17:31.046104+00:00",
+  "source_topics_count": 6,
+  "source_complaints_count": 203,
+  "batch_cell_count": 1,
+  "batch_utterance_count": 50,
+  "complaint_id_status": "provisional; no official complaint_id field in source",
+  "topic_mapping_rule": "complaints.topic_id.$oid == topics._id.$oid",
+  "production_ready": false,
+  "files": [
+    {
+      "file": "README.txt",
+      "bytes": 798,
+      "sha256": "7729d6282212e630b6ecb65a8e9026a32dced61e04b6fa7d8e6f9a2d67367c36"
+    },
+    {
+      "file": "batch2_complaint_english.jsonl",
+      "bytes": 58420,
+      "sha256": "8d44d629081a989b22b60f98491719b7d02233fda00c274611f586b64f17c58f"
+    },
+    {
+      "file": "batch2_glossary.json",
+      "bytes": 788,
+      "sha256": "0b59321c94dbf28596546dbb4f98d84f9c582157ee559cac87bf10d3bf8bd068"
+    },
+    {
+      "file": "batch2_self_audit.json",
+      "bytes": 792,
+      "sha256": "1468eb69bdb2a4a983e427e18e4af9ff8fdbd7c7b807dd88470888bba70faf9a"
+    },
+    {
+      "file": "batch2_source_mapping.json",
+      "bytes": 830,
+      "sha256": "593172656419166b94a5fe630db8151e7da0897105613df6252d7833668b62fc"
+    },
+    {
+      "file": "taxonomy_master_provisional.json",
+      "bytes": 2109,
+      "sha256": "e06e98c72bfa40449218a0a4d9c6987dc0036448aa3e1a7149a5f65a89b0a7b2"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "sudden sounds",
+      "meaning": "Abrupt or unexpected sounds; do not assume a cause or device fault."
+    },
+    {
+      "term": "door slamming",
+      "meaning": "A door closing with a sharp bang; source complaint example."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer distortion or pain unless stated."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

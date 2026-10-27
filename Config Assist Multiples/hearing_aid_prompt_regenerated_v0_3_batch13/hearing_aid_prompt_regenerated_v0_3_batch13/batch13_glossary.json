@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "hollow sound",
+      "meaning": "A subjective description of sound that feels empty, box-like, or lacking fullness."
+    },
+    {
+      "term": "fullness",
+      "meaning": "A perceived sense of body or richness in sound; subjective, not a technical diagnosis."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

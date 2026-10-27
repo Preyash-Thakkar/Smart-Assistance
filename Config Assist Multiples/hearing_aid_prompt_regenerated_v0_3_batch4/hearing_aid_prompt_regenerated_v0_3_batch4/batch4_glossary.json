@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "nearby sounds",
+      "meaning": "Sounds produced by people or objects close to the listener."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer distortion, pain, or device failure unless stated."
+    },
+    {
+      "term": "hearing aid",
+      "meaning": "Generic term for the user's hearing device."
+    }
+  ],
+  "notes": "Initial dataset terminology aid; not a clinically validated glossary."
+}

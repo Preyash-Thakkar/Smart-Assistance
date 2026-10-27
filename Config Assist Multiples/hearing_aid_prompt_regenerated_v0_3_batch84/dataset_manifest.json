@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Hearing Aid User Complaint Utterance Candidates",
+  "version": "v0.3",
+  "batch": 84,
+  "source_row_1_indexed": 84,
+  "source_question": "All Soft Sounds Too Soft",
+  "topic_name": "Loudness",
+  "topic_id": "66add6ac8d19f934bd07c673",
+  "provisional_complaint_id": "PROV-CMP-0084",
+  "language": "English (India)",
+  "counts": {
+    "total": 50,
+    "clean_natural_form": 42,
+    "synthetic_noisy_asr_style": 8
+  },
+  "files": [
+    "batch84_complaint_english.jsonl",
+    "batch84_glossary.json",
+    "batch84_source_mapping.json",
+    "batch84_self_audit.json",
+    "taxonomy_master_provisional.json",
+    "dataset_manifest.json",
+    "README.txt"
+  ],
+  "review_status": "synthetic draft; expert and native-speaker review pending"
+}

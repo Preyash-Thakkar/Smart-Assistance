@@ -1,0 +1,23 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "hearing aid",
+      "meaning": "The user's hearing device; use as the default generic device term."
+    },
+    {
+      "term": "distorted",
+      "meaning": "Sound quality is altered, broken up, harsh, fuzzy, raspy, or crackly."
+    },
+    {
+      "term": "crackling",
+      "meaning": "A crackly or intermittent rough sound quality; keep distinct from feedback whistling."
+    },
+    {
+      "term": "high volume",
+      "meaning": "Loudness condition in which the complaint occurs; do not infer a device fault cause."
+    }
+  ],
+  "notes": "Glossary is an initial dataset aid, not a clinically validated terminology standard."
+}

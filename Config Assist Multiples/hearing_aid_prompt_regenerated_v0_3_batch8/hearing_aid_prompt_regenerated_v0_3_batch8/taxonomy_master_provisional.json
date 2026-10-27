@@ -1,0 +1,13 @@
+{
+  "status": "provisional",
+  "topic": {
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "title": "Loudness"
+  },
+  "complaint": {
+    "complaint_id": "PROV-CMP-0008",
+    "source_row_1_indexed": 8,
+    "title": "Running Water Sound feels loud"
+  },
+  "note": "Current batch mapping only; not the complete canonical taxonomy."
+}

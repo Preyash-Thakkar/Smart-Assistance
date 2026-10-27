@@ -1,0 +1,11 @@
+{
+  "batch": 67,
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 67,
+  "source_question": "Own Voice Boomy/Loud",
+  "canonical_complaint_id_present_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0067",
+  "topic_id": "66b060e25c6674686e02d02c",
+  "topic_name": "Own Voice",
+  "mapping_note": "Provisional ID is assigned by source-row order and must be reconciled with the canonical complaint taxonomy."
+}

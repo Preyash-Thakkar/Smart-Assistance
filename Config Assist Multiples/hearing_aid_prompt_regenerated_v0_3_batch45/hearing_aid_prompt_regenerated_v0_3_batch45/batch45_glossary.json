@@ -1,0 +1,18 @@
+{
+  "batch": 45,
+  "language": "English",
+  "terms": [
+    {
+      "term": "muffled sound",
+      "meaning": "sound perceived as covered, blocked, or lacking clarity"
+    },
+    {
+      "term": "dull sound",
+      "meaning": "sound perceived as lacking brightness or detail"
+    },
+    {
+      "term": "muddy audio",
+      "meaning": "audio perceived as unclear or poorly defined"
+    }
+  ]
+}

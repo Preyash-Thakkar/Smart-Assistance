@@ -1,0 +1,14 @@
+{
+  "row_count": 50,
+  "jsonl_parse_ok": true,
+  "schema_consistent": true,
+  "all_same_complaint_id": true,
+  "all_same_topic_id": true,
+  "exact_normalized_duplicates": [],
+  "noisy_rows": 8,
+  "all_noisy_rows_linked": true,
+  "embedding_similarity_check": "not performed",
+  "native_speaker_review": "not performed",
+  "model_evaluation": "not performed",
+  "synthetic_scores_note": "Naturalness and confidence values are estimates, not human ratings."
+}

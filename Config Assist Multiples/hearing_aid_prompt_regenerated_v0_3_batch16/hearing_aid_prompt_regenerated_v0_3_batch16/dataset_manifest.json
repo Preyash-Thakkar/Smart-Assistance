@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Hearing-aid user complaint intent dataset",
+  "version": "0.3",
+  "batch_number": 16,
+  "batch_scope": "One complaint × one language",
+  "complaint_id": "PROV-CMP-0016",
+  "complaint_text": " Soft Ambience noise is too noticeable",
+  "topic": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "language": "English",
+  "lang_code": "en-IN",
+  "row_count": 50,
+  "format": "JSONL UTF-8",
+  "status": "Synthetic draft; unreviewed"
+}

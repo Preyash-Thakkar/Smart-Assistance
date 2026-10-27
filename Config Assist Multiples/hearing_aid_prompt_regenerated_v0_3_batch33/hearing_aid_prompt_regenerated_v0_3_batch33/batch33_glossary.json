@@ -1,0 +1,18 @@
+{
+  "batch": 33,
+  "language": "English",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "the user's perception of their own voice while speaking"
+    },
+    {
+      "term": "muffled",
+      "meaning": "sound perceived as covered, blocked, or lacking clarity"
+    },
+    {
+      "term": "dull",
+      "meaning": "sound perceived as lacking crispness or brightness"
+    }
+  ]
+}

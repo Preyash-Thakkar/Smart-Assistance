@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Hearing-aid user complaint intent dataset",
+  "version": "0.3",
+  "batch_number": 8,
+  "batch_scope": "One complaint × one language",
+  "complaint_id": "PROV-CMP-0008",
+  "complaint_text": "Running Water Sound feels loud",
+  "topic": "Loudness",
+  "topic_id": "66add6ac8d19f934bd07c673",
+  "language": "English",
+  "lang_code": "en-IN",
+  "row_count": 50,
+  "format": "JSONL UTF-8",
+  "status": "Synthetic draft; unreviewed"
+}

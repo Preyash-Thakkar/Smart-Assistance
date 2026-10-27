@@ -1,0 +1,11 @@
+{
+  "batch": 18,
+  "source_row_number_1_indexed": 18,
+  "source_file": "test.complains (1)(1).json",
+  "source_question_exact": "Sudden noise is uncomfortable",
+  "source_topic_id_exact": "66b060d95c6674686e02d026",
+  "topic_name_from_source_topics_file": "Noise",
+  "canonical_complaint_id_field_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0018",
+  "mapping_note": "The source JSON contains question and topic_id only; PROV-CMP-0018 is a provisional row-based identifier and must be reconciled with the canonical complaint taxonomy before production."
+}

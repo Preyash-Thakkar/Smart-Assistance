@@ -1,0 +1,11 @@
+{
+  "batch": 35,
+  "source_row_number_1_indexed": 35,
+  "source_file": "test.complains (1)(1).json",
+  "source_question_exact": "Own Voice Too Sharp/Metallic",
+  "source_topic_id_exact": "66b060e25c6674686e02d02c",
+  "topic_name_from_source_topics_file": "Own Voice",
+  "canonical_complaint_id_field_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0035",
+  "mapping_note": "The source JSON contains question and topic_id only; the row-based complaint ID is provisional and must be reconciled with the canonical complaint taxonomy before production."
+}

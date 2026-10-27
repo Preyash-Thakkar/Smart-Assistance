@@ -1,0 +1,11 @@
+{
+  "batch": 49,
+  "source_row_number_1_indexed": 49,
+  "source_file": "test.complains (1)(1).json",
+  "source_question_exact": "Hearing Aid Whistles",
+  "source_topic_id_exact": "66b061095c6674686e02d03e",
+  "topic_name_from_source_topics_file": "Feedback",
+  "canonical_complaint_id_field_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0049",
+  "mapping_note": "The source JSON contains question and topic_id only; the row-based complaint ID is provisional and must be reconciled with the canonical complaint taxonomy before production."
+}

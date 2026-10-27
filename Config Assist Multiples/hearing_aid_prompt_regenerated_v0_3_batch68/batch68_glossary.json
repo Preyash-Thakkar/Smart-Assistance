@@ -1,0 +1,18 @@
+{
+  "batch": 68,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "speech",
+      "meaning": "Spoken words or voices the hearing-aid user is trying to hear."
+    },
+    {
+      "term": "too soft",
+      "meaning": "Speech is perceived as insufficiently loud or faint."
+    },
+    {
+      "term": "hearing aid",
+      "meaning": "The hearing device referenced in the complaint; no technical cause is inferred from the complaint alone."
+    }
+  ]
+}

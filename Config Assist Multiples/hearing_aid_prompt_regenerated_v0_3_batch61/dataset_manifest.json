@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Hearing Aid User Complaint Utterance Dataset",
+  "version": "v0.3",
+  "batch": 61,
+  "created_utc": "2026-10-09T11:07:55.224064+00:00",
+  "source_file": "test.complains (1)(1).json",
+  "source_row": 61,
+  "source_complaint": "Own Chewing Sounds Too Loud",
+  "topic_name": "Loudness",
+  "topic_id": "66add6ac8d19f934bd07c673",
+  "provisional_complaint_id": "PROV-CMP-0061",
+  "utterances": 50,
+  "clean_utterances": 42,
+  "noisy_utterances": 8,
+  "language": "English (India)",
+  "archive_file_count": 7,
+  "limitations": [
+    "Provisional complaint ID; canonical ID absent in source.",
+    "Generated candidates require expert and speaker review."
+  ]
+}

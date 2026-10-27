@@ -1,0 +1,11 @@
+{
+  "batch": 78,
+  "language": "English (India)",
+  "topic": "Noise",
+  "terms": {
+    "ambient noise": "Low-level environmental or room sound surrounding the hearing-aid user.",
+    "background ambience": "The general sound environment behind the main sound or conversation.",
+    "room hum": "A steady low-level sound in a room, such as ventilation or electrical equipment."
+  },
+  "labeling_note": "These are synthetic utterance candidates for one complaint label, not verified patient quotations."
+}

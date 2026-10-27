@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 8,
+  "complaint_text_exact_as_read": "Running Water Sound feels loud",
+  "provisional_complaint_id": "PROV-CMP-0008",
+  "topic_title": "Loudness",
+  "topic_id_exact": "66add6ac8d19f934bd07c673",
+  "mapping_note": "Provisional local complaint ID; source complaint row provides question and topic_id but no distinct complaint ID. Reconcile with canonical taxonomy before production."
+}

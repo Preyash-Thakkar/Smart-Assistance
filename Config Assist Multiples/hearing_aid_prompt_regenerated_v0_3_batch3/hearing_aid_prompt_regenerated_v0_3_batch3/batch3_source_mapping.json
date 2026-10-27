@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 3,
+  "complaint_text_exact": "Loud sounds are distorted",
+  "provisional_complaint_id": "PROV-CMP-0003",
+  "topic_title": "Loudness",
+  "topic_id_exact": "66add6ac8d19f934bd07c673",
+  "mapping_note": "The complaint ID is provisional because the source complaint record does not expose a distinct complaint ID field. Confirm against the canonical complaint master before production ingestion."
+}

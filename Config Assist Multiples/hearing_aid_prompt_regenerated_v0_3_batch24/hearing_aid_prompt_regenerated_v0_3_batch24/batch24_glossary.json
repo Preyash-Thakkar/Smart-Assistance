@@ -1,0 +1,18 @@
+{
+  "batch": 24,
+  "language": "English",
+  "terms": [
+    {
+      "term": "whistling",
+      "meaning": "a high-pitched whistle heard from the hearing aid"
+    },
+    {
+      "term": "acoustic feedback",
+      "meaning": "a squeal or whistle associated with sound escaping and being re-amplified by the hearing device"
+    },
+    {
+      "term": "squeal",
+      "meaning": "a sharp, high-pitched sound similar to a whistle"
+    }
+  ]
+}

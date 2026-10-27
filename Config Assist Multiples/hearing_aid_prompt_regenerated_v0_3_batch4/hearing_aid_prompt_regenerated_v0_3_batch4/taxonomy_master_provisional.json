@@ -1,0 +1,13 @@
+{
+  "status": "provisional",
+  "topic": {
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "title": "Loudness"
+  },
+  "complaint": {
+    "complaint_id": "PROV-CMP-0004",
+    "source_row_1_indexed": 4,
+    "title": "Nearby Sounds are loud"
+  },
+  "note": "Contains current batch mapping only, not the complete canonical taxonomy."
+}

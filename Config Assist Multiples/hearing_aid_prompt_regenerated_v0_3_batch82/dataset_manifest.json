@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Hearing Aid User Complaint Utterance Candidates",
+  "version": "v0.3",
+  "batch": 82,
+  "source_row_1_indexed": 82,
+  "source_question": "Crowd Noise Too Loud",
+  "topic_name": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "provisional_complaint_id": "PROV-CMP-0082",
+  "language": "English (India)",
+  "counts": {
+    "total": 50,
+    "clean_natural_form": 42,
+    "synthetic_noisy_asr_style": 8
+  },
+  "files": [
+    "batch82_complaint_english.jsonl",
+    "batch82_glossary.json",
+    "batch82_source_mapping.json",
+    "batch82_self_audit.json",
+    "taxonomy_master_provisional.json",
+    "dataset_manifest.json",
+    "README.txt"
+  ],
+  "review_status": "synthetic draft; expert and native-speaker review pending"
+}

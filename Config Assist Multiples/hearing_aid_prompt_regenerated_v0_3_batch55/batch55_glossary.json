@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0055",
+  "source_complaint": "All Soft Sounds Too Soft",
+  "terms": [
+    {
+      "term": "soft sounds",
+      "meaning": "Low-volume environmental sounds or speech."
+    },
+    {
+      "term": "insufficient loudness",
+      "meaning": "A user perceives quiet sounds as too faint to hear comfortably."
+    },
+    {
+      "term": "audibility",
+      "meaning": "How easily a sound can be detected and heard."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "batch": 54,
+  "source_row_1_indexed": 54,
+  "source_complaint": "Crowd Noise Too Loud",
+  "provisional_complaint_id": "PROV-CMP-0054",
+  "topic_id": "66b060d95c6674686e02d026",
+  "topic_name": "Noise",
+  "mapping_notes": [
+    "The source complaint JSON row provides question and topic_id but no canonical complaint ID field.",
+    "PROV-CMP-0054 is a provisional row-based ID and must be reconciled against the canonical taxonomy before production."
+  ]
+}

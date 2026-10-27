@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "running water",
+      "meaning": "Water flowing from a tap, shower, or similar source."
+    },
+    {
+      "term": "tap/faucet",
+      "meaning": "A water outlet; wording varies by region."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer distortion or pain unless stated."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

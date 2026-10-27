@@ -1,0 +1,11 @@
+{
+  "batch": 74,
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 74,
+  "source_question": "Sounds Echoic",
+  "canonical_complaint_id_present_in_source": false,
+  "provisional_complaint_id": "PROV-CMP-0074",
+  "topic_id": "66b060f15c6674686e02d038",
+  "topic_name": "General Sound",
+  "mapping_note": "Provisional ID follows 1-indexed source-row order and must be reconciled with the canonical complaint taxonomy."
+}

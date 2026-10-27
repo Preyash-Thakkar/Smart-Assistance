@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 5,
+  "complaint_text_exact_as_read": "Alarm/ChildrenCrying are loud",
+  "provisional_complaint_id": "PROV-CMP-0005",
+  "topic_title": "Loudness",
+  "topic_id_exact": "66add6ac8d19f934bd07c673",
+  "mapping_note": "Complaint ID is provisional because the source complaint record does not provide a distinct explicit complaint ID field. Reconcile against the canonical taxonomy before production ingestion."
+}

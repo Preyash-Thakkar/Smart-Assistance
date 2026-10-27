@@ -1,0 +1,25 @@
+{
+  "status": "provisional",
+  "source_files": [
+    "test.complains (1)(1).json",
+    "test.topics(1).json"
+  ],
+  "note": "Preserve source topic IDs. Complaint IDs are provisional because the source complaint JSON does not include a dedicated complaint ID field.",
+  "topic_id_to_name": {
+    "66add6ac8d19f934bd07c673": "Loudness",
+    "66b060d95c6674686e02d026": "Noise",
+    "66b060e25c6674686e02d02c": "Own Voice",
+    "66b060e85c6674686e02d032": "Speech",
+    "66b060f15c6674686e02d038": "General Sound",
+    "66b061095c6674686e02d03e": "Feedback"
+  },
+  "provisional_complaints": [
+    {
+      "complaint_id": "PROV-CMP-0019",
+      "source_row_number_1_indexed": 19,
+      "source_question": "Background Noise is too loud",
+      "topic_id": "66b060d95c6674686e02d026",
+      "topic_name": "Noise"
+    }
+  ]
+}

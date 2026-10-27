@@ -1,0 +1,28 @@
+{
+  "source_topics_file": "test.topics(1).json",
+  "source_complaints_file": "test.complains (1)(1).json",
+  "source_complaint_row": 1,
+  "source_complaint_record": {
+    "topic_id": {
+      "$oid": "66add6ac8d19f934bd07c673"
+    },
+    "question": "All Soft Sound are too Soft"
+  },
+  "topic_record": {
+    "_id": {
+      "$oid": "66add6ac8d19f934bd07c673"
+    },
+    "title": "Loudness",
+    "createdAt": {
+      "$date": "2024-08-03T07:05:16.961Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-03T07:05:16.961Z"
+    },
+    "__v": 0
+  },
+  "mapping_rule": "complaints.topic_id.$oid == topics._id.$oid",
+  "provisional_complaint_id": "PROV-CMP-0001",
+  "id_status": "PROVISIONAL_NOT_SOURCE_ID",
+  "warning": "The source complaint record has no individual complaint_id field. The provisional ID is only a local batch identifier."
+}

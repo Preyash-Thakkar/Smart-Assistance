@@ -1,0 +1,24 @@
+{
+  "batch": 61,
+  "source_row": 61,
+  "utterance_count": 50,
+  "clean_count": 42,
+  "synthetic_noisy_count": 8,
+  "checks": {
+    "jsonl_parse": true,
+    "schema_consistency": true,
+    "same_complaint_and_topic": true,
+    "normalized_exact_duplicates_absent": true,
+    "noisy_source_links_valid": true,
+    "counts_are_42_clean_8_noisy": true
+  },
+  "normalized_exact_duplicates": [],
+  "not_performed": [
+    "native-speaker review",
+    "hearing-care domain expert review",
+    "embedding similarity analysis",
+    "model-based evaluation",
+    "real-user validation"
+  ],
+  "score_note": "Naturalness and label-confidence scores are synthetic estimates, not human ratings."
+}

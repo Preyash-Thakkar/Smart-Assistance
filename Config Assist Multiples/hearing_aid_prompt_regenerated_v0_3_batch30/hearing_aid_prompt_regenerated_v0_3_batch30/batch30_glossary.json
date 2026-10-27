@@ -1,0 +1,18 @@
+{
+  "batch": 30,
+  "language": "English",
+  "terms": [
+    {
+      "term": "sudden sounds",
+      "meaning": "abrupt, unexpected sounds such as a door slam, bang, or knock"
+    },
+    {
+      "term": "impact sound",
+      "meaning": "a short sound caused when an object strikes or hits something"
+    },
+    {
+      "term": "over-amplification",
+      "meaning": "amplification that makes a sound excessively loud"
+    }
+  ]
+}

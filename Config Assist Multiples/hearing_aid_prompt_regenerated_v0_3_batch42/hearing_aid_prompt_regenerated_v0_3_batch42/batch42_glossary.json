@@ -1,0 +1,18 @@
+{
+  "batch": 42,
+  "language": "English",
+  "terms": [
+    {
+      "term": "speech clarity",
+      "meaning": "how distinctly the words and sounds of speech can be perceived"
+    },
+    {
+      "term": "unnatural speech quality",
+      "meaning": "speech that sounds unlike a natural voice to the listener"
+    },
+    {
+      "term": "muddiness",
+      "meaning": "a perceived lack of definition or separation in sound"
+    }
+  ]
+}

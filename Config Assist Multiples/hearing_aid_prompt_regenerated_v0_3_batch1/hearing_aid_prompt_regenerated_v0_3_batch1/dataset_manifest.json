@@ -1,0 +1,54 @@
+{
+  "dataset_name": "Hearing-Aid User Assistant Complaint Dataset",
+  "version": "0.2-corrected-provisional",
+  "created_at_utc": "2026-10-09T09:15:50.203254+00:00",
+  "source_topic_records": 6,
+  "source_complaint_records": 203,
+  "normalized_topic_question_pairs_including_placeholders": 83,
+  "valid_provisional_complaint_candidates": 79,
+  "pilot_positive_examples": 179,
+  "pilot_negative_examples": 43,
+  "validation_candidates": 43,
+  "language_registry_entries": 70,
+  "official_complaint_ids_present": false,
+  "status": "Corrected engineering pilot; not production-ready and not approved for model training/evaluation",
+  "limitations": [
+    "PROV-CMP identifiers are provisional only and must be replaced/mapped to official complaint IDs by the taxonomy owner.",
+    "All generated examples are synthetic and unreviewed.",
+    "No train/validation/test split is assigned.",
+    "No native-speaker or hearing-care professional review is claimed.",
+    "International languages are candidates for planning, not a validated top-50 selection."
+  ],
+  "files": [
+    {
+      "file": "README.txt",
+      "bytes": 1475,
+      "sha256": "f6c6e17a367e21106454fe11d81c3d4a176d7d56ae89355741bcdf0ef4683021"
+    },
+    {
+      "file": "batch1_complaint_english.jsonl",
+      "bytes": 59114,
+      "sha256": "119384889b92d4cffa3f90db84e2bc4d8e48bc7a45ccb545311333b2d7b65c46"
+    },
+    {
+      "file": "batch1_glossary.json",
+      "bytes": 988,
+      "sha256": "ed3bfbe07d6548251f9d4901908acedcc8c6432726e180e736e5002f541eb5d1"
+    },
+    {
+      "file": "batch1_self_audit.json",
+      "bytes": 907,
+      "sha256": "fb2007f75ffec57708122eb75b45207ed9be0fe02c86019e025c03d9d9af2324"
+    },
+    {
+      "file": "batch1_source_mapping.json",
+      "bytes": 836,
+      "sha256": "2b8c4baf5468145add097f71b747f8c838a70e1e97a0e5cf15a6684811b1e034"
+    },
+    {
+      "file": "taxonomy_master_provisional.json",
+      "bytes": 2107,
+      "sha256": "daadd706bccde52335daef2959e1c398fdb61528916384331bffe713beda1449"
+    }
+  ]
+}

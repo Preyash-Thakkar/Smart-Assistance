@@ -1,0 +1,18 @@
+{
+  "batch": 27,
+  "language": "English",
+  "terms": [
+    {
+      "term": "distortion",
+      "meaning": "a change in sound quality that makes the output rough, unclear, or unlike the original sound"
+    },
+    {
+      "term": "crackling",
+      "meaning": "a series of small sharp noises heard as part of distorted audio"
+    },
+    {
+      "term": "clipping",
+      "meaning": "audible roughness or breakup that can occur when a signal exceeds the system's available range"
+    }
+  ]
+}

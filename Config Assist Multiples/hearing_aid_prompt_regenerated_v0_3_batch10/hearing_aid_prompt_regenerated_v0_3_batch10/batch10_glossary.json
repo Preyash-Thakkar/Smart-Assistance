@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "motor sound",
+      "meaning": "Sound produced by a motor while it is operating."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer distortion or device malfunction unless stated."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

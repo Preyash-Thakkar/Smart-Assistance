@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "bass",
+      "meaning": "Low-frequency part of sound."
+    },
+    {
+      "term": "boomy",
+      "meaning": "A subjective description of a strong, resonant, heavy low-frequency sound."
+    },
+    {
+      "term": "low-frequency sound",
+      "meaning": "Lower-pitched sound; the wording describes perception and does not establish a technical fault."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

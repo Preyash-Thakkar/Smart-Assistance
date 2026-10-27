@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "echoic / echoey",
+      "meaning": "A perceived echo-like quality in sound."
+    },
+    {
+      "term": "reverberant",
+      "meaning": "Sound perceived as lingering or reflecting in the listening environment; not a confirmed technical diagnosis."
+    },
+    {
+      "term": "hollow sound",
+      "meaning": "A subjective description of sound lacking directness or fullness."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

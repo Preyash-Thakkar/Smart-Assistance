@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "unnatural sound",
+      "meaning": "A subjective impression that sound does not resemble its expected or familiar quality."
+    },
+    {
+      "term": "artificial / synthetic",
+      "meaning": "A perceived processed or non-lifelike sound quality; not by itself proof of device malfunction."
+    },
+    {
+      "term": "lifelike",
+      "meaning": "Perceived as similar to the natural sound of the source."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0060",
+  "source_complaint": "Sudden Sounds (e.g., Door Slams) Too Loud",
+  "terms": [
+    {
+      "term": "sudden sounds",
+      "meaning": "Abrupt sounds such as a door slam, bang, clunk, or dropped object."
+    },
+    {
+      "term": "door slam",
+      "meaning": "A door closing forcefully and producing a brief loud sound."
+    },
+    {
+      "term": "excessive loudness",
+      "meaning": "Sound perceived by the user as louder than comfortable."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

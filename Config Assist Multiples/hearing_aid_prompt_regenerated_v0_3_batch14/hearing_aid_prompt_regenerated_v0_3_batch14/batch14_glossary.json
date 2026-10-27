@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "unclear sound",
+      "meaning": "A subjective report that sound is difficult to distinguish or understand."
+    },
+    {
+      "term": "indistinct",
+      "meaning": "Not clearly defined or easy to make out."
+    },
+    {
+      "term": "muddled",
+      "meaning": "A subjective description of sound that seems mixed or unclear."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

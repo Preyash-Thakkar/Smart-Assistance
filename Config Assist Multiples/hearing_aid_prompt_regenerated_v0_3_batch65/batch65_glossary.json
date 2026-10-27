@@ -1,0 +1,18 @@
+{
+  "batch": 65,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "The user's own voice as heard by the user while speaking with the hearing aid."
+    },
+    {
+      "term": "sharp",
+      "meaning": "A user-described voice quality perceived as piercing, overly crisp, or harsh."
+    },
+    {
+      "term": "metallic",
+      "meaning": "A user-described voice quality perceived as tinny, ringing, or metal-like; it does not establish a technical cause."
+    }
+  ]
+}

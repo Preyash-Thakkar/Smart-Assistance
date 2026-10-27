@@ -1,0 +1,11 @@
+{
+  "batch": 80,
+  "language": "English (India)",
+  "topic": "Noise",
+  "terms": {
+    "background noise": "Sound that is present around the main sound or conversation.",
+    "surrounding noise": "Environmental sound near the hearing-aid user.",
+    "ambient noise": "The general sound level in the user's environment."
+  },
+  "labeling_note": "Synthetic utterance candidates for one complaint label; not verified patient quotations."
+}

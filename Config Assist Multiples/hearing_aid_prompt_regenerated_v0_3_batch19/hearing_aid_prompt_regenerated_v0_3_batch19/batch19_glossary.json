@@ -1,0 +1,18 @@
+{
+  "batch": 19,
+  "language": "English",
+  "terms": [
+    {
+      "term": "background noise",
+      "meaning": "ongoing or general environmental sound, not a single sudden event"
+    },
+    {
+      "term": "ambient noise",
+      "meaning": "surrounding room or environmental sound"
+    },
+    {
+      "term": "too loud",
+      "meaning": "the user perceives the background sound level as excessive"
+    }
+  ]
+}

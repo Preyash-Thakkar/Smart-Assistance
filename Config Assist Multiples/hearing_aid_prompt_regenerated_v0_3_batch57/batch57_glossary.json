@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0057",
+  "source_complaint": "Loud Sounds Distorted",
+  "terms": [
+    {
+      "term": "loud sounds",
+      "meaning": "High-volume environmental sounds or speech."
+    },
+    {
+      "term": "sound distortion",
+      "meaning": "A perceived change in sound quality such as crackling, fuzziness, clipping, or roughness."
+    },
+    {
+      "term": "clipping",
+      "meaning": "A perceived effect in which peaks of a sound seem cut off or harsh."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

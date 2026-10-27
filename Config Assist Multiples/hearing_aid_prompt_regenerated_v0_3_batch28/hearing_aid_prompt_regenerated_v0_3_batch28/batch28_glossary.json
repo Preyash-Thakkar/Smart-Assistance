@@ -1,0 +1,18 @@
+{
+  "batch": 28,
+  "language": "English",
+  "terms": [
+    {
+      "term": "nearby sounds",
+      "meaning": "sounds produced close to the listener"
+    },
+    {
+      "term": "over-amplification",
+      "meaning": "sound amplification that makes a sound excessively loud"
+    },
+    {
+      "term": "close-by voices",
+      "meaning": "speech from people positioned near the listener"
+    }
+  ]
+}

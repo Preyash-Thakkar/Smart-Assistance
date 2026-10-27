@@ -1,0 +1,18 @@
+{
+  "batch": 22,
+  "language": "English",
+  "terms": [
+    {
+      "term": "wind noise",
+      "meaning": "sound produced by wind around the user or hearing aid"
+    },
+    {
+      "term": "gust",
+      "meaning": "a brief increase or burst of wind"
+    },
+    {
+      "term": "too loud",
+      "meaning": "the user perceives wind sound as excessively loud through the hearing aid"
+    }
+  ]
+}

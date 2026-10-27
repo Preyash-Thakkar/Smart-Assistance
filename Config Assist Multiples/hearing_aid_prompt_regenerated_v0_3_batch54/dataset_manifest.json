@@ -1,0 +1,25 @@
+{
+  "dataset_version": "0.3",
+  "batch": 54,
+  "created_utc": "2026-10-09T10:59:59.665386+00:00",
+  "source_row_1_indexed": 54,
+  "source_complaint": "Crowd Noise Too Loud",
+  "provisional_complaint_id": "PROV-CMP-0054",
+  "topic_name": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "language": "English",
+  "lang_code": "en-IN",
+  "complaint_count": 1,
+  "utterance_count": 50,
+  "natural_form_candidate_count": 42,
+  "synthetic_noisy_text_candidate_count": 8,
+  "files": [
+    "batch54_complaint_english.jsonl",
+    "batch54_glossary.json",
+    "batch54_source_mapping.json",
+    "batch54_self_audit.json",
+    "taxonomy_master_provisional.json",
+    "dataset_manifest.json",
+    "README.txt"
+  ]
+}

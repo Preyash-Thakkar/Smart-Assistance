@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 17,
+  "complaint_text_exact_as_read": " Sound in noise is uncomfortable",
+  "provisional_complaint_id": "PROV-CMP-0017",
+  "topic_title": "Noise",
+  "topic_id_exact": "66b060d95c6674686e02d026",
+  "mapping_note": "Provisional local complaint ID; source complaint row provides question and topic_id but no distinct complaint ID. Reconcile with canonical taxonomy before production."
+}

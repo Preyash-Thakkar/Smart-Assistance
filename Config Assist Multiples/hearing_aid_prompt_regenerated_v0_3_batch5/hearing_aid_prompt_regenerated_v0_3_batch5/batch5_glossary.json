@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "alarm",
+      "meaning": "An alarm, warning beep, or alert tone; do not infer a specific alarm type unless stated."
+    },
+    {
+      "term": "children crying",
+      "meaning": "Crying sounds from a child or children, including a baby where explicitly stated."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer pain, distortion, or device malfunction unless stated."
+    }
+  ],
+  "notes": "Initial dataset glossary, not a clinically validated terminology standard."
+}

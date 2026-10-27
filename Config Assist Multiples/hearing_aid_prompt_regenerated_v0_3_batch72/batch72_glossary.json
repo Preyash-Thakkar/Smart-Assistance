@@ -1,0 +1,18 @@
+{
+  "batch": 72,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "speech quality",
+      "meaning": "The perceived clarity, naturalness, and overall sound of spoken voices."
+    },
+    {
+      "term": "clarity",
+      "meaning": "How distinctly speech sounds can be heard and differentiated."
+    },
+    {
+      "term": "unnatural",
+      "meaning": "A voice quality that does not resemble how speech normally sounds to the listener."
+    }
+  ]
+}

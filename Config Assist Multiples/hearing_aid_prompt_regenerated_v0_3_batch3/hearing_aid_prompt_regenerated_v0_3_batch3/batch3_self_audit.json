@@ -1,0 +1,29 @@
+{
+  "batch": 3,
+  "complaint_source_row": 3,
+  "complaint_text_source_exact": "Loud sounds are distorted",
+  "complaint_id_status": "Provisional local ID; source complaint JSON does not provide an explicit complaint ID field.",
+  "complaint_id": "PROV-CMP-0003",
+  "topic": "Loudness",
+  "topic_id": "66add6ac8d19f934bd07c673",
+  "language": "English",
+  "rows_written": 50,
+  "natural_form_candidates": 42,
+  "asr_noise_variants": 8,
+  "exact_normalized_duplicates": 0,
+  "json_parse_errors": 0,
+  "checks": {
+    "required_fields_present": true,
+    "all_rows_same_complaint_and_topic": true,
+    "all_asr_variants_link_to_source_utt_id": true,
+    "embedding_based_near_duplicate_check": "Not performed",
+    "native_speaker_review": "Not performed",
+    "domain_expert_review": "Not performed",
+    "model_evaluation": "Not performed"
+  },
+  "limitations": [
+    "Synthetic draft data; not yet reviewed by hearing-care domain experts or native-language reviewers.",
+    "No embedding-based similarity check was run; exact normalized duplicate check only.",
+    "Naturalness and label-confidence values are generator estimates, not measured human ratings."
+  ]
+}

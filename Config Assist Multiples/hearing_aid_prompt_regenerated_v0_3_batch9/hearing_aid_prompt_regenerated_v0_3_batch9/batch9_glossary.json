@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "fan noise",
+      "meaning": "Sound produced by a running ceiling, table, desk, or exhaust fan."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Perceived loudness is excessive; do not infer distortion, pain, or equipment fault unless stated."
+    }
+  ],
+  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+}

@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Hearing Aid User Complaint Utterance Dataset",
+  "version": "v0.3",
+  "batch": 75,
+  "created_utc": "2026-10-09T11:24:54.586670+00:00",
+  "source_file": "test.complains (1)(1).json",
+  "source_row": 75,
+  "source_complaint": "Sounds Muffled/Dull",
+  "topic_name": "General Sound",
+  "topic_id": "66b060f15c6674686e02d038",
+  "provisional_complaint_id": "PROV-CMP-0075",
+  "utterances": 50,
+  "clean_utterances": 42,
+  "noisy_utterances": 8,
+  "language": "English (India)",
+  "archive_file_count": 7,
+  "limitations": [
+    "Provisional complaint ID; canonical ID absent in source.",
+    "Generated candidates require expert and speaker review."
+  ]
+}

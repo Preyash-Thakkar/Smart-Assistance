@@ -1,0 +1,93 @@
+{
+  "status": "provisional; source IDs preserved",
+  "topic_id_mapping_rule": "Match complaints.topic_id.$oid to topics._id.$oid and populate topic from topics.title.",
+  "topics": [
+    {
+      "_id": {
+        "$oid": "66add6ac8d19f934bd07c673"
+      },
+      "title": "Loudness",
+      "createdAt": {
+        "$date": "2024-08-03T07:05:16.961Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-03T07:05:16.961Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "66b060d95c6674686e02d026"
+      },
+      "title": "Noise",
+      "createdAt": {
+        "$date": "2024-08-05T05:19:21.234Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-05T05:19:21.234Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "66b060e25c6674686e02d02c"
+      },
+      "title": "Own Voice",
+      "createdAt": {
+        "$date": "2024-08-05T05:19:30.925Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-05T05:19:30.925Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "66b060e85c6674686e02d032"
+      },
+      "title": "Speech",
+      "createdAt": {
+        "$date": "2024-08-05T05:19:36.053Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-05T05:19:36.053Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "66b060f15c6674686e02d038"
+      },
+      "title": "General Sound",
+      "createdAt": {
+        "$date": "2024-08-05T05:19:45.545Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-05T05:19:45.545Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "66b061095c6674686e02d03e"
+      },
+      "title": "Feedback",
+      "createdAt": {
+        "$date": "2024-08-05T05:20:09.794Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-05T05:20:09.794Z"
+      },
+      "__v": 0
+    }
+  ],
+  "complaint_definition": {
+    "provisional_complaint_id": "PROV-CMP-0002",
+    "source_complaint_id": null,
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "topic": "Loudness",
+    "complaint": " All Loud sounds are too loud",
+    "source_row": 2,
+    "id_status": "PROVISIONAL_NOT_SOURCE_ID"
+  }
+}

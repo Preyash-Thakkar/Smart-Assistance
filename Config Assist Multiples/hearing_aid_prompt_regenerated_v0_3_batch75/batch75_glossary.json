@@ -1,0 +1,18 @@
+{
+  "batch": 75,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "muffled",
+      "meaning": "A sound that seems blocked, covered, or lacking clarity."
+    },
+    {
+      "term": "dull",
+      "meaning": "A sound perceived as lacking brightness, crispness, or detail."
+    },
+    {
+      "term": "muted",
+      "meaning": "Sound that seems reduced in brightness or definition."
+    }
+  ]
+}

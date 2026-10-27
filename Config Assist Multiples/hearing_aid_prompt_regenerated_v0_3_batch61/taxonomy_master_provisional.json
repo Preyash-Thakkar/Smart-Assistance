@@ -1,0 +1,18 @@
+{
+  "status": "provisional",
+  "id_policy": "PROV-CMP-#### uses the 1-indexed source complaint row; reconcile to canonical IDs before production.",
+  "topics": [
+    {
+      "topic_id": "66add6ac8d19f934bd07c673",
+      "topic_name": "Loudness"
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "PROV-CMP-0061",
+      "source_row": 61,
+      "source_question": "Own Chewing Sounds Too Loud",
+      "topic_id": "66add6ac8d19f934bd07c673"
+    }
+  ]
+}

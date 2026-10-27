@@ -1,0 +1,18 @@
+{
+  "batch": 44,
+  "language": "English",
+  "terms": [
+    {
+      "term": "echoic sound",
+      "meaning": "a sound perceived as having an echo"
+    },
+    {
+      "term": "reverberation",
+      "meaning": "persistence or lingering of sound after it is produced"
+    },
+    {
+      "term": "environmental sound",
+      "meaning": "a sound originating from the user's surroundings"
+    }
+  ]
+}

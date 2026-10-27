@@ -1,0 +1,19 @@
+{
+  "status": "provisional",
+  "version": "0.3",
+  "source_complaints_file": "test.complains (1)(1).json",
+  "source_topics_file": "test.topics(1).json",
+  "topic_id_to_name": {
+    "66add6ac8d19f934bd07c673": "Loudness"
+  },
+  "provisional_complaints": [
+    {
+      "complaint_id": "PROV-CMP-0056",
+      "source_row_1_indexed": 56,
+      "question": "All Loud Sounds Too Loud",
+      "topic_id": "66add6ac8d19f934bd07c673",
+      "topic_name": "Loudness"
+    }
+  ],
+  "note": "Provisional per-batch taxonomy extract. Reconcile complaint IDs and topic labels with the canonical taxonomy before production."
+}

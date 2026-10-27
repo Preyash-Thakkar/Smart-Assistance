@@ -1,0 +1,18 @@
+{
+  "batch": 50,
+  "language": "English",
+  "terms": [
+    {
+      "term": "ambient noise",
+      "meaning": "background sound present in an environment, such as a fan or air conditioning"
+    },
+    {
+      "term": "low-level sound",
+      "meaning": "a quiet sound that is present but not especially loud"
+    },
+    {
+      "term": "prominent background sound",
+      "meaning": "a background sound that attracts attention more than desired"
+    }
+  ]
+}

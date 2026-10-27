@@ -1,0 +1,18 @@
+{
+  "batch": 23,
+  "language": "English",
+  "terms": [
+    {
+      "term": "crowd noise",
+      "meaning": "the combined sound of many people in a shared space"
+    },
+    {
+      "term": "crowd chatter",
+      "meaning": "overlapping voices from people in a group"
+    },
+    {
+      "term": "too loud",
+      "meaning": "the user perceives overall crowd sound as excessively loud through the hearing aid"
+    }
+  ]
+}

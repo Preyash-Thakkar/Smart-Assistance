@@ -1,0 +1,18 @@
+{
+  "batch": 25,
+  "language": "English",
+  "terms": [
+    {
+      "term": "soft sounds",
+      "meaning": "quiet or low-volume environmental sounds and speech"
+    },
+    {
+      "term": "faint sounds",
+      "meaning": "sounds that are difficult to hear because their level is low"
+    },
+    {
+      "term": "soft speech",
+      "meaning": "speech spoken at a low volume"
+    }
+  ]
+}

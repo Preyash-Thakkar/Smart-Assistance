@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Hearing Aid User Assistant Complaint Utterances",
+  "version": "0.3",
+  "batch": 22,
+  "created_utc": "2026-10-09T09:38:24.002513+00:00",
+  "language": "English",
+  "language_code": "en-IN",
+  "source_complaint_count": 1,
+  "utterance_count": 50,
+  "natural_form_candidates": 42,
+  "asr_noisy_text_candidates": 8,
+  "complaint_id": "PROV-CMP-0022",
+  "topic_id": "66b060d95c6674686e02d026",
+  "topic_name": "Noise"
+}

@@ -1,0 +1,18 @@
+{
+  "batch": 18,
+  "language": "English",
+  "terms": [
+    {
+      "term": "sudden noise",
+      "meaning": "a sound that starts abruptly or unexpectedly"
+    },
+    {
+      "term": "abrupt sound",
+      "meaning": "a sudden sound onset, not a continuous background noise"
+    },
+    {
+      "term": "uncomfortable",
+      "meaning": "the user reports unpleasantness or difficulty tolerating the sudden sound; no diagnosis is implied"
+    }
+  ]
+}

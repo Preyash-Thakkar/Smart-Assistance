@@ -1,0 +1,18 @@
+{
+  "batch": 37,
+  "language": "English",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "the user's perception of their own voice while speaking"
+    },
+    {
+      "term": "boomy",
+      "meaning": "sound perceived as excessively full or bass-heavy"
+    },
+    {
+      "term": "self-voice loudness",
+      "meaning": "the perceived loudness of the user's own voice while speaking"
+    }
+  ]
+}

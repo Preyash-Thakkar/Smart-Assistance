@@ -1,0 +1,18 @@
+{
+  "batch": 53,
+  "language": "English",
+  "terms": [
+    {
+      "term": "wind noise",
+      "meaning": "noise caused when moving air interacts with a hearing aid or its microphones"
+    },
+    {
+      "term": "buffeting",
+      "meaning": "irregular rushing or thumping noise caused by gusts of air hitting a surface or microphone"
+    },
+    {
+      "term": "wind-noise reduction",
+      "meaning": "device processing intended to limit the prominence of wind-related sound"
+    }
+  ]
+}

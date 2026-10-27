@@ -1,0 +1,9 @@
+{
+  "source_file": "test.complains (1)(1).json",
+  "source_row_1_indexed": 14,
+  "complaint_text_exact_as_read": "Too Much Bass",
+  "provisional_complaint_id": "PROV-CMP-0014",
+  "topic_title": "General Sound",
+  "topic_id_exact": "66b060f15c6674686e02d038",
+  "mapping_note": "Provisional local complaint ID; source complaint row provides question and topic_id but no distinct complaint ID. Reconcile with canonical taxonomy before production."
+}

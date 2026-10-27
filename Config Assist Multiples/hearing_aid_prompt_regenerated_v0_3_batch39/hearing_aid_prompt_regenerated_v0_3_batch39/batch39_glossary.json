@@ -1,0 +1,18 @@
+{
+  "batch": 39,
+  "language": "English",
+  "terms": [
+    {
+      "term": "whispering",
+      "meaning": "speech produced very quietly"
+    },
+    {
+      "term": "distant speech",
+      "meaning": "spoken words produced by a person some distance away"
+    },
+    {
+      "term": "speech audibility",
+      "meaning": "how easily spoken words can be heard"
+    }
+  ]
+}

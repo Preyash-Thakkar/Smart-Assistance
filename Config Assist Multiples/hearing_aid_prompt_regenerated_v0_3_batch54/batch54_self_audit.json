@@ -1,0 +1,24 @@
+{
+  "batch": 54,
+  "source_complaint": "Crowd Noise Too Loud",
+  "topic_id": "66b060d95c6674686e02d026",
+  "checks": {
+    "row_count_50": true,
+    "jsonl_parse_ok": true,
+    "schema_consistent": true,
+    "all_same_complaint_id": true,
+    "all_same_topic_id": true,
+    "42_natural_form_candidates": true,
+    "8_synthetic_noisy_candidates": true,
+    "all_noisy_rows_linked_to_clean_rows": true,
+    "no_normalized_exact_duplicates": true
+  },
+  "normalized_exact_duplicates": [],
+  "not_performed": [
+    "Native-speaker review",
+    "Hearing-care/domain-expert review",
+    "Embedding similarity checks against existing dataset",
+    "Model training or evaluation"
+  ],
+  "score_note": "Naturalness and label-confidence scores are synthetic estimates, not human ratings."
+}

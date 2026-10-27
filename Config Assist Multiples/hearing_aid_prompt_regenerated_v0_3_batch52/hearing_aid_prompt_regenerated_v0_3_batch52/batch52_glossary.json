@@ -1,0 +1,18 @@
+{
+  "batch": 52,
+  "language": "English",
+  "terms": [
+    {
+      "term": "background noise",
+      "meaning": "sound from the surrounding environment that is not the primary sound the listener wants to hear"
+    },
+    {
+      "term": "competing speech",
+      "meaning": "voices from other people that overlap with the conversation the listener is trying to follow"
+    },
+    {
+      "term": "noise reduction",
+      "meaning": "hearing-aid processing intended to reduce the prominence of some environmental noise"
+    }
+  ]
+}

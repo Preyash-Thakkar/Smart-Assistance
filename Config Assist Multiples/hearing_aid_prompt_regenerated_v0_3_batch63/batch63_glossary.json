@@ -1,0 +1,18 @@
+{
+  "batch": 63,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "own voice",
+      "meaning": "The user's own voice as heard by the user while speaking with the hearing aid."
+    },
+    {
+      "term": "muffled",
+      "meaning": "Perceived as unclear, blocked, or lacking detail."
+    },
+    {
+      "term": "dull",
+      "meaning": "Perceived as lacking clarity or crispness; this is a user-reported sound quality, not a confirmed cause."
+    }
+  ]
+}

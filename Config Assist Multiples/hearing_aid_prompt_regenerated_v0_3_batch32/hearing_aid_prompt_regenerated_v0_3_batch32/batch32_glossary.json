@@ -1,0 +1,18 @@
+{
+  "batch": 32,
+  "language": "English",
+  "terms": [
+    {
+      "term": "running water",
+      "meaning": "water flowing from a tap, shower, or drain"
+    },
+    {
+      "term": "fan noise",
+      "meaning": "sound produced by a rotating fan"
+    },
+    {
+      "term": "over-amplification",
+      "meaning": "amplification that makes a sound excessively loud"
+    }
+  ]
+}

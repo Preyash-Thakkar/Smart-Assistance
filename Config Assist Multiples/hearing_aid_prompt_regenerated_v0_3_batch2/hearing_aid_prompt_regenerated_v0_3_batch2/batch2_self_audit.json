@@ -1,0 +1,22 @@
+{
+  "batch": "2",
+  "cell": {
+    "complaint_id": "PROV-CMP-0002",
+    "source_complaint_text": " All Loud sounds are too loud",
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "topic": "Loudness",
+    "language": "English"
+  },
+  "source_complaint_row": 2,
+  "generated_utterance_count": 50,
+  "natural_base_utterance_count": 42,
+  "asr_variant_count": 8,
+  "exact_normalized_duplicates_remaining": 0,
+  "under_covered_axes": [
+    "No non-English or romanized transliteration in this cell.",
+    "Only Indian English/general is covered; other English regional varieties remain pending.",
+    "No multi-turn follow-up snippets.",
+    "Embedding-based similarity and domain review were not performed."
+  ],
+  "quality_status": "Synthetic draft batch; not approved for production training."
+}

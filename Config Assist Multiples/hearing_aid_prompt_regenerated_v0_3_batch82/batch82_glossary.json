@@ -1,0 +1,11 @@
+{
+  "batch": 82,
+  "language": "English (India)",
+  "topic": "Noise",
+  "terms": {
+    "crowd noise": "Combined sound from multiple people in a shared environment.",
+    "background noise": "Sound that is present around the main sound or conversation.",
+    "overwhelming": "So prominent or loud that listening becomes difficult or uncomfortable."
+  },
+  "labeling_note": "Synthetic utterance candidates for one complaint label; not verified patient quotations."
+}

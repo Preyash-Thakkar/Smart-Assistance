@@ -1,0 +1,18 @@
+{
+  "batch": 47,
+  "language": "English",
+  "terms": [
+    {
+      "term": "bass",
+      "meaning": "low-frequency audio content"
+    },
+    {
+      "term": "boomy",
+      "meaning": "a prominent, resonant low-frequency sound quality"
+    },
+    {
+      "term": "muddy sound",
+      "meaning": "sound perceived as unclear or lacking separation, often described with excessive bass"
+    }
+  ]
+}

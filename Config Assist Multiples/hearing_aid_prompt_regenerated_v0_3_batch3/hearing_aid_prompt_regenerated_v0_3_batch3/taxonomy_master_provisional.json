@@ -1,0 +1,13 @@
+{
+  "status": "provisional",
+  "topic": {
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "title": "Loudness"
+  },
+  "complaint": {
+    "complaint_id": "PROV-CMP-0003",
+    "source_row_1_indexed": 3,
+    "title": "Loud sounds are distorted"
+  },
+  "note": "Only the current batch's mapping is represented here; do not treat this as the complete canonical taxonomy."
+}

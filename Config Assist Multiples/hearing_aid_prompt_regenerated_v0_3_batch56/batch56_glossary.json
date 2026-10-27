@@ -1,0 +1,24 @@
+{
+  "version": "0.3",
+  "language": "English (India)",
+  "complaint_id": "PROV-CMP-0056",
+  "source_complaint": "All Loud Sounds Too Loud",
+  "terms": [
+    {
+      "term": "loud sounds",
+      "meaning": "High-volume environmental sounds or speech."
+    },
+    {
+      "term": "excessive loudness",
+      "meaning": "Sounds perceived by the user as louder than comfortable."
+    },
+    {
+      "term": "output level",
+      "meaning": "The sound level delivered by the hearing aid."
+    },
+    {
+      "term": "hearing aid context",
+      "meaning": "The user reports the complaint while using a hearing aid."
+    }
+  ]
+}

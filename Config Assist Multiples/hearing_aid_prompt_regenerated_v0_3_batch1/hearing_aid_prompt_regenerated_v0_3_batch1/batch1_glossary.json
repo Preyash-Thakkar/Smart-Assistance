@@ -1,0 +1,40 @@
+{
+  "language": "English",
+  "lang_code": "en",
+  "cell": {
+    "complaint_id": "PROV-CMP-0001",
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "topic": "Loudness"
+  },
+  "terms": [
+    {
+      "concept": "hearing aid",
+      "preferred_terms": [
+        "hearing aid",
+        "hearing device",
+        "hearing machine"
+      ],
+      "notes": "Use the user's own device term where known."
+    },
+    {
+      "concept": "quiet/soft sounds",
+      "preferred_terms": [
+        "quiet sounds",
+        "soft sounds",
+        "low-level sounds",
+        "softer sounds"
+      ],
+      "notes": "Keep the meaning general; avoid changing the complaint to speech-only or one specific sound."
+    },
+    {
+      "concept": "volume",
+      "preferred_terms": [
+        "volume",
+        "sound level",
+        "too faint"
+      ],
+      "notes": "Do not infer a device fault or prescribed setting."
+    }
+  ],
+  "review_status": "Draft glossary; no domain or native-speaker review claimed."
+}

@@ -1,0 +1,29 @@
+{
+  "batch": 16,
+  "complaint_source_row": 16,
+  "complaint_text_source_exact": " Soft Ambience noise is too noticeable",
+  "complaint_id": "PROV-CMP-0016",
+  "complaint_id_status": "Provisional local ID",
+  "topic": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "language": "English",
+  "rows_written": 50,
+  "natural_form_candidates": 42,
+  "asr_noise_variants": 8,
+  "exact_normalized_duplicates": 0,
+  "json_parse_errors": 0,
+  "checks": {
+    "required_fields_present": true,
+    "all_rows_same_complaint_and_topic": true,
+    "asr_variants_link_to_source_utt_id": true,
+    "embedding_similarity_check": "Not performed",
+    "native_speaker_review": "Not performed",
+    "domain_expert_review": "Not performed",
+    "model_evaluation": "Not performed"
+  },
+  "limitations": [
+    "Synthetic draft; native-speaker and hearing-care domain review pending.",
+    "Only exact normalized duplicate detection was run.",
+    "Naturalness/confidence scores are generator estimates, not human ratings."
+  ]
+}

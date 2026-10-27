@@ -1,0 +1,18 @@
+{
+  "batch": 20,
+  "language": "English",
+  "terms": [
+    {
+      "term": "restaurant noise",
+      "meaning": "the combined sound in a restaurant, including diners and dining-room activity"
+    },
+    {
+      "term": "restaurant chatter",
+      "meaning": "people talking in the restaurant"
+    },
+    {
+      "term": "too loud",
+      "meaning": "the user perceives restaurant sound as excessively loud through the hearing aid"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "language": "English",
+  "lang_code": "en",
+  "cell": {
+    "complaint_id": "PROV-CMP-0002",
+    "topic_id": "66add6ac8d19f934bd07c673",
+    "topic": "Loudness"
+  },
+  "terms": [
+    {
+      "concept": "hearing aid",
+      "preferred_terms": [
+        "hearing aid",
+        "hearing device",
+        "hearing machine"
+      ]
+    },
+    {
+      "concept": "loud sounds",
+      "preferred_terms": [
+        "loud sounds",
+        "strong sounds",
+        "loud noise",
+        "high-volume sounds"
+      ]
+    },
+    {
+      "concept": "volume",
+      "preferred_terms": [
+        "volume",
+        "sound level",
+        "too intense",
+        "too strong",
+        "overpowering"
+      ]
+    }
+  ],
+  "review_status": "Draft glossary; no domain or native-speaker review claimed."
+}

@@ -1,0 +1,18 @@
+{
+  "batch": 70,
+  "language": "English (India)",
+  "terms": [
+    {
+      "term": "speech",
+      "meaning": "Spoken words or voices heard through or around the hearing aid."
+    },
+    {
+      "term": "boomy",
+      "meaning": "A heavy, resonant quality, often perceived as having excessive low-frequency sound."
+    },
+    {
+      "term": "too loud",
+      "meaning": "Sound is perceived as excessively strong or uncomfortable."
+    }
+  ]
+}

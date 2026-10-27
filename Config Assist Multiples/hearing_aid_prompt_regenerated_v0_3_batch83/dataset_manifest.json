@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Hearing Aid User Complaint Utterance Candidates",
+  "version": "v0.3",
+  "batch": 83,
+  "source_row_1_indexed": 83,
+  "source_question": "Hearing Aid Whistles",
+  "topic_name": "Feedback",
+  "topic_id": "66b061095c6674686e02d03e",
+  "provisional_complaint_id": "PROV-CMP-0083",
+  "language": "English (India)",
+  "counts": {
+    "total": 50,
+    "clean_natural_form": 42,
+    "synthetic_noisy_asr_style": 8
+  },
+  "files": [
+    "batch83_complaint_english.jsonl",
+    "batch83_glossary.json",
+    "batch83_source_mapping.json",
+    "batch83_self_audit.json",
+    "taxonomy_master_provisional.json",
+    "dataset_manifest.json",
+    "README.txt"
+  ],
+  "review_status": "synthetic draft; expert and native-speaker review pending"
+}
