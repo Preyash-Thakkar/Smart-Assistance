@@ -3,13 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "motor sound",
-      "meaning": "Sound produced by a motor while it is operating."
+      "term": "tinny",
+      "meaning": "Thin, metallic and slightly sharp in tone."
     },
     {
-      "term": "too loud",
-      "meaning": "Perceived loudness is excessive; do not infer distortion or device malfunction unless stated."
+      "term": "metallic",
+      "meaning": "A hard, metallic colouration that does not sound natural."
+    },
+    {
+      "term": "sharp",
+      "meaning": "Piercing or harsh in the high frequencies."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

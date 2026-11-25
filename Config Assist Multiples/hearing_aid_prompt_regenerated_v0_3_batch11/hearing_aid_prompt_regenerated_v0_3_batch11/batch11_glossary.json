@@ -3,17 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "tinny",
-      "meaning": "A thin, small, metallic-sounding quality."
+      "term": "echoic",
+      "meaning": "Having an echo or repeated quality."
     },
     {
-      "term": "metallic",
-      "meaning": "A sound quality resembling metal; not a diagnosis of device malfunction."
+      "term": "reverberant",
+      "meaning": "Sounding as if it bounces around a space."
     },
     {
-      "term": "sharp",
-      "meaning": "A piercing or overly bright perceived sound quality in this complaint context."
+      "term": "echo",
+      "meaning": "A delayed repeat of a sound."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

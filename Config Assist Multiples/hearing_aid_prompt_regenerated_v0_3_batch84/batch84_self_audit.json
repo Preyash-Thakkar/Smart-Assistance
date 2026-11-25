@@ -1,25 +1,32 @@
 {
   "batch": 84,
-  "source_row_1_indexed": 84,
-  "source_question": "All Soft Sounds Too Soft",
-  "provisional_complaint_id": "PROV-CMP-0084",
+  "complaint_source_row": 84,
+  "complaint_text_source_exact": "All Soft Sounds Too Soft",
+  "intent_code": "LOUDNESS_SOFT_TOO_SOFT",
+  "complaint_id": "PROV-CMP-0084",
+  "topic": "Loudness",
   "topic_id": "66add6ac8d19f934bd07c673",
+  "language": "English",
+  "rows_written": 50,
+  "natural_form_candidates": 42,
+  "asr_noise_variants": 8,
+  "exact_normalized_duplicates": 0,
+  "json_parse_errors": 0,
+  "generation_method": "deterministic template bank (data_pipeline/concepts.py)",
+  "generated_at_utc": "2026-11-25T10:05:52.035550+00:00",
   "checks": {
-    "utterance_count_50": true,
-    "clean_count_42": true,
-    "noisy_count_8": true,
-    "jsonl_records_parse": true,
-    "schema_consistent": true,
-    "same_complaint_and_topic": true,
-    "normalized_exact_duplicates_absent": true,
-    "noisy_source_links_valid": true,
-    "canonical_complaint_id_missing_noted": true
+    "source_keyword_overlap": 1.0,
+    "source_keywords": [
+      "soft"
+    ],
+    "required_fields_present": true,
+    "embedding_similarity_check": "Not performed",
+    "native_speaker_review": "Not performed",
+    "domain_expert_review": "Not performed",
+    "model_evaluation": "Not performed"
   },
   "limitations": [
-    "Native-speaker review not performed.",
-    "Hearing-care domain-expert review not performed.",
-    "Embedding-based semantic similarity review not performed.",
-    "Model evaluation not performed.",
-    "Naturalness and label-confidence scores are synthetic estimates, not human ratings."
+    "Template-generated synthetic draft; native-speaker and domain review pending.",
+    "Less varied than the LLM-authored batches; treat as training-data repair, not gold data."
   ]
 }

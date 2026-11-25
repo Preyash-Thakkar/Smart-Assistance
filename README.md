@@ -12,7 +12,7 @@ matching DSP configuration payload.
 ```
 Real Data/                     MongoDB exports (topics + complaints + DSP solutions)
 Config Assist Multiples/       Generated complaint batches (84 folders)
-data_pipeline/                 Data audit, label repair and split builder
+data_pipeline/                 Data audit, label repair, batch regeneration and split builder
 data/processed/                Generated train/val/test + DSP lookup database
 training/                      SetFit trainer (train_classifier.py)
 evaluation/                    Grouped-holdout evaluation
@@ -49,10 +49,9 @@ P0 fixes this:
 * `auto_mapper.py` is now an optional semantic **audit**; it no longer writes
   training labels.
 
-After excluding the mismatched batches, 30 intents have usable training data.
-`NOISE_SOUND_UNCOMFORTABLE` has no clean batch yet: its only batch (17) contains
-ambient-noise text, so it is quarantined and the class is kept in the DSP
-database for when a correct batch is generated.
+After regenerating the mismatched batches, all 31 intents have usable training
+data. `NOISE_SOUND_UNCOMFORTABLE` is supported by a single batch (17), so it can
+only appear in train and the split report warns about it.
 
 ## Quick start
 
@@ -86,18 +85,21 @@ The API is then available at `http://localhost:8000/docs`.
 
 ## Baseline
 
-The first grouped-holdout baseline is recorded in
-[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **83.58% accuracy / 81.08%
+The post-repair grouped-holdout baseline is recorded in
+[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **83.23% accuracy / 78.17%
 macro-F1** on 1,443 utterances from 29 unseen batches, with no train/test batch
-overlap. Read the caveats there before treating it as production accuracy.
+overlap and all 31 intents trainable. Read the caveats there before treating it
+as production accuracy.
 
 ## Split modes
 
 `clean_data.py` defaults to `--split-mode coverage`:
 
-* every intent with at least two batches gets a held-out test batch;
-* every intent with at least three batches also gets a validation batch;
-* a one-batch intent can only appear in train (the report warns about it).
+* every intent with at least two original batches gets a held-out test batch;
+* every intent with at least three original batches also gets a validation batch;
+* a one-batch intent can only appear in train (the report warns about it);
+* template replacements are train-only and are used only when an intent has no
+  original batch.
 
 Use `--split-mode ratio` for a plain grouped 80/10/10 shuffle. It may leave
 some intents out of test, so check `data/processed/split_report.json`.
@@ -117,19 +119,41 @@ some intents out of test, so check `data/processed/split_report.json`.
 | `evaluation/report.json` | Accuracy, macro-F1, per-class report, leakage |
 | `evaluation/confusion_matrix.csv` | Confusion matrix |
 
-## Quarantine
+## Quarantine and regeneration
 
 `data_pipeline/quarantine.txt` lists batches whose generated content does not
-match the source row (for example batch 17 records ambient-noise text but its
-source row is "Sound in noise is uncomfortable", and batch 83 records wind
-noise but its source row is "Hearing Aid Whistles"). They are excluded by
-default. Re-audit with:
+match the source row; they are excluded by default. The initial audit
+quarantined `10–17`, `79`, `83` and `84` because their text described a
+different concept than their label (for example batch 17 held ambient-noise
+text although its source row is "Sound in noise is uncomfortable").
+
+Those batches were regenerated offline from the correct source rows:
+
+```bash
+# Preview first; nothing is written without --write
+python data_pipeline/regenerate_batches.py --batches 10 11 12 13 14 15 16 17 79 83 84
+python data_pipeline/regenerate_batches.py --batches 10 11 12 13 14 15 16 17 79 83 84 --write
+```
+
+The generator is deterministic and template-based (`data_pipeline/concepts.py`)
+because the original LLM generator is not in the repository. It rewrites only
+the utterance JSONL, glossary, self-audit and README; the authoritative
+`*_source_mapping.json` is never modified. Every regenerated batch must pass the
+same source/content audit before its number is removed from `quarantine.txt`:
 
 ```bash
 python data_pipeline/audit_batches.py
 ```
 
-To include them anyway (not recommended until the content is regenerated):
+Regenerated replacements are listed in
+`data_pipeline/replacement_batches.txt`. A replacement is used **only when its
+intent has no original batch**; otherwise it is dropped as redundant, because
+the template style shifts the decision boundary (measured on the grouped
+holdout). Replacements that are used stay in train and never enter validation
+or test, so the headline metrics remain comparable across data repairs.
+
+The original generated text remains recoverable from git history. To include
+still-quarantined batches anyway (not recommended):
 
 ```bash
 python data_pipeline/clean_data.py --include-quarantined
@@ -137,8 +161,12 @@ python data_pipeline/clean_data.py --include-quarantined
 
 ## Next steps after P0
 
-1. Regenerate the quarantined batches from the correct source rows.
+1. ~~Regenerate the quarantined batches from the correct source rows.~~ Done;
+   the replacement text is template-generated, so review it before treating it
+   as gold data.
 2. Add real user utterances and active-learning review.
-3. Tune the model only after the corrected baseline is measured
+3. Generate a second batch for `NOISE_SOUND_UNCOMFORTABLE` and
+   `SOUND_TOO_MUCH_BASS` so both can appear in validation/test.
+4. Tune the model only after the corrected baseline is measured
    (`--iterations`, `--epochs`, stronger encoder, hierarchical topic→intent).
-4. Evaluate end-to-end DSP-action accuracy, not only intent accuracy.
+5. Evaluate end-to-end DSP-action accuracy, not only intent accuracy.

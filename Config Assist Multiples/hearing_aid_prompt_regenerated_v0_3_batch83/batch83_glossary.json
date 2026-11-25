@@ -1,11 +1,19 @@
 {
-  "batch": 83,
-  "language": "English (India)",
-  "topic": "Feedback",
-  "terms": {
-    "wind noise": "Noise produced when moving air or gusts reach the hearing-aid microphones.",
-    "whooshing sound": "A rushing sound often associated with moving air.",
-    "microphone": "The component that picks up sound for processing by the hearing aid."
-  },
-  "labeling_note": "Synthetic utterance candidates for one complaint label; not verified patient quotations."
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "feedback",
+      "meaning": "Amplified sound leaking back into the microphone and re-amplifying."
+    },
+    {
+      "term": "whistling",
+      "meaning": "A high-pitched tone caused by feedback."
+    },
+    {
+      "term": "squeal",
+      "meaning": "A sharp, high-pitched feedback sound."
+    }
+  ],
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

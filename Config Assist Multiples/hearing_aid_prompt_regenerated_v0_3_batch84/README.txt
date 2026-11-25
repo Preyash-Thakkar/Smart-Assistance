@@ -1,17 +1,13 @@
-Hearing Aid User Complaint Dataset — Batch 84
+Hearing-aid AI dataset — Batch 84
 
-Source row: 84 (1-indexed)
-Source complaint: All Soft Sounds Too Soft
-Topic: Loudness (66add6ac8d19f934bd07c673)
-Provisional label: PROV-CMP-0084
+Source row 84: 'All Soft Sounds Too Soft'
+Topic: Loudness
+Topic ID: 66add6ac8d19f934bd07c673
+Provisional complaint ID: PROV-CMP-0084
+Language: English (general Indian English)
+Rows: 50 (42 template-generated natural-form candidates + 8 ASR/noisy-text variants)
 
-Contents:
-- batch84_complaint_english.jsonl: 50 utterance candidates (42 clean/natural-form and 8 synthetic noisy-text/ASR-style candidates)
-- batch84_glossary.json
-- batch84_source_mapping.json
-- batch84_self_audit.json
-- taxonomy_master_provisional.json
-- dataset_manifest.json
-- README.txt
+Regenerated to replace content that did not match the source row.
+Files: batch84_complaint_english.jsonl, batch84_glossary.json, batch84_source_mapping.json, batch84_self_audit.json, taxonomy_master_provisional.json, dataset_manifest.json.
 
-Important: The source data has no canonical complaint ID. Reconcile the provisional ID before production use. Utterances and scores are synthetic candidates; native-speaker and hearing-care domain review is pending. Embedding similarity and model evaluation were not performed.
+Limitations: synthetic template draft; no native-speaker/domain-expert review; scores are generator estimates, not human ratings.

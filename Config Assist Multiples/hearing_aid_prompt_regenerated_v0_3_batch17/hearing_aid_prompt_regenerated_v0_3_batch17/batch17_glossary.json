@@ -3,17 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "ambient noise / ambience",
-      "meaning": "Background environmental sound present in a room or place."
+      "term": "sound in noise",
+      "meaning": "A target sound heard while background noise is present."
     },
     {
-      "term": "soft background noise",
-      "meaning": "Low-level environmental sound that is perceived as too noticeable; this does not imply it is objectively loud."
+      "term": "uncomfortable",
+      "meaning": "Harsh or unpleasant to listen to."
     },
     {
-      "term": "prominent",
-      "meaning": "Standing out perceptually relative to other sounds."
+      "term": "background noise",
+      "meaning": "Sound around the listener that is not the main target."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

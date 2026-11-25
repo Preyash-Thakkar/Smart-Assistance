@@ -5,7 +5,7 @@
   "iterations": 4,
   "batch_size": 16,
   "seed": 42,
-  "train_rows": 1642,
+  "train_rows": 1692,
   "val_rows": 549,
   "classes": [
     "FEEDBACK_WHISTLING",
@@ -20,6 +20,7 @@
     "NOISE_AMBIENT_NOTICEABLE",
     "NOISE_BACKGROUND_RESTAURANT",
     "NOISE_CROWD_TOO_LOUD",
+    "NOISE_SOUND_UNCOMFORTABLE",
     "NOISE_SUDDEN_UNCOMFORTABLE",
     "NOISE_WIND_TOO_LOUD",
     "OWN_VOICE_BOOMY_LOUD",

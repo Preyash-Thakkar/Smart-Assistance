@@ -3,17 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "echoic / echoey",
-      "meaning": "A perceived echo-like quality in sound."
+      "term": "muffled",
+      "meaning": "Lacking clear high frequencies; sounds covered."
     },
     {
-      "term": "reverberant",
-      "meaning": "Sound perceived as lingering or reflecting in the listening environment; not a confirmed technical diagnosis."
+      "term": "dull",
+      "meaning": "Flat and lifeless, without crisp detail."
     },
     {
-      "term": "hollow sound",
-      "meaning": "A subjective description of sound lacking directness or fullness."
+      "term": "muted",
+      "meaning": "Softened or reduced in clarity."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

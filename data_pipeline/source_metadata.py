@@ -173,6 +173,7 @@ class BatchMetadata:
     glossary_path: str | None
 
     source_row: int | None
+    complaint_id: str
     mapping_question: str
     real_question: str
     question: str
@@ -200,6 +201,7 @@ class BatchMetadata:
             "utterance_path": self.utterance_path,
             "glossary_path": self.glossary_path,
             "source_row": self.source_row,
+            "complaint_id": self.complaint_id,
             "mapping_question": self.mapping_question,
             "real_question": self.real_question,
             "question": self.question,
@@ -396,6 +398,10 @@ def build_batch_metadata(root: str = ".") -> list[BatchMetadata]:
         raw_intent = question_to_intent(authoritative_question)
         intent = final_intent(raw_intent) if raw_intent else None
 
+        complaint_id = str(mapping.get("complaint_id") or "").strip()
+        if not complaint_id and source_row is not None:
+            complaint_id = f"PROV-CMP-{source_row:04d}"
+
         flags: list[str] = []
         if source_row is None:
             flags.append("MISSING_SOURCE_ROW")
@@ -419,6 +425,7 @@ def build_batch_metadata(root: str = ".") -> list[BatchMetadata]:
                 utterance_path=files.utterance_path,
                 glossary_path=files.glossary_path,
                 source_row=source_row,
+                complaint_id=complaint_id,
                 mapping_question=mapping_question,
                 real_question=real_question,
                 question=authoritative_question,

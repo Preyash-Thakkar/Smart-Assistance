@@ -3,17 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "unclear sound",
-      "meaning": "A subjective report that sound is difficult to distinguish or understand."
+      "term": "bass",
+      "meaning": "Low-frequency sound; a deep or thumping quality."
     },
     {
-      "term": "indistinct",
-      "meaning": "Not clearly defined or easy to make out."
+      "term": "boomy",
+      "meaning": "Excessively resonant in the low frequencies."
     },
     {
-      "term": "muddled",
-      "meaning": "A subjective description of sound that seems mixed or unclear."
+      "term": "low-frequency",
+      "meaning": "Sound in the deeper part of the pitch range."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

@@ -3,17 +3,21 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "unnatural sound",
-      "meaning": "A subjective impression that sound does not resemble its expected or familiar quality."
+      "term": "ambient noise",
+      "meaning": "Low-level sound that fills a room or environment."
     },
     {
-      "term": "artificial / synthetic",
-      "meaning": "A perceived processed or non-lifelike sound quality; not by itself proof of device malfunction."
+      "term": "ambience",
+      "meaning": "The overall sound character of a room or place."
     },
     {
-      "term": "lifelike",
-      "meaning": "Perceived as similar to the natural sound of the source."
+      "term": "room tone",
+      "meaning": "The quiet background sound of a room."
+    },
+    {
+      "term": "noticeable",
+      "meaning": "Easy to perceive, even when it is not loud."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

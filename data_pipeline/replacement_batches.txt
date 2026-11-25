@@ -1,0 +1,23 @@
+# Batches that were regenerated offline because their original text did not
+# match the source complaint row.
+#
+# These are *candidate* replacements.  clean_data.py uses one only when its
+# intent has no original batch left; otherwise the replacement is dropped as
+# redundant, because the template style shifts the decision boundary.  Used
+# replacements are train-only and never enter validation or test, so evaluation
+# stays on the original LLM-authored batches and remains comparable.
+#
+# One batch number per line.  `#` starts a comment.
+#
+# See data_pipeline/regenerate_batches.py and data_pipeline/concepts.py.
+10
+11
+12
+13
+14
+15
+16
+17
+79
+83
+84

@@ -2,8 +2,8 @@
   "batch": 14,
   "complaint_source_row": 14,
   "complaint_text_source_exact": "Too Much Bass",
+  "intent_code": "SOUND_TOO_MUCH_BASS",
   "complaint_id": "PROV-CMP-0014",
-  "complaint_id_status": "Provisional local ID",
   "topic": "General Sound",
   "topic_id": "66b060f15c6674686e02d038",
   "language": "English",
@@ -12,18 +12,21 @@
   "asr_noise_variants": 8,
   "exact_normalized_duplicates": 0,
   "json_parse_errors": 0,
+  "generation_method": "deterministic template bank (data_pipeline/concepts.py)",
+  "generated_at_utc": "2026-11-25T10:05:51.560565+00:00",
   "checks": {
+    "source_keyword_overlap": 1.0,
+    "source_keywords": [
+      "bass"
+    ],
     "required_fields_present": true,
-    "all_rows_same_complaint_and_topic": true,
-    "asr_variants_link_to_source_utt_id": true,
     "embedding_similarity_check": "Not performed",
     "native_speaker_review": "Not performed",
     "domain_expert_review": "Not performed",
     "model_evaluation": "Not performed"
   },
   "limitations": [
-    "Synthetic draft; native-speaker and hearing-care domain review pending.",
-    "Only exact normalized duplicate detection was run.",
-    "Naturalness/confidence scores are generator estimates, not human ratings."
+    "Template-generated synthetic draft; native-speaker and domain review pending.",
+    "Less varied than the LLM-authored batches; treat as training-data repair, not gold data."
   ]
 }

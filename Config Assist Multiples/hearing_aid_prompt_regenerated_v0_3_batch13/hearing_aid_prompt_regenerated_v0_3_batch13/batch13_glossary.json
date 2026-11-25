@@ -3,13 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "hollow sound",
-      "meaning": "A subjective description of sound that feels empty, box-like, or lacking fullness."
+      "term": "artificial",
+      "meaning": "Not sounding like the natural source."
     },
     {
-      "term": "fullness",
-      "meaning": "A perceived sense of body or richness in sound; subjective, not a technical diagnosis."
+      "term": "mechanical",
+      "meaning": "Robotic or machine-like in character."
+    },
+    {
+      "term": "synthetic",
+      "meaning": "Processed and lacking natural texture."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

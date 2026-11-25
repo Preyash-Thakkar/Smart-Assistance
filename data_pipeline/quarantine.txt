@@ -4,20 +4,13 @@
 #
 # One batch number per line.  Re-check with: python data_pipeline/audit_batches.py
 #
-# Confirmed content/source shift (content belongs to the previous/next row):
-10
-11
-12
-13
-14
-15
-16
-# batch 17 source = "Sound in noise is uncomfortable", content = soft ambient
-# noise ("background noise is too noticeable"), i.e. the row-16 concept.
-17
-# batch 79 source = "Sudden Noise Uncomfortable", content = crowd/background noise
-79
-# batch 83 source = "Hearing Aid Whistles", content = wind noise
-83
-# batch 84 source = "All Soft Sounds Too Soft", content = feedback/whistling
-84
+# History
+# -------
+# 10-17, 79, 83, 84 were quarantined because the generated text described a
+# different source concept than the row they were labelled with.  They were
+# regenerated offline with data_pipeline/regenerate_batches.py (deterministic
+# template banks in data_pipeline/concepts.py) and now pass the source/content
+# audit.  Originals remain recoverable from git history.
+#
+# Add a batch number here again if its content later stops matching its source
+# question.

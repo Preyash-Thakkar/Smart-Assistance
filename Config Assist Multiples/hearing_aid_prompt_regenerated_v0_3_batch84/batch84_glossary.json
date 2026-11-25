@@ -1,11 +1,19 @@
 {
-  "batch": 84,
-  "language": "English (India)",
-  "topic": "Loudness",
-  "terms": {
-    "feedback": "Unwanted sound produced when amplified sound leaks back into the hearing aid microphone and is re-amplified.",
-    "whistling": "A high-pitched tone that may be perceived as a whistle or squeal.",
-    "high-pitched": "A sound with a relatively high perceived frequency."
-  },
-  "labeling_note": "Synthetic utterance candidates for one complaint label; not verified patient quotations."
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "soft sound",
+      "meaning": "A quiet sound that is low in level."
+    },
+    {
+      "term": "faint",
+      "meaning": "Barely audible; very low in level."
+    },
+    {
+      "term": "audible",
+      "meaning": "Loud enough to be heard."
+    }
+  ],
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

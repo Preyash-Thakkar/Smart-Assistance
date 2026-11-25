@@ -9,7 +9,10 @@ P0 changes compared with the previous pipeline:
    complaint can never appear in both train and test.
 3. Batches listed in ``data_pipeline/quarantine.txt`` (content/source
    mismatch) are excluded by default.
-4. The report records class coverage, leakage checks and quarantine decisions.
+4. Template-regenerated replacement batches in
+   ``data_pipeline/replacement_batches.txt`` are kept in train only, so
+   validation/test stay on the original batches.
+5. The report records class coverage, leakage checks and quarantine decisions.
 
 Run::
 
@@ -184,10 +187,53 @@ def build_master_dataset(
 # Grouped split
 # ---------------------------------------------------------------------------
 
+def apply_replacement_policy(
+    rows: list[dict], replacement_numbers: set[int]
+) -> tuple[list[dict], dict]:
+    """Keep a replacement batch only when its intent has no original batch.
+
+    Template-regenerated replacements are useful for filling a missing class,
+    but they are stylistically unlike the original LLM-authored batches.  When
+    an intent already has original data, adding the template rows only shifts
+    the decision boundary (measured: it hurt Speech and Noise classes), so the
+    redundant replacement is dropped.
+    """
+
+    intents_with_original = {
+        row["intent_code"]
+        for row in rows
+        if row["batch_number"] not in replacement_numbers
+    }
+
+    kept: list[dict] = []
+    dropped_batches: set[int] = set()
+    used_batches: set[int] = set()
+    dropped_rows = 0
+    for row in rows:
+        number = row["batch_number"]
+        if number in replacement_numbers:
+            if row["intent_code"] in intents_with_original:
+                dropped_batches.add(number)
+                dropped_rows += 1
+                continue
+            used_batches.add(number)
+        kept.append(row)
+
+    info = {
+        "listed": sorted(replacement_numbers),
+        "used": sorted(used_batches),
+        "dropped_redundant": sorted(dropped_batches),
+        "rows_kept": len(kept),
+        "rows_dropped": dropped_rows,
+    }
+    return kept, info
+
+
 def grouped_split(
     rows: list[dict],
     seed: int = 42,
     mode: str = "coverage",
+    train_only: set[int] | None = None,
 ) -> tuple[dict[str, list[dict]], dict]:
     """Split rows by ``source_batch`` so no batch appears in two splits.
 
@@ -195,52 +241,71 @@ def grouped_split(
     batches has a held-out test batch.  ``ratio`` is a plain group shuffle
     targeting roughly 80/10/10; use it when you care more about the ratio than
     per-intent test coverage.
+
+    ``train_only`` lists batch numbers that must stay in train (for example
+    template-regenerated replacement batches).  They are removed from the
+    holdout pool *before* shuffling, so the split stays reproducible.
     """
 
     if mode not in {"coverage", "ratio"}:
         raise ValueError(f"Unknown split mode: {mode}")
 
+    train_only = set(train_only or ())
+
     batches_by_intent: dict[str, list[str]] = defaultdict(list)
     rows_by_batch: dict[str, list[dict]] = defaultdict(list)
     batch_intent: dict[str, str] = {}
+    batch_number: dict[str, int] = {}
     for row in rows:
         batch = row["source_batch"]
         rows_by_batch[batch].append(row)
         batch_intent[batch] = row["intent_code"]
+        batch_number[batch] = int(row["batch_number"])
     for batch, intent in batch_intent.items():
         batches_by_intent[intent].append(batch)
 
     rng = random.Random(seed)
     split_batches: dict[str, set[str]] = {split: set() for split in SPLITS}
     warnings: list[str] = []
+    forced_train = {
+        batch for batch, number in batch_number.items() if number in train_only
+    }
+    split_batches["train"].update(forced_train)
 
     if mode == "coverage":
         for intent in sorted(batches_by_intent):
             batches = sorted(set(batches_by_intent[intent]))
-            rng.shuffle(batches)
-            count = len(batches)
+            pool = [batch for batch in batches if batch not in forced_train]
+            rng.shuffle(pool)
+            count = len(pool)
             if count >= 3:
                 # One held-out test batch, one validation batch, rest train.
-                split_batches["test_holdout"].add(batches[0])
-                split_batches["val"].add(batches[1])
-                split_batches["train"].update(batches[2:])
+                split_batches["test_holdout"].add(pool[0])
+                split_batches["val"].add(pool[1])
+                split_batches["train"].update(pool[2:])
             elif count == 2:
-                split_batches["test_holdout"].add(batches[0])
-                split_batches["train"].add(batches[1])
-            else:
-                split_batches["train"].add(batches[0])
+                split_batches["test_holdout"].add(pool[0])
+                split_batches["train"].add(pool[1])
+            elif count == 1:
+                split_batches["train"].add(pool[0])
                 warnings.append(
-                    f"{intent} has only one batch ({batches[0]}); it can only appear in train."
+                    f"{intent} has only one non-replacement batch ({pool[0]}); "
+                    "it can only appear in train."
+                )
+            else:
+                warnings.append(
+                    f"{intent} has no non-replacement batch; it can only appear in train."
                 )
     else:
         unique = sorted(rows_by_batch)
-        rng.shuffle(unique)
-        total = len(unique)
-        n_test = max(1, int(round(total * 0.10)))
-        n_val = max(1, int(round(total * 0.10)))
-        split_batches["test_holdout"].update(unique[:n_test])
-        split_batches["val"].update(unique[n_test : n_test + n_val])
-        split_batches["train"].update(unique[n_test + n_val :])
+        pool = [batch for batch in unique if batch not in forced_train]
+        rng.shuffle(pool)
+        total = len(pool)
+        n_test = max(1, int(round(total * 0.10))) if total else 0
+        n_val = max(1, int(round(total * 0.10))) if total else 0
+        split_batches["test_holdout"].update(pool[:n_test])
+        split_batches["val"].update(pool[n_test : n_test + n_val])
+        split_batches["train"].update(pool[n_test + n_val :])
 
     split_rows: dict[str, list[dict]] = {split: [] for split in SPLITS}
     for batch, batch_rows in rows_by_batch.items():
@@ -267,6 +332,7 @@ def grouped_split(
         "batches": {split: sorted(split_batches[split]) for split in SPLITS},
         "batch_counts": {split: len(split_batches[split]) for split in SPLITS},
         "row_counts": {split: len(split_rows[split]) for split in SPLITS},
+        "train_only_batches": sorted(forced_train),
         "warnings": warnings,
     }
     return split_rows, info
@@ -451,11 +517,36 @@ def main() -> None:
     if not master:
         raise SystemExit("No rows were produced. Check the audit report and quarantine file.")
 
+    replacement_file = os.path.join(args.root, "data_pipeline", "replacement_batches.txt")
+    replacement_numbers = parse_quarantine(replacement_file)
+    replacement_info = {"listed": [], "used": [], "dropped_redundant": [], "rows_kept": len(master), "rows_dropped": 0}
+    if replacement_numbers:
+        master, replacement_info = apply_replacement_policy(master, replacement_numbers)
+        dataset_report["replacements"] = replacement_info
+        dataset_report["rows"]["total"] = len(master)
+        dataset_report["rows"]["skipped"]["redundant_replacement"] = replacement_info["rows_dropped"]
+        dataset_report["batches"]["included"] = len({row["batch_number"] for row in master})
+        used_counts = Counter(row["batch_number"] for row in master)
+        for number, item in dataset_report["per_batch"].items():
+            item["rows_used"] = used_counts.get(number, 0)
+            if number in replacement_numbers:
+                item["replacement_used"] = number in replacement_info["used"]
+        print(
+            "      replacements: "
+            f"used={replacement_info['used']} "
+            f"dropped_redundant={replacement_info['dropped_redundant']}"
+        )
+
     print(f"      {dataset_report['rows']['total']} rows from {dataset_report['batches']['included']} batches")
     print(f"      skipped: {dataset_report['rows']['skipped']}")
 
     print("[2/5] Building grouped splits...")
-    split_rows, split_info = grouped_split(master, seed=args.seed, mode=args.split_mode)
+    train_only = set(replacement_info["used"])
+    if train_only:
+        print(f"      train-only replacement batches: {sorted(train_only)}")
+    split_rows, split_info = grouped_split(
+        master, seed=args.seed, mode=args.split_mode, train_only=train_only
+    )
     print(f"      rows: {split_info['row_counts']}")
     print(f"      batches: {split_info['batch_counts']}")
 

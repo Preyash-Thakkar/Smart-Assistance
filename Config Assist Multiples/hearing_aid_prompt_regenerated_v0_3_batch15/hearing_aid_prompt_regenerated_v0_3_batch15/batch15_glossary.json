@@ -3,17 +3,17 @@
   "lang_code": "en-IN",
   "terms": [
     {
-      "term": "bass",
-      "meaning": "Low-frequency part of sound."
+      "term": "distorted",
+      "meaning": "Changed in shape and no longer clean."
     },
     {
-      "term": "boomy",
-      "meaning": "A subjective description of a strong, resonant, heavy low-frequency sound."
+      "term": "crackling",
+      "meaning": "Broken by small sharp noises."
     },
     {
-      "term": "low-frequency sound",
-      "meaning": "Lower-pitched sound; the wording describes perception and does not establish a technical fault."
+      "term": "clipping",
+      "meaning": "Flattening of loud peaks that adds harshness."
     }
   ],
-  "notes": "Initial dataset glossary; not a clinically validated terminology standard."
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
 }

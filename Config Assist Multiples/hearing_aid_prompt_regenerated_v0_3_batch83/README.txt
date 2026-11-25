@@ -1,17 +1,13 @@
-Hearing Aid User Complaint Dataset — Batch 83
+Hearing-aid AI dataset — Batch 83
 
-Source row: 83 (1-indexed)
-Source complaint: Hearing Aid Whistles
-Topic: Feedback (66b061095c6674686e02d03e)
-Provisional label: PROV-CMP-0083
+Source row 83: 'Hearing Aid Whistles'
+Topic: Feedback
+Topic ID: 66b061095c6674686e02d03e
+Provisional complaint ID: PROV-CMP-0083
+Language: English (general Indian English)
+Rows: 50 (42 template-generated natural-form candidates + 8 ASR/noisy-text variants)
 
-Contents:
-- batch83_complaint_english.jsonl: 50 utterance candidates (42 clean/natural-form and 8 synthetic noisy-text/ASR-style candidates)
-- batch83_glossary.json
-- batch83_source_mapping.json
-- batch83_self_audit.json
-- taxonomy_master_provisional.json
-- dataset_manifest.json
-- README.txt
+Regenerated to replace content that did not match the source row.
+Files: batch83_complaint_english.jsonl, batch83_glossary.json, batch83_source_mapping.json, batch83_self_audit.json, taxonomy_master_provisional.json, dataset_manifest.json.
 
-Important: The source data has no canonical complaint ID. Reconcile the provisional ID before production use. Utterances and scores are synthetic candidates; native-speaker and hearing-care domain review is pending. Embedding similarity and model evaluation were not performed.
+Limitations: synthetic template draft; no native-speaker/domain-expert review; scores are generator estimates, not human ratings.

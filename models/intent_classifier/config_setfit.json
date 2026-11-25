@@ -1,5 +1,4 @@
 {
-  "normalize_embeddings": false,
   "labels": [
     "FEEDBACK_WHISTLING",
     "LOUDNESS_ALARMS_CRYING_LOUD",
@@ -13,6 +12,7 @@
     "NOISE_AMBIENT_NOTICEABLE",
     "NOISE_BACKGROUND_RESTAURANT",
     "NOISE_CROWD_TOO_LOUD",
+    "NOISE_SOUND_UNCOMFORTABLE",
     "NOISE_SUDDEN_UNCOMFORTABLE",
     "NOISE_WIND_TOO_LOUD",
     "OWN_VOICE_BOOMY_LOUD",
@@ -31,5 +31,6 @@
     "SPEECH_TOO_LOUD_BOOMY",
     "SPEECH_TOO_SOFT",
     "SPEECH_WHISPER_DISTANT_SOFT"
-  ]
+  ],
+  "normalize_embeddings": false
 }
