@@ -1,0 +1,732 @@
+{
+  "1": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch1",
+    "intent_code": "LOUDNESS_SOFT_TOO_SOFT",
+    "source_row": 1,
+    "source_question": "All Soft Sound are too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "2": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch2",
+    "intent_code": "LOUDNESS_LOUD_TOO_LOUD",
+    "source_row": 2,
+    "source_question": "All Loud sounds are too loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "3": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch3",
+    "intent_code": "LOUDNESS_LOUD_DISTORTED",
+    "source_row": 3,
+    "source_question": "Loud sounds are distorted",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "4": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch4",
+    "intent_code": "LOUDNESS_NEARBY_TOO_LOUD",
+    "source_row": 4,
+    "source_question": "Nearby Sounds are loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "5": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch5",
+    "intent_code": "LOUDNESS_ALARMS_CRYING_LOUD",
+    "source_row": 5,
+    "source_question": "Alarm/ChildrenCrying are loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 0.58,
+    "flags": []
+  },
+  "6": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch6",
+    "intent_code": "LOUDNESS_SUDDEN_SOUNDS_LOUD",
+    "source_row": 6,
+    "source_question": "Sudden Sounds/Door slamming  sounds are loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "7": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch7",
+    "intent_code": "LOUDNESS_CHEWING_TOO_LOUD",
+    "source_row": 7,
+    "source_question": "Own Chewing Sounds are loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "8": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch8",
+    "intent_code": "LOUDNESS_WATER_FAN_LOUD",
+    "source_row": 8,
+    "source_question": "Running Water Sound feels loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "9": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch9",
+    "intent_code": "LOUDNESS_WATER_FAN_LOUD",
+    "source_row": 9,
+    "source_question": "Running Fan sounds are loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "18": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch18",
+    "intent_code": "NOISE_SUDDEN_UNCOMFORTABLE",
+    "source_row": 18,
+    "source_question": "Sudden noise is uncomfortable",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "19": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch19",
+    "intent_code": "NOISE_BACKGROUND_RESTAURANT",
+    "source_row": 19,
+    "source_question": "Background Noise is too loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "20": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch20",
+    "intent_code": "NOISE_BACKGROUND_RESTAURANT",
+    "source_row": 20,
+    "source_question": "Restaurant noise is loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "21": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch21",
+    "intent_code": "NOISE_BACKGROUND_RESTAURANT",
+    "source_row": 21,
+    "source_question": "Street&#x2F;Traffic noise is too loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 0.744,
+    "flags": []
+  },
+  "22": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch22",
+    "intent_code": "NOISE_WIND_TOO_LOUD",
+    "source_row": 22,
+    "source_question": "Wind Noise is loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "23": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch23",
+    "intent_code": "NOISE_CROWD_TOO_LOUD",
+    "source_row": 23,
+    "source_question": "Crowd noise is loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "24": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch24",
+    "intent_code": "FEEDBACK_WHISTLING",
+    "source_row": 24,
+    "source_question": "Hearing Aid whistles",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "25": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch25",
+    "intent_code": "LOUDNESS_SOFT_TOO_SOFT",
+    "source_row": 25,
+    "source_question": "All Soft Sounds Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "26": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch26",
+    "intent_code": "LOUDNESS_LOUD_TOO_LOUD",
+    "source_row": 26,
+    "source_question": "All Loud Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "27": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch27",
+    "intent_code": "LOUDNESS_LOUD_DISTORTED",
+    "source_row": 27,
+    "source_question": "Loud Sounds Distorted",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "28": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch28",
+    "intent_code": "LOUDNESS_NEARBY_TOO_LOUD",
+    "source_row": 28,
+    "source_question": "Nearby Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "29": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch29",
+    "intent_code": "LOUDNESS_ALARMS_CRYING_LOUD",
+    "source_row": 29,
+    "source_question": "Alarms/Children Crying Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "30": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch30",
+    "intent_code": "LOUDNESS_SUDDEN_SOUNDS_LOUD",
+    "source_row": 30,
+    "source_question": "Sudden Sounds (e.g., Door Slams) Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "31": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch31",
+    "intent_code": "LOUDNESS_CHEWING_TOO_LOUD",
+    "source_row": 31,
+    "source_question": "Own Chewing Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "32": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch32",
+    "intent_code": "LOUDNESS_WATER_FAN_LOUD",
+    "source_row": 32,
+    "source_question": "Running Water/Fan Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "33": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch33",
+    "intent_code": "OWN_VOICE_MUFFLED_DULL",
+    "source_row": 33,
+    "source_question": "Own Voice Muffled/Dull",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "34": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch34",
+    "intent_code": "OWN_VOICE_HOLLOW",
+    "source_row": 34,
+    "source_question": "Own Voice Hollow",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "35": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch35",
+    "intent_code": "OWN_VOICE_SHARP_METALLIC",
+    "source_row": 35,
+    "source_question": "Own Voice Too Sharp/Metallic",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "36": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch36",
+    "intent_code": "OWN_VOICE_THIN",
+    "source_row": 36,
+    "source_question": "Own Voice Thin",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "37": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch37",
+    "intent_code": "OWN_VOICE_BOOMY_LOUD",
+    "source_row": 37,
+    "source_question": "Own Voice Boomy/Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "38": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch38",
+    "intent_code": "SPEECH_TOO_SOFT",
+    "source_row": 38,
+    "source_question": "Speech Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "39": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch39",
+    "intent_code": "SPEECH_WHISPER_DISTANT_SOFT",
+    "source_row": 39,
+    "source_question": "Whisper/Distant Speech Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "40": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch40",
+    "intent_code": "SPEECH_TOO_LOUD_BOOMY",
+    "source_row": 40,
+    "source_question": "Speech Too Loud/Boomy",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "41": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch41",
+    "intent_code": "SPEECH_ECHOIC",
+    "source_row": 41,
+    "source_question": "Speech Echoic",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "42": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch42",
+    "intent_code": "SPEECH_POOR_QUALITY",
+    "source_row": 42,
+    "source_question": "Poor Speech Quality",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "43": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch43",
+    "intent_code": "SOUND_TINY_METALLIC_SHARP",
+    "source_row": 43,
+    "source_question": "Sounds Tiny/Metallic/Sharp",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "44": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch44",
+    "intent_code": "SOUND_ECHOIC",
+    "source_row": 44,
+    "source_question": "Sounds Echoic",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "45": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch45",
+    "intent_code": "SOUND_MUFFLED_DULL",
+    "source_row": 45,
+    "source_question": "Sounds Muffled/Dull",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "46": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch46",
+    "intent_code": "SOUND_ARTIFICIAL_MECHANICAL",
+    "source_row": 46,
+    "source_question": "Sounds Artificial/Mechanical",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "47": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch47",
+    "intent_code": "SOUND_TOO_MUCH_BASS",
+    "source_row": 47,
+    "source_question": "Too Much Bass",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "48": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch48",
+    "intent_code": "SOUND_DISTORTED",
+    "source_row": 48,
+    "source_question": "Sounds Distorted",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "49": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch49",
+    "intent_code": "FEEDBACK_WHISTLING",
+    "source_row": 49,
+    "source_question": "Hearing Aid Whistles",
+    "rows_in_file": 50,
+    "rows_kept": 48,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "50": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch50",
+    "intent_code": "NOISE_AMBIENT_NOTICEABLE",
+    "source_row": 50,
+    "source_question": "Ambient Noise Too Noticeable",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "51": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch51",
+    "intent_code": "NOISE_SUDDEN_UNCOMFORTABLE",
+    "source_row": 51,
+    "source_question": "Sudden Noise Uncomfortable",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "52": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch52",
+    "intent_code": "NOISE_BACKGROUND_RESTAURANT",
+    "source_row": 52,
+    "source_question": "Background Noise (e.g., Restaurants) Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "53": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch53",
+    "intent_code": "NOISE_WIND_TOO_LOUD",
+    "source_row": 53,
+    "source_question": "Wind Noise Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "54": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch54",
+    "intent_code": "NOISE_CROWD_TOO_LOUD",
+    "source_row": 54,
+    "source_question": "Crowd Noise Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "55": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch55",
+    "intent_code": "LOUDNESS_SOFT_TOO_SOFT",
+    "source_row": 55,
+    "source_question": "All Soft Sounds Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "56": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch56",
+    "intent_code": "LOUDNESS_LOUD_TOO_LOUD",
+    "source_row": 56,
+    "source_question": "All Loud Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "57": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch57",
+    "intent_code": "LOUDNESS_LOUD_DISTORTED",
+    "source_row": 57,
+    "source_question": "Loud Sounds Distorted",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "58": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch58",
+    "intent_code": "LOUDNESS_NEARBY_TOO_LOUD",
+    "source_row": 58,
+    "source_question": "Nearby Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "59": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch59",
+    "intent_code": "LOUDNESS_ALARMS_CRYING_LOUD",
+    "source_row": 59,
+    "source_question": "Alarms/Children Crying Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 48,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "60": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch60",
+    "intent_code": "LOUDNESS_SUDDEN_SOUNDS_LOUD",
+    "source_row": 60,
+    "source_question": "Sudden Sounds (e.g., Door Slams) Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "61": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch61",
+    "intent_code": "LOUDNESS_CHEWING_TOO_LOUD",
+    "source_row": 61,
+    "source_question": "Own Chewing Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "62": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch62",
+    "intent_code": "LOUDNESS_WATER_FAN_LOUD",
+    "source_row": 62,
+    "source_question": "Running Water/Fan Sounds Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "63": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch63",
+    "intent_code": "OWN_VOICE_MUFFLED_DULL",
+    "source_row": 63,
+    "source_question": "Own Voice Muffled/Dull",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "64": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch64",
+    "intent_code": "OWN_VOICE_HOLLOW",
+    "source_row": 64,
+    "source_question": "Own Voice Hollow",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "65": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch65",
+    "intent_code": "OWN_VOICE_SHARP_METALLIC",
+    "source_row": 65,
+    "source_question": "Own Voice Too Sharp/Metallic",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "66": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch66",
+    "intent_code": "OWN_VOICE_THIN",
+    "source_row": 66,
+    "source_question": "Own Voice Thin",
+    "rows_in_file": 50,
+    "rows_kept": 48,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "67": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch67",
+    "intent_code": "OWN_VOICE_BOOMY_LOUD",
+    "source_row": 67,
+    "source_question": "Own Voice Boomy/Loud",
+    "rows_in_file": 50,
+    "rows_kept": 49,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "68": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch68",
+    "intent_code": "SPEECH_TOO_SOFT",
+    "source_row": 68,
+    "source_question": "Speech Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "69": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch69",
+    "intent_code": "SPEECH_WHISPER_DISTANT_SOFT",
+    "source_row": 69,
+    "source_question": "Whisper/Distant Speech Too Soft",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "70": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch70",
+    "intent_code": "SPEECH_TOO_LOUD_BOOMY",
+    "source_row": 70,
+    "source_question": "Speech Too Loud/Boomy",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "71": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch71",
+    "intent_code": "SPEECH_ECHOIC",
+    "source_row": 71,
+    "source_question": "Speech Echoic",
+    "rows_in_file": 50,
+    "rows_kept": 48,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "72": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch72",
+    "intent_code": "SPEECH_POOR_QUALITY",
+    "source_row": 72,
+    "source_question": "Poor Speech Quality",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "73": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch73",
+    "intent_code": "SOUND_TINY_METALLIC_SHARP",
+    "source_row": 73,
+    "source_question": "Sounds Tiny/Metallic/Sharp",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "74": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch74",
+    "intent_code": "SOUND_ECHOIC",
+    "source_row": 74,
+    "source_question": "Sounds Echoic",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "75": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch75",
+    "intent_code": "SOUND_MUFFLED_DULL",
+    "source_row": 75,
+    "source_question": "Sounds Muffled/Dull",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "76": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch76",
+    "intent_code": "SOUND_ARTIFICIAL_MECHANICAL",
+    "source_row": 76,
+    "source_question": "Sounds Artificial/Mechanical",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "77": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch77",
+    "intent_code": "SOUND_DISTORTED",
+    "source_row": 77,
+    "source_question": "Sounds Distorted",
+    "rows_in_file": 50,
+    "rows_kept": 48,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "78": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch78",
+    "intent_code": "NOISE_AMBIENT_NOTICEABLE",
+    "source_row": 78,
+    "source_question": "Ambient Noise Too Noticeable",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "80": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch80",
+    "intent_code": "NOISE_BACKGROUND_RESTAURANT",
+    "source_row": 80,
+    "source_question": "Background Noise (e.g., Restaurants) Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 0.658,
+    "flags": []
+  },
+  "81": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch81",
+    "intent_code": "NOISE_WIND_TOO_LOUD",
+    "source_row": 81,
+    "source_question": "Wind Noise Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  },
+  "82": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch82",
+    "intent_code": "NOISE_CROWD_TOO_LOUD",
+    "source_row": 82,
+    "source_question": "Crowd Noise Too Loud",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": []
+  }
+}

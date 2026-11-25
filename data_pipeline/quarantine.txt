@@ -1,0 +1,23 @@
+# Batches whose generated content/glossary does not match the source row in
+# Real Data/test.complains.json.  They are excluded by clean_data.py unless
+# you pass --include-quarantined.
+#
+# One batch number per line.  Re-check with: python data_pipeline/audit_batches.py
+#
+# Confirmed content/source shift (content belongs to the previous/next row):
+10
+11
+12
+13
+14
+15
+16
+# batch 17 source = "Sound in noise is uncomfortable", content = soft ambient
+# noise ("background noise is too noticeable"), i.e. the row-16 concept.
+17
+# batch 79 source = "Sudden Noise Uncomfortable", content = crowd/background noise
+79
+# batch 83 source = "Hearing Aid Whistles", content = wind noise
+83
+# batch 84 source = "All Soft Sounds Too Soft", content = feedback/whistling
+84

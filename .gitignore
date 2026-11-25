@@ -1,2 +1,10 @@
-﻿
-checkpoints/
+﻿checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Optional semantic audit outputs (large, not part of the baseline)
+data/processed/semantic_audit.json
+data/processed/semantic_audit.jsonl

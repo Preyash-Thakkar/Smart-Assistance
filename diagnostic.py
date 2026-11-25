@@ -1,51 +1,35 @@
-import glob
-import json
+"""Print the source-row mapping for every generated batch.
+
+This is a small operator aid: it shows the batch number, source row, canonical
+complaint question and the intent that ``clean_data.py`` will use.
+
+Usage::
+
+    python diagnostic.py
+"""
+
+from __future__ import annotations
+
 import os
-import re
+import sys
 
-def extract_dicts(data):
-    if isinstance(data, dict): 
-        yield data
-    elif isinstance(data, list):
-        for item in data: 
-            yield from extract_dicts(item)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "data_pipeline"))
 
-def main():
-    print("Scanning source mappings...\n")
-    batch_files = glob.glob("Config Assist Multiples/**/batch*_source_mapping.json", recursive=True)
-    
-    mapping = {}
-    for filepath in batch_files:
-        # Extract just "batchX" from the path
-        match = re.search(r'(batch\d+)_', filepath)
-        if not match: continue
-        batch_name = match.group(1)
-        
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
-                
-            dicts = []
-            try:
-                dicts.extend(list(extract_dicts(json.loads(content))))
-            except:
-                pass
-            
-            found_q = "MISSING/UNKNOWN"
-            for d in dicts:
-                if "source_complaint_record" in d:
-                    found_q = d["source_complaint_record"].get("question", "MISSING/UNKNOWN")
-                    break
-            
-            mapping[batch_name] = found_q.strip()
-        except Exception as e:
-            mapping[batch_name] = f"ERROR: {e}"
+from source_metadata import build_batch_metadata  # noqa: E402
 
-    # Sort numerically (batch1, batch2... batch10)
-    sorted_batches = sorted(mapping.items(), key=lambda x: int(x[0].replace('batch', '')))
-    
-    for b, q in sorted_batches:
-        print(f"'{b}': '{q}',")
+
+def main() -> None:
+    batches = build_batch_metadata(".")
+    print(f"{'batch':>5}  {'row':>4}  {'intent':<32}  topic / question")
+    for item in batches:
+        print(
+            f"{item.batch_number:>5}  {str(item.source_row):>4}  "
+            f"{str(item.intent_code):<32}  "
+            f"{item.topic}: {item.question!r}"
+        )
+        for flag in item.flags:
+            print(f"       ! {flag}")
+
 
 if __name__ == "__main__":
     main()

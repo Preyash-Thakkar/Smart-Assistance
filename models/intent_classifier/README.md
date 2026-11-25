@@ -5,11 +5,12 @@ tags:
 - text-classification
 - generated_from_setfit_trainer
 widget:
-- text: I hear my own chewing more clearly than I want to.
-- text: Could someone review my fitting because sounds seem echoic?
-- text: The loud sounds is breaking up when volume high.
-- text: People's voices sound altered and unclear.
-- text: People's voices sound robotic when I wear my device.
+- text: Could you check why alarms sound so loud through my hearing aid?
+- text: When the sound gets loud, my hearing aid makes it feel even louder.
+- text: Both hearing aids make running water sound excessively loud.
+- text: Running water sounds too loud when I wear my hearing aid.
+- text: The general restaurant chatter is too loud even when I'm sitting at a quiet
+    table.
 metrics:
 - accuracy
 pipeline_tag: text-classification
@@ -34,7 +35,7 @@ The model has been trained using an efficient few-shot learning technique that i
 - **Sentence Transformer body:** [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 - **Classification head:** a [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) instance
 - **Maximum Sequence Length:** 256 tokens
-- **Number of Classes:** 28 classes
+- **Number of Classes:** 30 classes
 <!-- - **Training Dataset:** [Unknown](https://huggingface.co/datasets/unknown) -->
 <!-- - **Language:** Unknown -->
 <!-- - **License:** Unknown -->
@@ -46,36 +47,38 @@ The model has been trained using an efficient few-shot learning technique that i
 - **Blogpost:** [SetFit: Efficient Few-Shot Learning Without Prompts](https://huggingface.co/blog/setfit)
 
 ### Model Labels
-| Label                       | Examples                                                                                                                                                                                                                                |
-|:----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SOUND_ECHOIC                | <ul><li>'A high-pitched tone keeps coming from the device.'</li><li>'I can hear a high-pitched whistle coming from my hearing aid.'</li><li>'Hearing aid makes a squeek when I touch it.'</li></ul>                                     |
-| SOUND_TINY_METALLIC_SHARP   | <ul><li>'can u make it less sharp pls'</li><li>'High notes are harsh and piercing through the hearing aid.'</li><li>'Sounds lack fullness and have a thin, bright quality.'</li></ul>                                                   |
-| NOISE_WIND_TOO_LOUD         | <ul><li>'wind noise um gets really loud when i walk'</li><li>'My hearing aid picks up the wind too strongly.'</li><li>'I hear a loud hiss of wind around the hearing aid.'</li></ul>                                                    |
-| OWN_VOICE_SHARP_METALLIC    | <ul><li>'my voice is tinny but everyone else sounds ok'</li><li>'Please help make voices less bass-heavy and more comfortable.'</li><li>'Even a calm voice sounds loud and boomy to me.'</li></ul>                                      |
-| NOISE_CROWD_TOO_LOUD        | <ul><li>'The noise from a busy group is disturbing my listening.'</li><li>'Street noise is too loud.'</li><li>'The noise around a gathering is too prominent.'</li></ul>                                                                |
-| OWN_VOICE_MUFFLED_DULL      | <ul><li>'Both hearing aids make my voice sound muffled.'</li><li>'The sound of my talking is deep, boomy, and uncomfortable.'</li><li>'Even when someone talks close to me, their voice sounds quiet.'</li></ul>                        |
-| SOUND_DISTORTED             | <ul><li>'why sounds seem distorted with hearing aid'</li><li>'Environmental audio seems to reverberate too much.'</li><li>"People's voices sound distorted instead of clear."</li></ul>                                                 |
-| LOUDNESS_NEARBY_TOO_LOUD    | <ul><li>'the person beside me is sounding too loud'</li><li>'noises keep ringing on after they happen'</li><li>'Sounds seem echoey when I use my hearing aid.'</li></ul>                                                                |
-| FEEDBACK_WHISTLING          | <ul><li>'aid whistles when i move it around'</li><li>'can u stop the feedback noise'</li><li>'My hearing aid starts squeaking when I cover my ear.'</li></ul>                                                                           |
-| SOUND_MUFFLED_DULL          | <ul><li>'The hearing aid audio is hard to make out.'</li><li>'Sounds are dull and lack clarity when I wear the device.'</li><li>'audio feels blocked and lacks clarity'</li></ul>                                                       |
-| LOUDNESS_LOUD_TOO_LOUD      | <ul><li>'I hear a crackling effect on high-volume sounds.'</li><li>'The sudden ring of a phone feels jarring through my hearing aid.'</li><li>'Backgroud noise is too loud in my hearing aid.'</li></ul>                                |
-| NOISE_AMBIENT_NOTICEABLE    | <ul><li>'Could you help me reduce the background noise level? It is too loud.'</li><li>'Is there a way to make the general background sound less loud?'</li><li>'I would like the quiet background sounds to stand out less.'</li></ul> |
-| LOUDNESS_CHEWING_TOO_LOUD   | <ul><li>'Chewing feels noisy inside my head when I use the hearing aid.'</li><li>'when i chew its very loud'</li><li>'please reduce chewing sound'</li></ul>                                                                            |
-| OWN_VOICE_HOLLOW            | <ul><li>'Why do voices sound hollow with my hearing aid on?'</li><li>'The audio lacks body and sounds hollow.'</li><li>'My voice sounds hollow every time I speak with the hearing aid on.'</li></ul>                                   |
-| LOUDNESS_WATER_FAN_LOUD     | <ul><li>'Could you check why running water sounds so loud?'</li><li>'Is there a setting to reduce the loudness of running water?'</li><li>'shower water is too loud with aid'</li></ul>                                                 |
-| OWN_VOICE_BOOMY_LOUD        | <ul><li>'My hearing aid does not make voices loud enough.'</li><li>'hearing aid makes my voice bassy n loud plz check'</li><li>'The TV dialogue is too quiet with my hearing aid on.'</li></ul>                                         |
-| OWN_VOICE_THIN              | <ul><li>'sound thin not natural'</li><li>'Why do sounds have a tiny, tinny quality when I wear my aid?'</li><li>'My voice has a low, hollow sound when I wear my hearing aid.'</li></ul>                                                |
-| LOUDNESS_LOUD_DISTORTED     | <ul><li>'When something gets loud, the sound becomes unclear.'</li><li>'The sound seems to repeat slightly in my hearing aid.'</li><li>'Can someone troubleshoot the distortion I hear at high sound levels?'</li></ul>                 |
-| SOUND_ARTIFICIAL_MECHANICAL | <ul><li>'My hearing aid makes music sound synthetic and unnatural.'</li><li>'Why do sounds seem artificial with my hearing aid?'</li><li>'Everyday sounds do not sound real when I wear the device.'</li></ul>                          |
-| NOISE_SUDDEN_UNCOMFORTABLE  | <ul><li>'When I insert the hearing aid, it starts making a squealing sound.'</li><li>'Can the feedback whistle in my hearing aid be adjusted?'</li><li>'The whistling from my hearing device is irritating.'</li></ul>                  |
-| LOUDNESS_SUDDEN_SOUNDS_LOUD | <ul><li>'When a door slams, the sound is much too loud.'</li><li>'Door slams are startlingly loud when I wear the device.'</li><li>'Why are sudden sounds like a door slam so loud?'</li></ul>                                          |
-| LOUDNESS_SOFT_TOO_SOFT      | <ul><li>'Soft sounds are too faint in both hearing aids.'</li><li>'I miss quiet parts of conversations because they sound too soft.'</li><li>'I am missing quiet sounds even with the hearing aid turned on.'</li></ul>                 |
-| SPEECH_ECHOIC               | <ul><li>"People's voices seem to echo when they talk to me."</li><li>'Speech sounds echoey through my hearing aid.'</li><li>'I hear an echo on conversations even when nobody else notices one.'</li></ul>                              |
-| SPEECH_WHISPER_DISTANT_SOFT | <ul><li>'can u make whispers louder on my aid pls'</li><li>'I can tell someone is whispering, but I cannot make out the words.'</li><li>'People speaking from a distance sound too quiet with my device.'</li></ul>                     |
-| SPEECH_TOO_LOUD_BOOMY       | <ul><li>'everything sounds boomy and bassy with the aid'</li><li>'Could the speech settings be changed to reduce the booming sound?'</li><li>'Deep voices are especially loud and boomy.'</li></ul>                                     |
-| LOUDNESS_ALARMS_CRYING_LOUD | <ul><li>"I find a child's loud crying uncomfortable with my hearing aid."</li><li>'The alarm at work is overwhelming when my hearing aid is on.'</li><li>'When a baby cries nearby, the sound becomes too loud.'</li></ul>              |
-| SPEECH_TOO_SOFT             | <ul><li>'People talking nearby make it hard to focus on the person with me.'</li><li>'Please reduce the restaurant noise without making speech too quiet.'</li><li>'the dishes clattering um its too much'</li></ul>                    |
-| SOUND_TOO_MUCH_BASS         | <ul><li>'I want less bass and a more balanced sound.'</li><li>'My hearing aid makes music sound overly bassy.'</li><li>'I hear a heavy, booming sound when listening.'</li></ul>                                                        |
+| Label                       | Examples                                                                                                                                                                                                                                              |
+|:----------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LOUDNESS_SOFT_TOO_SOFT      | <ul><li>'All the quiet sounds are too quiet for me.'</li><li>'Even the little sounds seem too low.'</li><li>'Everything on the softer end is hard to hear through my aid.'</li></ul>                                                                  |
+| LOUDNESS_WATER_FAN_LOUD     | <ul><li>'Running water sounds too loud through my hearing aid.'</li><li>'The tap running sounds much louder than it should.'</li><li>'Water flowing into the sink is too loud when I wear my device.'</li></ul>                                       |
+| NOISE_SUDDEN_UNCOMFORTABLE  | <ul><li>'Sudden noises feel really uncomfortable when I wear my hearing aid.'</li><li>'A sudden sound makes me jump; it feels unpleasant through the aid.'</li><li>'Why do unexpected noises bother me so much with my hearing machine on?'</li></ul> |
+| NOISE_BACKGROUND_RESTAURANT | <ul><li>'The background noise is too loud through my hearing aid.'</li><li>'I can hear the room noise more loudly than I want to.'</li><li>'My hearing machine makes the background sound too loud.'</li></ul>                                        |
+| NOISE_WIND_TOO_LOUD         | <ul><li>'Wind noise is too loud through my hearing aid.'</li><li>'When I step outside, the wind sounds much too loud in my hearing aids.'</li><li>'The sound of wind is overpowering with my hearing machine on.'</li></ul>                           |
+| FEEDBACK_WHISTLING          | <ul><li>'My hearing aid keeps whistling.'</li><li>'There is a high-pitched whistle coming from my hearing aid.'</li><li>'My hearing aid makes a whistling sound when I wear it.'</li></ul>                                                            |
+| LOUDNESS_LOUD_DISTORTED     | <ul><li>'Loud sounds are distorted through my hearing aid.'</li><li>'When a sound gets loud, it starts to sound distorted.'</li><li>'My hearing aid makes loud noises sound crackly and unclear.'</li></ul>                                           |
+| LOUDNESS_ALARMS_CRYING_LOUD | <ul><li>"Alarms and children's crying sound too loud through my hearing aid."</li><li>'The alarm is painfully loud when I wear my hearing aid.'</li><li>'Children crying sounds much too loud with my hearing aid on.'</li></ul>                      |
+| LOUDNESS_SUDDEN_SOUNDS_LOUD | <ul><li>'Sudden sounds are too loud with my hearing aid.'</li><li>'A door slamming sounds painfully loud when I wear my hearing aid.'</li><li>'Unexpected noises are much too loud through my hearing device.'</li></ul>                              |
+| LOUDNESS_CHEWING_TOO_LOUD   | <ul><li>'My chewing sounds are too loud with my hearing aid.'</li><li>'I can hear my own chewing very loudly when I wear my hearing aid.'</li><li>'The sound of me chewing is overpowering through my hearing device.'</li></ul>                      |
+| OWN_VOICE_MUFFLED_DULL      | <ul><li>'My own voice sounds muffled when I wear my hearing aid.'</li><li>'My voice sounds dull and unclear through the hearing aid.'</li><li>'When I speak, my voice sounds blocked up.'</li></ul>                                                   |
+| OWN_VOICE_SHARP_METALLIC    | <ul><li>'My own voice sounds sharp and metallic when I wear my hearing aid.'</li><li>'My voice has a tinny sound through the hearing aid.'</li><li>'When I speak, my voice sounds too sharp and unnatural.'</li></ul>                                 |
+| SPEECH_WHISPER_DISTANT_SOFT | <ul><li>'Whispering sounds too soft through my hearing aid.'</li><li>'I cannot hear whispers clearly because they sound too faint.'</li><li>'People speaking from a distance sound too quiet with my device.'</li></ul>                               |
+| SPEECH_TOO_LOUD_BOOMY       | <ul><li>'Speech sounds too loud and boomy through my hearing aid.'</li><li>"People's voices have too much bass and sound booming."</li><li>'Voices sound unnaturally loud when I use my hearing aid.'</li></ul>                                       |
+| SOUND_MUFFLED_DULL          | <ul><li>'Sounds are muffled and dull through my hearing aid.'</li><li>'Everything sounds dull, as if something is covering the speaker.'</li><li>'The sounds around me lack clarity and seem muffled.'</li></ul>                                      |
+| SOUND_ARTIFICIAL_MECHANICAL | <ul><li>'Sounds from my hearing aid feel artificial and mechanical.'</li><li>'Everything sounds like it is coming from a machine.'</li><li>'The sound quality does not feel natural; it sounds processed.'</li></ul>                                  |
+| SOUND_TOO_MUCH_BASS         | <ul><li>'There is too much bass coming through my hearing aid.'</li><li>'The sound is very bass-heavy and lacks balance.'</li><li>'Low sounds are overpowering everything else.'</li></ul>                                                            |
+| SOUND_DISTORTED             | <ul><li>'Sounds from my hearing aid are distorted.'</li><li>'The audio sounds crackly and unclear when I wear my device.'</li><li>'Everything sounds warped through my hearing aid.'</li></ul>                                                        |
+| NOISE_AMBIENT_NOTICEABLE    | <ul><li>'I notice the background ambience too much with my hearing aid.'</li><li>'Soft environmental noise is very noticeable when I wear the device.'</li><li>'Even quiet background sounds seem too prominent.'</li></ul>                           |
+| LOUDNESS_LOUD_TOO_LOUD      | <ul><li>'All loud sounds feel too loud when I use my hearing aid.'</li><li>'Sudden or strong sounds are uncomfortably loud through my device.'</li><li>'My hearing aid makes loud noises seem even louder than they should.'</li></ul>                |
+| LOUDNESS_NEARBY_TOO_LOUD    | <ul><li>'Sounds from people or objects close to me are too loud through my hearing aid.'</li><li>'Nearby sounds feel much louder than they should.'</li><li>'When someone speaks right beside me, their voice is too loud.'</li></ul>                 |
+| OWN_VOICE_HOLLOW            | <ul><li>'My voice sounds as if I am speaking inside a tunnel.'</li><li>'When I talk, my voice has an empty, hollow quality.'</li><li>'My voice sounds echoey and hollow to me with the device on.'</li></ul>                                          |
+| OWN_VOICE_THIN              | <ul><li>'My voice sounds weak and thin with the device switched on.'</li><li>'When I speak, my voice lacks its usual fullness.'</li><li>'My own voice sounds light and hollow instead of normal.'</li></ul>                                           |
+| OWN_VOICE_BOOMY_LOUD        | <ul><li>'My voice sounds boomy with the device switched on.'</li><li>'When I speak, my voice seems much louder than normal.'</li><li>'My own voice feels amplified inside my ears.'</li></ul>                                                         |
+| SPEECH_TOO_SOFT             | <ul><li>'Speech sounds too soft through my hearing aid.'</li><li>"People's voices are too quiet when I wear the device."</li><li>'I struggle to hear what people are saying because speech is too low.'</li></ul>                                     |
+| SPEECH_ECHOIC               | <ul><li>"People's voices seem to echo when they talk to me."</li><li>'Conversation has an echo effect with my hearing aid on.'</li><li>'Voices sound as if they are bouncing around in a room.'</li></ul>                                             |
+| SPEECH_POOR_QUALITY         | <ul><li>'Speech sounds poor through my hearing aid.'</li><li>"People's voices do not sound clear or natural."</li><li>'The overall quality of speech is bad when I wear the device.'</li></ul>                                                        |
+| SOUND_TINY_METALLIC_SHARP   | <ul><li>'Sounds from my hearing aid are too tiny and sharp.'</li><li>'Everything sounds metallic when I wear my hearing aid.'</li><li>'Voices have a thin, tinny sound through the device.'</li></ul>                                                 |
+| SOUND_ECHOIC                | <ul><li>'Everything sounds echoey through my hearing aid.'</li><li>'Sounds seem to bounce back when I listen with the device on.'</li><li>'My hearing aid makes everyday sounds echo.'</li></ul>                                                      |
+| NOISE_CROWD_TOO_LOUD        | <ul><li>'The background noise is too loud when I am in a crowd.'</li><li>'Crowd noise becomes too loud through my hearing aid.'</li><li>'The sound of many people around me is overwhelming.'</li></ul>                                               |
 
 ## Uses
 
@@ -95,7 +98,7 @@ from setfit import SetFitModel
 # Download from the 🤗 Hub
 model = SetFitModel.from_pretrained("setfit_model_id")
 # Run inference
-preds = model("People's voices sound altered and unclear.")
+preds = model("Running water sounds too loud when I wear my hearing aid.")
 ```
 
 <!--
@@ -125,47 +128,49 @@ preds = model("People's voices sound altered and unclear.")
 ## Training Details
 
 ### Training Set Metrics
-| Training set | Min | Median | Max |
-|:-------------|:----|:-------|:----|
-| Word count   | 3   | 9.9515 | 17  |
+| Training set | Min | Median  | Max |
+|:-------------|:----|:--------|:----|
+| Word count   | 3   | 10.0719 | 17  |
 
 | Label                       | Training Sample Count |
 |:----------------------------|:----------------------|
-| FEEDBACK_WHISTLING          | 38                    |
-| LOUDNESS_ALARMS_CRYING_LOUD | 117                   |
-| LOUDNESS_CHEWING_TOO_LOUD   | 114                   |
-| LOUDNESS_LOUD_DISTORTED     | 118                   |
-| LOUDNESS_LOUD_TOO_LOUD      | 353                   |
-| LOUDNESS_NEARBY_TOO_LOUD    | 207                   |
-| LOUDNESS_SOFT_TOO_SOFT      | 120                   |
-| LOUDNESS_SUDDEN_SOUNDS_LOUD | 41                    |
-| LOUDNESS_WATER_FAN_LOUD     | 89                    |
-| NOISE_AMBIENT_NOTICEABLE    | 128                   |
-| NOISE_CROWD_TOO_LOUD        | 277                   |
-| NOISE_SUDDEN_UNCOMFORTABLE  | 123                   |
-| NOISE_WIND_TOO_LOUD         | 199                   |
-| OWN_VOICE_BOOMY_LOUD        | 86                    |
-| OWN_VOICE_HOLLOW            | 81                    |
-| OWN_VOICE_MUFFLED_DULL      | 236                   |
-| OWN_VOICE_SHARP_METALLIC    | 83                    |
-| OWN_VOICE_THIN              | 121                   |
-| SOUND_ARTIFICIAL_MECHANICAL | 76                    |
-| SOUND_DISTORTED             | 122                   |
-| SOUND_ECHOIC                | 46                    |
-| SOUND_MUFFLED_DULL          | 109                   |
-| SOUND_TINY_METALLIC_SHARP   | 78                    |
-| SOUND_TOO_MUCH_BASS         | 34                    |
-| SPEECH_ECHOIC               | 79                    |
-| SPEECH_TOO_LOUD_BOOMY       | 126                   |
-| SPEECH_TOO_SOFT             | 74                    |
-| SPEECH_WHISPER_DISTANT_SOFT | 45                    |
+| FEEDBACK_WHISTLING          | 49                    |
+| LOUDNESS_ALARMS_CRYING_LOUD | 50                    |
+| LOUDNESS_CHEWING_TOO_LOUD   | 50                    |
+| LOUDNESS_LOUD_DISTORTED     | 50                    |
+| LOUDNESS_LOUD_TOO_LOUD      | 50                    |
+| LOUDNESS_NEARBY_TOO_LOUD    | 50                    |
+| LOUDNESS_SOFT_TOO_SOFT      | 50                    |
+| LOUDNESS_SUDDEN_SOUNDS_LOUD | 50                    |
+| LOUDNESS_WATER_FAN_LOUD     | 99                    |
+| NOISE_AMBIENT_NOTICEABLE    | 50                    |
+| NOISE_BACKGROUND_RESTAURANT | 150                   |
+| NOISE_CROWD_TOO_LOUD        | 50                    |
+| NOISE_SUDDEN_UNCOMFORTABLE  | 50                    |
+| NOISE_WIND_TOO_LOUD         | 50                    |
+| OWN_VOICE_BOOMY_LOUD        | 49                    |
+| OWN_VOICE_HOLLOW            | 49                    |
+| OWN_VOICE_MUFFLED_DULL      | 50                    |
+| OWN_VOICE_SHARP_METALLIC    | 50                    |
+| OWN_VOICE_THIN              | 48                    |
+| SOUND_ARTIFICIAL_MECHANICAL | 50                    |
+| SOUND_DISTORTED             | 50                    |
+| SOUND_ECHOIC                | 50                    |
+| SOUND_MUFFLED_DULL          | 50                    |
+| SOUND_TINY_METALLIC_SHARP   | 50                    |
+| SOUND_TOO_MUCH_BASS         | 50                    |
+| SPEECH_ECHOIC               | 48                    |
+| SPEECH_POOR_QUALITY         | 50                    |
+| SPEECH_TOO_LOUD_BOOMY       | 50                    |
+| SPEECH_TOO_SOFT             | 50                    |
+| SPEECH_WHISPER_DISTANT_SOFT | 50                    |
 
 ### Training Hyperparameters
 - batch_size: (16, 16)
-- num_epochs: (2, 2)
+- num_epochs: (1, 16)
 - max_steps: -1
 - sampling_strategy: oversampling
-- num_iterations: 2
+- num_iterations: 4
 - body_learning_rate: (2e-05, 1e-05)
 - head_learning_rate: 0.01
 - loss: CosineSimilarityLoss
@@ -182,50 +187,32 @@ preds = model("People's voices sound altered and unclear.")
 ### Training Results
 | Epoch  | Step | Training Loss | Validation Loss |
 |:------:|:----:|:-------------:|:---------------:|
-| 0.0012 | 1    | 0.2531        | -               |
-| 0.0602 | 50   | 0.2173        | -               |
-| 0.1205 | 100  | 0.1960        | -               |
-| 0.1807 | 150  | 0.1926        | -               |
-| 0.2410 | 200  | 0.1696        | -               |
-| 0.3012 | 250  | 0.1622        | -               |
-| 0.3614 | 300  | 0.1602        | -               |
-| 0.4217 | 350  | 0.1607        | -               |
-| 0.4819 | 400  | 0.1481        | -               |
-| 0.5422 | 450  | 0.1442        | -               |
-| 0.6024 | 500  | 0.1303        | -               |
-| 0.6627 | 550  | 0.1274        | -               |
-| 0.7229 | 600  | 0.1276        | -               |
-| 0.7831 | 650  | 0.1339        | -               |
-| 0.8434 | 700  | 0.1292        | -               |
-| 0.9036 | 750  | 0.1322        | -               |
-| 0.9639 | 800  | 0.1283        | -               |
-| 1.0    | 830  | -             | 0.1208          |
-| 1.0241 | 850  | 0.1169        | -               |
-| 1.0843 | 900  | 0.1105        | -               |
-| 1.1446 | 950  | 0.1120        | -               |
-| 1.2048 | 1000 | 0.1040        | -               |
-| 1.2651 | 1050 | 0.1005        | -               |
-| 1.3253 | 1100 | 0.1035        | -               |
-| 1.3855 | 1150 | 0.1082        | -               |
-| 1.4458 | 1200 | 0.1071        | -               |
-| 1.5060 | 1250 | 0.0932        | -               |
-| 1.5663 | 1300 | 0.0985        | -               |
-| 1.6265 | 1350 | 0.0928        | -               |
-| 1.6867 | 1400 | 0.0940        | -               |
-| 1.7470 | 1450 | 0.1030        | -               |
-| 1.8072 | 1500 | 0.0963        | -               |
-| 1.8675 | 1550 | 0.0937        | -               |
-| 1.9277 | 1600 | 0.0985        | -               |
-| 1.9880 | 1650 | 0.0895        | -               |
-| 2.0    | 1660 | -             | 0.1162          |
+| 0.0012 | 1    | 0.2642        | -               |
+| 0.0609 | 50   | 0.1996        | -               |
+| 0.1218 | 100  | 0.1675        | -               |
+| 0.1827 | 150  | 0.1458        | -               |
+| 0.2436 | 200  | 0.1312        | -               |
+| 0.3045 | 250  | 0.1033        | -               |
+| 0.3654 | 300  | 0.1053        | -               |
+| 0.4263 | 350  | 0.0899        | -               |
+| 0.4872 | 400  | 0.0936        | -               |
+| 0.5481 | 450  | 0.0877        | -               |
+| 0.6090 | 500  | 0.0769        | -               |
+| 0.6699 | 550  | 0.0727        | -               |
+| 0.7308 | 600  | 0.0717        | -               |
+| 0.7917 | 650  | 0.0821        | -               |
+| 0.8526 | 700  | 0.0702        | -               |
+| 0.9135 | 750  | 0.0614        | -               |
+| 0.9744 | 800  | 0.0708        | -               |
+| 1.0    | 821  | -             | 0.0703          |
 
 ### Framework Versions
-- Python: 3.11.0
+- Python: 3.10.12
 - SetFit: 1.2.0
-- Sentence Transformers: 6.2.0
-- Transformers: 5.21.0
+- Sentence Transformers: 6.3.0
+- Transformers: 5.20.2
 - PyTorch: 2.14.1+cpu
-- Datasets: 5.1.0
+- Datasets: 5.2.0
 - Tokenizers: 0.23.3
 
 ## Citation

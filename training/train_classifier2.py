@@ -1,8 +1,27 @@
+"""DEPRECATED: legacy 84-batch classifier.
+
+This script trains on ``source_batch`` (one class per synthetic batch folder).
+The production model must train on the corrected ``intent_code`` instead, so
+P0 moves the default path to ``train_classifier.py``.
+
+If you deliberately want the old 84-class experiment, pass
+``--legacy-batch-labels``.  Otherwise the script exits with a pointer to the
+correct trainer.
+"""
+
 import os
+import sys
 import json
 import pandas as pd
 from setfit import SetFitModel, Trainer, TrainingArguments
 from datasets import Dataset
+
+if "--legacy-batch-labels" not in sys.argv:
+    raise SystemExit(
+        "train_classifier2.py is deprecated. Use training/train_classifier.py "
+        "(30 usable source intents). To reproduce the old 84-batch experiment, run:\n"
+        "  python training/train_classifier2.py --legacy-batch-labels"
+    )
 
 def load_jsonl(filepath):
     data = []
