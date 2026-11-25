@@ -5,7 +5,7 @@
   "iterations": 4,
   "batch_size": 16,
   "seed": 42,
-  "train_rows": 1692,
+  "train_rows": 1742,
   "val_rows": 549,
   "classes": [
     "FEEDBACK_WHISTLING",

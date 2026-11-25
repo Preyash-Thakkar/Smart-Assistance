@@ -3,7 +3,8 @@
 #
 # These are *candidate* replacements.  clean_data.py uses one only when its
 # intent has no original batch left; otherwise the replacement is dropped as
-# redundant, because the template style shifts the decision boundary.  Used
+# redundant, because the template style shifts the decision boundary.  See
+# data_pipeline/sharpening_batches.txt for the small always-on list.  Used
 # replacements are train-only and never enter validation or test, so evaluation
 # stays on the original LLM-authored batches and remains comparable.
 #

@@ -1,0 +1,11 @@
+# Replacement batches that are kept even when redundant, and are allowed to
+# compete for validation/test.  Used to give single-batch intents held-out
+# support so every intent can be evaluated.
+#
+# Batch 14 (SOUND_TOO_MUCH_BASS) and batch 17 (NOISE_SOUND_UNCOMFORTABLE) are
+# the only sources for their intents.  Keeping them lets coverage mode hold one
+# out as a test batch.
+#
+# One batch number per line.  `#` starts a comment.
+14
+17

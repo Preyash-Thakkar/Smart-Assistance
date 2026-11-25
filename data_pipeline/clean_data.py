@@ -11,7 +11,9 @@ P0 changes compared with the previous pipeline:
    mismatch) are excluded by default.
 4. Template-regenerated replacement batches in
    ``data_pipeline/replacement_batches.txt`` are kept in train only, so
-   validation/test stay on the original batches.
+   validation/test stay on the original batches.  A small
+   ``data_pipeline/sharpening_batches.txt`` list is always kept to fix a known
+   boundary confusion.
 5. The report records class coverage, leakage checks and quarantine decisions.
 
 Run::
@@ -188,17 +190,23 @@ def build_master_dataset(
 # ---------------------------------------------------------------------------
 
 def apply_replacement_policy(
-    rows: list[dict], replacement_numbers: set[int]
+    rows: list[dict],
+    replacement_numbers: set[int],
+    always_use: set[int] | None = None,
+    keep_eligible: set[int] | None = None,
 ) -> tuple[list[dict], dict]:
-    """Keep a replacement batch only when its intent has no original batch.
+    """Keep a replacement batch when needed, forced, or explicitly eligible.
 
     Template-regenerated replacements are useful for filling a missing class,
     but they are stylistically unlike the original LLM-authored batches.  When
-    an intent already has original data, adding the template rows only shifts
-    the decision boundary (measured: it hurt Speech and Noise classes), so the
-    redundant replacement is dropped.
+    an intent already has original data, a replacement is dropped unless it is
+    in ``always_use`` (kept and forced to train, for boundary sharpening) or
+    ``keep_eligible`` (kept and allowed to compete for validation/test, used
+    to give single-batch intents held-out support).
     """
 
+    always_use = set(always_use or ())
+    keep_eligible = set(keep_eligible or ())
     intents_with_original = {
         row["intent_code"]
         for row in rows
@@ -212,7 +220,11 @@ def apply_replacement_policy(
     for row in rows:
         number = row["batch_number"]
         if number in replacement_numbers:
-            if row["intent_code"] in intents_with_original:
+            if (
+                row["intent_code"] in intents_with_original
+                and number not in always_use
+                and number not in keep_eligible
+            ):
                 dropped_batches.add(number)
                 dropped_rows += 1
                 continue
@@ -221,6 +233,8 @@ def apply_replacement_policy(
 
     info = {
         "listed": sorted(replacement_numbers),
+        "always_use": sorted(always_use),
+        "keep_eligible": sorted(keep_eligible),
         "used": sorted(used_batches),
         "dropped_redundant": sorted(dropped_batches),
         "rows_kept": len(kept),
@@ -518,10 +532,29 @@ def main() -> None:
         raise SystemExit("No rows were produced. Check the audit report and quarantine file.")
 
     replacement_file = os.path.join(args.root, "data_pipeline", "replacement_batches.txt")
+    sharpening_file = os.path.join(args.root, "data_pipeline", "sharpening_batches.txt")
+    test_support_file = os.path.join(args.root, "data_pipeline", "test_support_batches.txt")
     replacement_numbers = parse_quarantine(replacement_file)
-    replacement_info = {"listed": [], "used": [], "dropped_redundant": [], "rows_kept": len(master), "rows_dropped": 0}
+    sharpening_numbers = parse_quarantine(sharpening_file)
+    test_support_numbers = parse_quarantine(test_support_file)
+    replacement_numbers |= sharpening_numbers
+    replacement_numbers |= test_support_numbers
+    replacement_info = {
+        "listed": [],
+        "always_use": [],
+        "keep_eligible": [],
+        "used": [],
+        "dropped_redundant": [],
+        "rows_kept": len(master),
+        "rows_dropped": 0,
+    }
     if replacement_numbers:
-        master, replacement_info = apply_replacement_policy(master, replacement_numbers)
+        master, replacement_info = apply_replacement_policy(
+            master,
+            replacement_numbers,
+            always_use=sharpening_numbers,
+            keep_eligible=test_support_numbers,
+        )
         dataset_report["replacements"] = replacement_info
         dataset_report["rows"]["total"] = len(master)
         dataset_report["rows"]["skipped"]["redundant_replacement"] = replacement_info["rows_dropped"]
@@ -541,7 +574,7 @@ def main() -> None:
     print(f"      skipped: {dataset_report['rows']['skipped']}")
 
     print("[2/5] Building grouped splits...")
-    train_only = set(replacement_info["used"])
+    train_only = set(replacement_info["always_use"])
     if train_only:
         print(f"      train-only replacement batches: {sorted(train_only)}")
     split_rows, split_info = grouped_split(

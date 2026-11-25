@@ -1,0 +1,33 @@
+{
+  "batch": 85,
+  "complaint_source_row": 17,
+  "complaint_text_source_exact": "Sound in noise is uncomfortable",
+  "intent_code": "NOISE_SOUND_UNCOMFORTABLE",
+  "complaint_id": "PROV-CMP-0017",
+  "topic": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "language": "English",
+  "rows_written": 50,
+  "natural_form_candidates": 42,
+  "asr_noise_variants": 8,
+  "exact_normalized_duplicates": 0,
+  "json_parse_errors": 0,
+  "generation_method": "deterministic template bank (data_pipeline/concepts.py)",
+  "generated_at_utc": "2026-11-25T12:50:44.970187+00:00",
+  "checks": {
+    "source_keyword_overlap": 1.0,
+    "source_keywords": [
+      "noise",
+      "uncomfortable"
+    ],
+    "required_fields_present": true,
+    "embedding_similarity_check": "Not performed",
+    "native_speaker_review": "Not performed",
+    "domain_expert_review": "Not performed",
+    "model_evaluation": "Not performed"
+  },
+  "limitations": [
+    "Template-generated synthetic draft; native-speaker and domain review pending.",
+    "Less varied than the LLM-authored batches; treat as training-data repair, not gold data."
+  ]
+}

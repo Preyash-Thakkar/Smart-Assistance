@@ -1,10 +1,10 @@
 {
   "split": "test_holdout",
   "model": "models/intent_classifier",
-  "rows": 1443,
-  "accuracy": 0.832294,
-  "macro_f1": 0.781654,
-  "weighted_f1": 0.835182,
+  "rows": 1543,
+  "accuracy": 0.849644,
+  "macro_f1": 0.85242,
+  "weighted_f1": 0.852145,
   "labels": [
     "FEEDBACK_WHISTLING",
     "LOUDNESS_ALARMS_CRYING_LOUD",
@@ -51,7 +51,7 @@
     "NOISE_AMBIENT_NOTICEABLE": 50,
     "NOISE_BACKGROUND_RESTAURANT": 50,
     "NOISE_CROWD_TOO_LOUD": 50,
-    "NOISE_SOUND_UNCOMFORTABLE": 0,
+    "NOISE_SOUND_UNCOMFORTABLE": 50,
     "NOISE_SUDDEN_UNCOMFORTABLE": 50,
     "NOISE_WIND_TOO_LOUD": 50,
     "OWN_VOICE_BOOMY_LOUD": 50,
@@ -64,7 +64,7 @@
     "SOUND_ECHOIC": 50,
     "SOUND_MUFFLED_DULL": 50,
     "SOUND_TINY_METALLIC_SHARP": 50,
-    "SOUND_TOO_MUCH_BASS": 0,
+    "SOUND_TOO_MUCH_BASS": 50,
     "SPEECH_ECHOIC": 50,
     "SPEECH_POOR_QUALITY": 50,
     "SPEECH_TOO_LOUD_BOOMY": 50,
@@ -73,15 +73,15 @@
   },
   "per_class": {
     "FEEDBACK_WHISTLING": {
-      "precision": 0.9777777777777777,
-      "recall": 0.9166666666666666,
-      "f1-score": 0.946236559139785,
+      "precision": 0.9583333333333334,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9583333333333334,
       "support": 48.0
     },
     "LOUDNESS_ALARMS_CRYING_LOUD": {
-      "precision": 0.9795918367346939,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.9896907216494846,
+      "f1-score": 1.0,
       "support": 48.0
     },
     "LOUDNESS_CHEWING_TOO_LOUD": {
@@ -91,199 +91,213 @@
       "support": 50.0
     },
     "LOUDNESS_LOUD_DISTORTED": {
-      "precision": 0.926829268292683,
-      "recall": 0.76,
-      "f1-score": 0.8351648351648352,
+      "precision": 0.9736842105263158,
+      "recall": 0.74,
+      "f1-score": 0.8409090909090909,
       "support": 50.0
     },
     "LOUDNESS_LOUD_TOO_LOUD": {
-      "precision": 0.88,
-      "recall": 0.88,
-      "f1-score": 0.88,
+      "precision": 0.9583333333333334,
+      "recall": 0.92,
+      "f1-score": 0.9387755102040817,
       "support": 50.0
     },
     "LOUDNESS_NEARBY_TOO_LOUD": {
-      "precision": 0.8679245283018868,
-      "recall": 0.92,
-      "f1-score": 0.8932038834951457,
+      "precision": 0.8148148148148148,
+      "recall": 0.88,
+      "f1-score": 0.8461538461538461,
       "support": 50.0
     },
     "LOUDNESS_SOFT_TOO_SOFT": {
-      "precision": 0.9230769230769231,
+      "precision": 0.8780487804878049,
       "recall": 0.72,
-      "f1-score": 0.8089887640449438,
+      "f1-score": 0.7912087912087912,
       "support": 50.0
     },
     "LOUDNESS_SUDDEN_SOUNDS_LOUD": {
-      "precision": 0.65,
+      "precision": 0.6842105263157895,
       "recall": 0.78,
-      "f1-score": 0.7090909090909091,
+      "f1-score": 0.7289719626168224,
       "support": 50.0
     },
     "LOUDNESS_WATER_FAN_LOUD": {
-      "precision": 0.9791666666666666,
-      "recall": 0.94,
-      "f1-score": 0.9591836734693877,
+      "precision": 0.9777777777777777,
+      "recall": 0.88,
+      "f1-score": 0.9263157894736842,
       "support": 50.0
     },
     "NOISE_AMBIENT_NOTICEABLE": {
-      "precision": 0.7777777777777778,
-      "recall": 0.42,
-      "f1-score": 0.5454545454545454,
+      "precision": 0.7659574468085106,
+      "recall": 0.72,
+      "f1-score": 0.7422680412371134,
       "support": 50.0
     },
     "NOISE_BACKGROUND_RESTAURANT": {
-      "precision": 0.47,
-      "recall": 0.94,
-      "f1-score": 0.6266666666666667,
+      "precision": 0.5212765957446809,
+      "recall": 0.98,
+      "f1-score": 0.6805555555555556,
       "support": 50.0
     },
     "NOISE_CROWD_TOO_LOUD": {
-      "precision": 0.9512195121951219,
-      "recall": 0.78,
-      "f1-score": 0.8571428571428571,
+      "precision": 1.0,
+      "recall": 0.74,
+      "f1-score": 0.8505747126436781,
       "support": 50.0
     },
     "NOISE_SOUND_UNCOMFORTABLE": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 0.0
+      "precision": 0.9722222222222222,
+      "recall": 0.7,
+      "f1-score": 0.813953488372093,
+      "support": 50.0
     },
     "NOISE_SUDDEN_UNCOMFORTABLE": {
-      "precision": 0.7954545454545454,
-      "recall": 0.7,
-      "f1-score": 0.7446808510638298,
+      "precision": 0.8260869565217391,
+      "recall": 0.76,
+      "f1-score": 0.7916666666666666,
       "support": 50.0
     },
     "NOISE_WIND_TOO_LOUD": {
       "precision": 1.0,
-      "recall": 0.94,
-      "f1-score": 0.9690721649484536,
+      "recall": 0.98,
+      "f1-score": 0.98989898989899,
       "support": 50.0
     },
     "OWN_VOICE_BOOMY_LOUD": {
-      "precision": 0.8166666666666667,
-      "recall": 0.98,
-      "f1-score": 0.8909090909090909,
+      "precision": 0.8035714285714286,
+      "recall": 0.9,
+      "f1-score": 0.8490566037735849,
       "support": 50.0
     },
     "OWN_VOICE_HOLLOW": {
-      "precision": 0.8163265306122449,
+      "precision": 0.7692307692307693,
       "recall": 0.8,
-      "f1-score": 0.8080808080808081,
+      "f1-score": 0.7843137254901961,
       "support": 50.0
     },
     "OWN_VOICE_MUFFLED_DULL": {
-      "precision": 0.9111111111111111,
-      "recall": 0.8367346938775511,
-      "f1-score": 0.8723404255319149,
+      "precision": 0.8863636363636364,
+      "recall": 0.7959183673469388,
+      "f1-score": 0.8387096774193549,
       "support": 49.0
     },
     "OWN_VOICE_SHARP_METALLIC": {
-      "precision": 0.9565217391304348,
-      "recall": 0.88,
-      "f1-score": 0.9166666666666666,
-      "support": 50.0
-    },
-    "OWN_VOICE_THIN": {
       "precision": 0.9347826086956522,
       "recall": 0.86,
       "f1-score": 0.8958333333333334,
       "support": 50.0
     },
+    "OWN_VOICE_THIN": {
+      "precision": 0.8936170212765957,
+      "recall": 0.84,
+      "f1-score": 0.865979381443299,
+      "support": 50.0
+    },
     "SOUND_ARTIFICIAL_MECHANICAL": {
-      "precision": 0.9782608695652174,
-      "recall": 0.9,
-      "f1-score": 0.9375,
+      "precision": 0.92,
+      "recall": 0.92,
+      "f1-score": 0.92,
       "support": 50.0
     },
     "SOUND_DISTORTED": {
-      "precision": 0.8636363636363636,
+      "precision": 0.8444444444444444,
       "recall": 0.7916666666666666,
-      "f1-score": 0.8260869565217391,
+      "f1-score": 0.8172043010752689,
       "support": 48.0
     },
     "SOUND_ECHOIC": {
-      "precision": 0.9215686274509803,
-      "recall": 0.94,
-      "f1-score": 0.9306930693069307,
+      "precision": 0.9074074074074074,
+      "recall": 0.98,
+      "f1-score": 0.9423076923076923,
       "support": 50.0
     },
     "SOUND_MUFFLED_DULL": {
-      "precision": 0.7678571428571429,
-      "recall": 0.86,
-      "f1-score": 0.8113207547169812,
+      "precision": 0.8541666666666666,
+      "recall": 0.82,
+      "f1-score": 0.8367346938775511,
       "support": 50.0
     },
     "SOUND_TINY_METALLIC_SHARP": {
-      "precision": 0.9090909090909091,
-      "recall": 1.0,
-      "f1-score": 0.9523809523809523,
+      "precision": 0.9245283018867925,
+      "recall": 0.98,
+      "f1-score": 0.9514563106796117,
       "support": 50.0
     },
     "SOUND_TOO_MUCH_BASS": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 0.0
+      "precision": 0.8695652173913043,
+      "recall": 0.8,
+      "f1-score": 0.8333333333333334,
+      "support": 50.0
     },
     "SPEECH_ECHOIC": {
-      "precision": 0.8679245283018868,
-      "recall": 0.92,
-      "f1-score": 0.8932038834951457,
+      "precision": 0.9375,
+      "recall": 0.9,
+      "f1-score": 0.9183673469387755,
       "support": 50.0
     },
     "SPEECH_POOR_QUALITY": {
-      "precision": 0.7719298245614035,
-      "recall": 0.88,
-      "f1-score": 0.822429906542056,
+      "precision": 0.7735849056603774,
+      "recall": 0.82,
+      "f1-score": 0.7961165048543689,
       "support": 50.0
     },
     "SPEECH_TOO_LOUD_BOOMY": {
-      "precision": 0.9117647058823529,
-      "recall": 0.62,
-      "f1-score": 0.7380952380952381,
+      "precision": 0.6307692307692307,
+      "recall": 0.82,
+      "f1-score": 0.7130434782608696,
       "support": 50.0
     },
     "SPEECH_TOO_SOFT": {
-      "precision": 0.45901639344262296,
-      "recall": 0.56,
-      "f1-score": 0.5045045045045045,
+      "precision": 0.8,
+      "recall": 0.64,
+      "f1-score": 0.7111111111111111,
       "support": 50.0
     },
     "SPEECH_WHISPER_DISTANT_SOFT": {
-      "precision": 0.7209302325581395,
-      "recall": 0.62,
-      "f1-score": 0.6666666666666666,
+      "precision": 0.7931034482758621,
+      "recall": 0.92,
+      "f1-score": 0.8518518518518519,
       "support": 50.0
     },
-    "accuracy": 0.8322938322938322,
+    "accuracy": 0.8496435515230071,
     "macro avg": {
-      "precision": 0.7995550674142325,
-      "recall": 0.778873162168093,
-      "f1-score": 0.7816544738091248,
-      "support": 1443.0
+      "precision": 0.8668832607911771,
+      "recall": 0.8498683344305465,
+      "f1-score": 0.8524195201298046,
+      "support": 1543.0
     },
     "weighted avg": {
-      "precision": 0.8543016156788991,
-      "recall": 0.8322938322938322,
-      "f1-score": 0.8351823045765693,
-      "support": 1443.0
+      "precision": 0.8666086422776443,
+      "recall": 0.8496435515230071,
+      "f1-score": 0.8521454771581082,
+      "support": 1543.0
     }
   },
   "per_batch": {
+    "hearing_aid_prompt_regenerated_v0_3_batch14": {
+      "rows": 50,
+      "correct": 40,
+      "accuracy": 0.8,
+      "true_intent": "SOUND_TOO_MUCH_BASS",
+      "majority_prediction": "SOUND_TOO_MUCH_BASS"
+    },
     "hearing_aid_prompt_regenerated_v0_3_batch21": {
       "rows": 50,
-      "correct": 47,
-      "accuracy": 0.94,
+      "correct": 49,
+      "accuracy": 0.98,
       "true_intent": "NOISE_BACKGROUND_RESTAURANT",
       "majority_prediction": "NOISE_BACKGROUND_RESTAURANT"
     },
+    "hearing_aid_prompt_regenerated_v0_3_batch22": {
+      "rows": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "true_intent": "NOISE_WIND_TOO_LOUD",
+      "majority_prediction": "NOISE_WIND_TOO_LOUD"
+    },
     "hearing_aid_prompt_regenerated_v0_3_batch23": {
       "rows": 50,
-      "correct": 39,
-      "accuracy": 0.78,
+      "correct": 37,
+      "accuracy": 0.74,
       "true_intent": "NOISE_CROWD_TOO_LOUD",
       "majority_prediction": "NOISE_CROWD_TOO_LOUD"
     },
@@ -296,22 +310,22 @@
     },
     "hearing_aid_prompt_regenerated_v0_3_batch26": {
       "rows": 50,
-      "correct": 44,
-      "accuracy": 0.88,
+      "correct": 46,
+      "accuracy": 0.92,
       "true_intent": "LOUDNESS_LOUD_TOO_LOUD",
       "majority_prediction": "LOUDNESS_LOUD_TOO_LOUD"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch28": {
       "rows": 50,
-      "correct": 46,
-      "accuracy": 0.92,
+      "correct": 44,
+      "accuracy": 0.88,
       "true_intent": "LOUDNESS_NEARBY_TOO_LOUD",
       "majority_prediction": "LOUDNESS_NEARBY_TOO_LOUD"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch3": {
       "rows": 50,
-      "correct": 38,
-      "accuracy": 0.76,
+      "correct": 37,
+      "accuracy": 0.74,
       "true_intent": "LOUDNESS_LOUD_DISTORTED",
       "majority_prediction": "LOUDNESS_LOUD_DISTORTED"
     },
@@ -324,64 +338,64 @@
     },
     "hearing_aid_prompt_regenerated_v0_3_batch36": {
       "rows": 50,
-      "correct": 43,
-      "accuracy": 0.86,
+      "correct": 42,
+      "accuracy": 0.84,
       "true_intent": "OWN_VOICE_THIN",
       "majority_prediction": "OWN_VOICE_THIN"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch37": {
       "rows": 50,
-      "correct": 49,
-      "accuracy": 0.98,
+      "correct": 45,
+      "accuracy": 0.9,
       "true_intent": "OWN_VOICE_BOOMY_LOUD",
       "majority_prediction": "OWN_VOICE_BOOMY_LOUD"
     },
-    "hearing_aid_prompt_regenerated_v0_3_batch38": {
-      "rows": 50,
-      "correct": 28,
-      "accuracy": 0.56,
-      "true_intent": "SPEECH_TOO_SOFT",
-      "majority_prediction": "SPEECH_TOO_SOFT"
-    },
-    "hearing_aid_prompt_regenerated_v0_3_batch41": {
+    "hearing_aid_prompt_regenerated_v0_3_batch39": {
       "rows": 50,
       "correct": 46,
       "accuracy": 0.92,
+      "true_intent": "SPEECH_WHISPER_DISTANT_SOFT",
+      "majority_prediction": "SPEECH_WHISPER_DISTANT_SOFT"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch40": {
+      "rows": 50,
+      "correct": 41,
+      "accuracy": 0.82,
+      "true_intent": "SPEECH_TOO_LOUD_BOOMY",
+      "majority_prediction": "SPEECH_TOO_LOUD_BOOMY"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch41": {
+      "rows": 50,
+      "correct": 45,
+      "accuracy": 0.9,
       "true_intent": "SPEECH_ECHOIC",
       "majority_prediction": "SPEECH_ECHOIC"
     },
-    "hearing_aid_prompt_regenerated_v0_3_batch42": {
-      "rows": 50,
-      "correct": 44,
-      "accuracy": 0.88,
-      "true_intent": "SPEECH_POOR_QUALITY",
-      "majority_prediction": "SPEECH_POOR_QUALITY"
-    },
     "hearing_aid_prompt_regenerated_v0_3_batch43": {
       "rows": 50,
-      "correct": 50,
-      "accuracy": 1.0,
+      "correct": 49,
+      "accuracy": 0.98,
       "true_intent": "SOUND_TINY_METALLIC_SHARP",
       "majority_prediction": "SOUND_TINY_METALLIC_SHARP"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch44": {
       "rows": 50,
-      "correct": 47,
-      "accuracy": 0.94,
+      "correct": 49,
+      "accuracy": 0.98,
       "true_intent": "SOUND_ECHOIC",
       "majority_prediction": "SOUND_ECHOIC"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch49": {
       "rows": 48,
-      "correct": 44,
-      "accuracy": 0.9167,
+      "correct": 46,
+      "accuracy": 0.9583,
       "true_intent": "FEEDBACK_WHISTLING",
       "majority_prediction": "FEEDBACK_WHISTLING"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch51": {
       "rows": 50,
-      "correct": 35,
-      "accuracy": 0.7,
+      "correct": 38,
+      "accuracy": 0.76,
       "true_intent": "NOISE_SUDDEN_UNCOMFORTABLE",
       "majority_prediction": "NOISE_SUDDEN_UNCOMFORTABLE"
     },
@@ -408,43 +422,43 @@
     },
     "hearing_aid_prompt_regenerated_v0_3_batch63": {
       "rows": 49,
-      "correct": 41,
-      "accuracy": 0.8367,
+      "correct": 39,
+      "accuracy": 0.7959,
       "true_intent": "OWN_VOICE_MUFFLED_DULL",
       "majority_prediction": "OWN_VOICE_MUFFLED_DULL"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch65": {
       "rows": 50,
-      "correct": 44,
-      "accuracy": 0.88,
+      "correct": 43,
+      "accuracy": 0.86,
       "true_intent": "OWN_VOICE_SHARP_METALLIC",
       "majority_prediction": "OWN_VOICE_SHARP_METALLIC"
     },
-    "hearing_aid_prompt_regenerated_v0_3_batch69": {
+    "hearing_aid_prompt_regenerated_v0_3_batch68": {
       "rows": 50,
-      "correct": 31,
-      "accuracy": 0.62,
-      "true_intent": "SPEECH_WHISPER_DISTANT_SOFT",
-      "majority_prediction": "SPEECH_WHISPER_DISTANT_SOFT"
+      "correct": 32,
+      "accuracy": 0.64,
+      "true_intent": "SPEECH_TOO_SOFT",
+      "majority_prediction": "SPEECH_TOO_SOFT"
     },
-    "hearing_aid_prompt_regenerated_v0_3_batch70": {
+    "hearing_aid_prompt_regenerated_v0_3_batch72": {
       "rows": 50,
-      "correct": 31,
-      "accuracy": 0.62,
-      "true_intent": "SPEECH_TOO_LOUD_BOOMY",
-      "majority_prediction": "SPEECH_TOO_LOUD_BOOMY"
+      "correct": 41,
+      "accuracy": 0.82,
+      "true_intent": "SPEECH_POOR_QUALITY",
+      "majority_prediction": "SPEECH_POOR_QUALITY"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch75": {
       "rows": 50,
-      "correct": 43,
-      "accuracy": 0.86,
+      "correct": 41,
+      "accuracy": 0.82,
       "true_intent": "SOUND_MUFFLED_DULL",
       "majority_prediction": "SOUND_MUFFLED_DULL"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch76": {
       "rows": 50,
-      "correct": 45,
-      "accuracy": 0.9,
+      "correct": 46,
+      "accuracy": 0.92,
       "true_intent": "SOUND_ARTIFICIAL_MECHANICAL",
       "majority_prediction": "SOUND_ARTIFICIAL_MECHANICAL"
     },
@@ -457,30 +471,30 @@
     },
     "hearing_aid_prompt_regenerated_v0_3_batch78": {
       "rows": 50,
-      "correct": 21,
-      "accuracy": 0.42,
+      "correct": 36,
+      "accuracy": 0.72,
       "true_intent": "NOISE_AMBIENT_NOTICEABLE",
-      "majority_prediction": "NOISE_BACKGROUND_RESTAURANT"
+      "majority_prediction": "NOISE_AMBIENT_NOTICEABLE"
     },
-    "hearing_aid_prompt_regenerated_v0_3_batch81": {
+    "hearing_aid_prompt_regenerated_v0_3_batch85": {
       "rows": 50,
-      "correct": 47,
-      "accuracy": 0.94,
-      "true_intent": "NOISE_WIND_TOO_LOUD",
-      "majority_prediction": "NOISE_WIND_TOO_LOUD"
+      "correct": 35,
+      "accuracy": 0.7,
+      "true_intent": "NOISE_SOUND_UNCOMFORTABLE",
+      "majority_prediction": "NOISE_SOUND_UNCOMFORTABLE"
     },
     "hearing_aid_prompt_regenerated_v0_3_batch9": {
       "rows": 50,
-      "correct": 47,
-      "accuracy": 0.94,
+      "correct": 44,
+      "accuracy": 0.88,
       "true_intent": "LOUDNESS_WATER_FAN_LOUD",
       "majority_prediction": "LOUDNESS_WATER_FAN_LOUD"
     }
   },
   "leakage": {
     "checked": true,
-    "train_batches": 34,
-    "test_batches": 29,
+    "train_batches": 35,
+    "test_batches": 31,
     "overlap": [],
     "leak": false
   }

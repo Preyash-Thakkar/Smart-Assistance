@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-25T10:42:32.686607+00:00",
+  "generated_at_utc": "2026-11-25T12:51:51.624799+00:00",
   "root": "/home/dhruvit/WeHear/Smart-Assistance",
   "taxonomy": {
     "intent_count": 31,
@@ -71,23 +71,23 @@
     }
   },
   "dataset": {
-    "generated_at_utc": "2026-11-25T10:42:32.631322+00:00",
+    "generated_at_utc": "2026-11-25T12:51:51.574307+00:00",
     "root": "/home/dhruvit/WeHear/Smart-Assistance",
     "include_quarantined": false,
     "keep_hard_negatives": false,
     "min_naturalness": 1.0,
     "batches": {
-      "total": 84,
-      "included": 74,
+      "total": 85,
+      "included": 77,
       "quarantined": [],
       "quarantine_file_entries": [],
       "unmapped": []
     },
     "rows": {
-      "total": 3684,
+      "total": 3834,
       "skipped": {
         "exact_duplicate": 16,
-        "redundant_replacement": 500
+        "redundant_replacement": 400
       }
     },
     "duplicates": {
@@ -332,8 +332,8 @@
         "rows_kept": 50,
         "content_source_overlap": 1.0,
         "flags": [],
-        "rows_used": 0,
-        "replacement_used": false
+        "rows_used": 50,
+        "replacement_used": true
       },
       "15": {
         "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch15",
@@ -356,8 +356,8 @@
         "rows_kept": 50,
         "content_source_overlap": 1.0,
         "flags": [],
-        "rows_used": 0,
-        "replacement_used": false
+        "rows_used": 50,
+        "replacement_used": true
       },
       "17": {
         "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch17",
@@ -411,7 +411,7 @@
         "source_question": "Street&#x2F;Traffic noise is too loud",
         "rows_in_file": 50,
         "rows_kept": 50,
-        "content_source_overlap": 0.744,
+        "content_source_overlap": 0.743,
         "flags": [],
         "rows_used": 50
       },
@@ -1061,7 +1061,7 @@
         "source_question": "Background Noise (e.g., Restaurants) Too Loud",
         "rows_in_file": 50,
         "rows_kept": 50,
-        "content_source_overlap": 0.658,
+        "content_source_overlap": 0.657,
         "flags": [],
         "rows_used": 50
       },
@@ -1110,6 +1110,17 @@
         "flags": [],
         "rows_used": 0,
         "replacement_used": false
+      },
+      "85": {
+        "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch85",
+        "intent_code": "NOISE_SOUND_UNCOMFORTABLE",
+        "source_row": 17,
+        "source_question": "Sound in noise is uncomfortable",
+        "rows_in_file": 50,
+        "rows_kept": 50,
+        "content_source_overlap": 1.0,
+        "flags": [],
+        "rows_used": 50
       }
     },
     "replacements": {
@@ -1126,7 +1137,16 @@
         83,
         84
       ],
+      "always_use": [
+        16
+      ],
+      "keep_eligible": [
+        14,
+        17
+      ],
       "used": [
+        14,
+        16,
         17
       ],
       "dropped_redundant": [
@@ -1134,15 +1154,13 @@
         11,
         12,
         13,
-        14,
         15,
-        16,
         79,
         83,
         84
       ],
-      "rows_kept": 3684,
-      "rows_dropped": 500
+      "rows_kept": 3834,
+      "rows_dropped": 400
     }
   },
   "database": {
@@ -1190,10 +1208,10 @@
     "batches": {
       "train": [
         "hearing_aid_prompt_regenerated_v0_3_batch1",
+        "hearing_aid_prompt_regenerated_v0_3_batch16",
         "hearing_aid_prompt_regenerated_v0_3_batch17",
         "hearing_aid_prompt_regenerated_v0_3_batch18",
         "hearing_aid_prompt_regenerated_v0_3_batch19",
-        "hearing_aid_prompt_regenerated_v0_3_batch22",
         "hearing_aid_prompt_regenerated_v0_3_batch24",
         "hearing_aid_prompt_regenerated_v0_3_batch27",
         "hearing_aid_prompt_regenerated_v0_3_batch29",
@@ -1201,8 +1219,8 @@
         "hearing_aid_prompt_regenerated_v0_3_batch31",
         "hearing_aid_prompt_regenerated_v0_3_batch33",
         "hearing_aid_prompt_regenerated_v0_3_batch35",
-        "hearing_aid_prompt_regenerated_v0_3_batch39",
-        "hearing_aid_prompt_regenerated_v0_3_batch40",
+        "hearing_aid_prompt_regenerated_v0_3_batch38",
+        "hearing_aid_prompt_regenerated_v0_3_batch42",
         "hearing_aid_prompt_regenerated_v0_3_batch45",
         "hearing_aid_prompt_regenerated_v0_3_batch46",
         "hearing_aid_prompt_regenerated_v0_3_batch47",
@@ -1215,13 +1233,14 @@
         "hearing_aid_prompt_regenerated_v0_3_batch64",
         "hearing_aid_prompt_regenerated_v0_3_batch66",
         "hearing_aid_prompt_regenerated_v0_3_batch67",
-        "hearing_aid_prompt_regenerated_v0_3_batch68",
+        "hearing_aid_prompt_regenerated_v0_3_batch69",
+        "hearing_aid_prompt_regenerated_v0_3_batch70",
         "hearing_aid_prompt_regenerated_v0_3_batch71",
-        "hearing_aid_prompt_regenerated_v0_3_batch72",
         "hearing_aid_prompt_regenerated_v0_3_batch73",
         "hearing_aid_prompt_regenerated_v0_3_batch74",
         "hearing_aid_prompt_regenerated_v0_3_batch8",
         "hearing_aid_prompt_regenerated_v0_3_batch80",
+        "hearing_aid_prompt_regenerated_v0_3_batch81",
         "hearing_aid_prompt_regenerated_v0_3_batch82"
       ],
       "val": [
@@ -1238,7 +1257,9 @@
         "hearing_aid_prompt_regenerated_v0_3_batch7"
       ],
       "test_holdout": [
+        "hearing_aid_prompt_regenerated_v0_3_batch14",
         "hearing_aid_prompt_regenerated_v0_3_batch21",
+        "hearing_aid_prompt_regenerated_v0_3_batch22",
         "hearing_aid_prompt_regenerated_v0_3_batch23",
         "hearing_aid_prompt_regenerated_v0_3_batch25",
         "hearing_aid_prompt_regenerated_v0_3_batch26",
@@ -1247,9 +1268,9 @@
         "hearing_aid_prompt_regenerated_v0_3_batch34",
         "hearing_aid_prompt_regenerated_v0_3_batch36",
         "hearing_aid_prompt_regenerated_v0_3_batch37",
-        "hearing_aid_prompt_regenerated_v0_3_batch38",
+        "hearing_aid_prompt_regenerated_v0_3_batch39",
+        "hearing_aid_prompt_regenerated_v0_3_batch40",
         "hearing_aid_prompt_regenerated_v0_3_batch41",
-        "hearing_aid_prompt_regenerated_v0_3_batch42",
         "hearing_aid_prompt_regenerated_v0_3_batch43",
         "hearing_aid_prompt_regenerated_v0_3_batch44",
         "hearing_aid_prompt_regenerated_v0_3_batch49",
@@ -1259,33 +1280,30 @@
         "hearing_aid_prompt_regenerated_v0_3_batch61",
         "hearing_aid_prompt_regenerated_v0_3_batch63",
         "hearing_aid_prompt_regenerated_v0_3_batch65",
-        "hearing_aid_prompt_regenerated_v0_3_batch69",
-        "hearing_aid_prompt_regenerated_v0_3_batch70",
+        "hearing_aid_prompt_regenerated_v0_3_batch68",
+        "hearing_aid_prompt_regenerated_v0_3_batch72",
         "hearing_aid_prompt_regenerated_v0_3_batch75",
         "hearing_aid_prompt_regenerated_v0_3_batch76",
         "hearing_aid_prompt_regenerated_v0_3_batch77",
         "hearing_aid_prompt_regenerated_v0_3_batch78",
-        "hearing_aid_prompt_regenerated_v0_3_batch81",
+        "hearing_aid_prompt_regenerated_v0_3_batch85",
         "hearing_aid_prompt_regenerated_v0_3_batch9"
       ]
     },
     "batch_counts": {
-      "train": 34,
+      "train": 35,
       "val": 11,
-      "test_holdout": 29
+      "test_holdout": 31
     },
     "row_counts": {
-      "train": 1692,
+      "train": 1742,
       "val": 549,
-      "test_holdout": 1443
+      "test_holdout": 1543
     },
     "train_only_batches": [
-      "hearing_aid_prompt_regenerated_v0_3_batch17"
+      "hearing_aid_prompt_regenerated_v0_3_batch16"
     ],
-    "warnings": [
-      "NOISE_SOUND_UNCOMFORTABLE has no non-replacement batch; it can only appear in train.",
-      "SOUND_TOO_MUCH_BASS has only one non-replacement batch (hearing_aid_prompt_regenerated_v0_3_batch47); it can only appear in train."
-    ]
+    "warnings": []
   },
   "leakage": {
     "train_test_batch_overlap": [],
@@ -1501,11 +1519,12 @@
     },
     "NOISE_AMBIENT_NOTICEABLE": {
       "train": {
-        "rows": 50,
+        "rows": 100,
         "batches": [
+          "hearing_aid_prompt_regenerated_v0_3_batch16",
           "hearing_aid_prompt_regenerated_v0_3_batch50"
         ],
-        "batch_count": 1
+        "batch_count": 2
       },
       "val": {
         "rows": 0,
@@ -1582,9 +1601,11 @@
         "batch_count": 0
       },
       "test_holdout": {
-        "rows": 0,
-        "batches": [],
-        "batch_count": 0
+        "rows": 50,
+        "batches": [
+          "hearing_aid_prompt_regenerated_v0_3_batch85"
+        ],
+        "batch_count": 1
       }
     },
     "NOISE_SUDDEN_UNCOMFORTABLE": {
@@ -1612,7 +1633,7 @@
       "train": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch22"
+          "hearing_aid_prompt_regenerated_v0_3_batch81"
         ],
         "batch_count": 1
       },
@@ -1626,7 +1647,7 @@
       "test_holdout": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch81"
+          "hearing_aid_prompt_regenerated_v0_3_batch22"
         ],
         "batch_count": 1
       }
@@ -1855,9 +1876,11 @@
         "batch_count": 0
       },
       "test_holdout": {
-        "rows": 0,
-        "batches": [],
-        "batch_count": 0
+        "rows": 50,
+        "batches": [
+          "hearing_aid_prompt_regenerated_v0_3_batch14"
+        ],
+        "batch_count": 1
       }
     },
     "SPEECH_ECHOIC": {
@@ -1885,7 +1908,7 @@
       "train": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch72"
+          "hearing_aid_prompt_regenerated_v0_3_batch42"
         ],
         "batch_count": 1
       },
@@ -1897,7 +1920,7 @@
       "test_holdout": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch42"
+          "hearing_aid_prompt_regenerated_v0_3_batch72"
         ],
         "batch_count": 1
       }
@@ -1906,7 +1929,7 @@
       "train": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch40"
+          "hearing_aid_prompt_regenerated_v0_3_batch70"
         ],
         "batch_count": 1
       },
@@ -1918,7 +1941,7 @@
       "test_holdout": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch70"
+          "hearing_aid_prompt_regenerated_v0_3_batch40"
         ],
         "batch_count": 1
       }
@@ -1927,7 +1950,7 @@
       "train": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch68"
+          "hearing_aid_prompt_regenerated_v0_3_batch38"
         ],
         "batch_count": 1
       },
@@ -1939,7 +1962,7 @@
       "test_holdout": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch38"
+          "hearing_aid_prompt_regenerated_v0_3_batch68"
         ],
         "batch_count": 1
       }
@@ -1948,7 +1971,7 @@
       "train": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch39"
+          "hearing_aid_prompt_regenerated_v0_3_batch69"
         ],
         "batch_count": 1
       },
@@ -1960,31 +1983,28 @@
       "test_holdout": {
         "rows": 50,
         "batches": [
-          "hearing_aid_prompt_regenerated_v0_3_batch69"
+          "hearing_aid_prompt_regenerated_v0_3_batch39"
         ],
         "batch_count": 1
       }
     }
   },
   "warnings": [
-    "NOISE_SOUND_UNCOMFORTABLE has no non-replacement batch; it can only appear in train.",
-    "SOUND_TOO_MUCH_BASS has only one non-replacement batch (hearing_aid_prompt_regenerated_v0_3_batch47); it can only appear in train.",
-    "Intents without a held-out test batch: NOISE_SOUND_UNCOMFORTABLE, SOUND_TOO_MUCH_BASS",
     "Intents without a validation batch: FEEDBACK_WHISTLING, NOISE_AMBIENT_NOTICEABLE, NOISE_SOUND_UNCOMFORTABLE, NOISE_SUDDEN_UNCOMFORTABLE, OWN_VOICE_BOOMY_LOUD, OWN_VOICE_HOLLOW, OWN_VOICE_MUFFLED_DULL, OWN_VOICE_SHARP_METALLIC, OWN_VOICE_THIN, SOUND_ARTIFICIAL_MECHANICAL, SOUND_DISTORTED, SOUND_ECHOIC, SOUND_MUFFLED_DULL, SOUND_TINY_METALLIC_SHARP, SOUND_TOO_MUCH_BASS, SPEECH_ECHOIC, SPEECH_POOR_QUALITY, SPEECH_TOO_LOUD_BOOMY, SPEECH_TOO_SOFT, SPEECH_WHISPER_DISTANT_SOFT"
   ],
   "totals": {
-    "rows": 3684,
-    "batches": 74,
+    "rows": 3834,
+    "batches": 77,
     "intents": 31,
     "rows_by_split": {
-      "train": 1692,
+      "train": 1742,
       "val": 549,
-      "test_holdout": 1443
+      "test_holdout": 1543
     },
     "batches_by_split": {
-      "train": 34,
+      "train": 35,
       "val": 11,
-      "test_holdout": 29
+      "test_holdout": 31
     }
   }
 }

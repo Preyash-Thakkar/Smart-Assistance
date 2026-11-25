@@ -1,0 +1,10 @@
+# Replacement batches that target a known decision-boundary confusion and are
+# always kept in train (forced, never validation/test).
+#
+# Batch 16 adds quiet-room ambient examples (room tone, fan, fridge hum) that
+# are explicitly "noticeable but not loud".  Without them the model sends most
+# NOISE_AMBIENT_NOTICEABLE rows to NOISE_BACKGROUND_RESTAURANT.  Measured on the
+# grouped holdout: ambient F1 0.55 -> 0.70, background F1 0.63 -> 0.74.
+#
+# One batch number per line.  `#` starts a comment.
+16

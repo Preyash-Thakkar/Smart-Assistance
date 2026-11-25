@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Hearing-aid user complaint intent dataset",
+  "version": "0.3",
+  "batch_number": 17,
+  "batch_scope": "One complaint × one language",
+  "complaint_id": "PROV-CMP-0085",
+  "complaint_text": " Sound in noise is uncomfortable",
+  "topic": "Noise",
+  "topic_id": "66b060d95c6674686e02d026",
+  "language": "English",
+  "lang_code": "en-IN",
+  "row_count": 50,
+  "format": "JSONL UTF-8",
+  "status": "Synthetic draft; unreviewed"
+}

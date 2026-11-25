@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "lang_code": "en-IN",
+  "terms": [
+    {
+      "term": "sound in noise",
+      "meaning": "A target sound heard while background noise is present."
+    },
+    {
+      "term": "uncomfortable",
+      "meaning": "Harsh or unpleasant to listen to."
+    },
+    {
+      "term": "background noise",
+      "meaning": "Sound around the listener that is not the main target."
+    }
+  ],
+  "notes": "Regenerated template glossary. Terms describe the source complaint concept; not a clinically validated terminology standard."
+}

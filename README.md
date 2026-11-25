@@ -50,7 +50,7 @@ P0 fixes this:
   training labels.
 
 After regenerating the mismatched batches, all 31 intents have usable training
-data. `NOISE_SOUND_UNCOMFORTABLE` is supported by a single batch (17), so it can
+data, and all 31 now have held-out test support. `NOISE_SOUND_UNCOMFORTABLE` is supported by a single batch (17), so it can
 only appear in train and the split report warns about it.
 
 ## Quick start
@@ -86,10 +86,10 @@ The API is then available at `http://localhost:8000/docs`.
 ## Baseline
 
 The post-repair grouped-holdout baseline is recorded in
-[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **83.23% accuracy / 78.17%
-macro-F1** on 1,443 utterances from 29 unseen batches, with no train/test batch
-overlap and all 31 intents trainable. Read the caveats there before treating it
-as production accuracy.
+[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **84.96% accuracy / 85.24%
+macro-F1** on 1,543 utterances from 31 unseen batches, with no train/test batch
+overlap and all 31 intents trained and evaluated. Read the caveats there before
+treating it as production accuracy.
 
 ## Split modes
 

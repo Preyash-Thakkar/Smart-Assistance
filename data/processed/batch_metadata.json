@@ -155,8 +155,8 @@
     "rows_kept": 50,
     "content_source_overlap": 1.0,
     "flags": [],
-    "rows_used": 0,
-    "replacement_used": false
+    "rows_used": 50,
+    "replacement_used": true
   },
   "15": {
     "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch15",
@@ -179,8 +179,8 @@
     "rows_kept": 50,
     "content_source_overlap": 1.0,
     "flags": [],
-    "rows_used": 0,
-    "replacement_used": false
+    "rows_used": 50,
+    "replacement_used": true
   },
   "17": {
     "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch17",
@@ -234,7 +234,7 @@
     "source_question": "Street&#x2F;Traffic noise is too loud",
     "rows_in_file": 50,
     "rows_kept": 50,
-    "content_source_overlap": 0.744,
+    "content_source_overlap": 0.743,
     "flags": [],
     "rows_used": 50
   },
@@ -884,7 +884,7 @@
     "source_question": "Background Noise (e.g., Restaurants) Too Loud",
     "rows_in_file": 50,
     "rows_kept": 50,
-    "content_source_overlap": 0.658,
+    "content_source_overlap": 0.657,
     "flags": [],
     "rows_used": 50
   },
@@ -933,5 +933,16 @@
     "flags": [],
     "rows_used": 0,
     "replacement_used": false
+  },
+  "85": {
+    "batch_id": "hearing_aid_prompt_regenerated_v0_3_batch85",
+    "intent_code": "NOISE_SOUND_UNCOMFORTABLE",
+    "source_row": 17,
+    "source_question": "Sound in noise is uncomfortable",
+    "rows_in_file": 50,
+    "rows_kept": 50,
+    "content_source_overlap": 1.0,
+    "flags": [],
+    "rows_used": 50
   }
 }
