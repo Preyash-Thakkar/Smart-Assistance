@@ -71,11 +71,16 @@ python data_pipeline/clean_data.py
 # 3. Validate without loading a model
 python scripts/validate_dataset.py
 
-# 4. Train
-python training/train_classifier.py
+# 4. Train (config that produced the recorded baseline)
+python training/train_classifier.py \
+  --base-model sentence-transformers/all-MiniLM-L12-v2 \
+  --iterations 32 --epochs 1 --head-epochs 16
 
 # 5. Evaluate on unseen batches
 python evaluation/evaluate.py
+
+# Regression tests for the metric averaging (stdlib unittest, no extra deps)
+python -m unittest discover -s tests
 
 # 6. Serve
 python inference/api.py
@@ -85,11 +90,13 @@ The API is then available at `http://localhost:8000/docs`.
 
 ## Baseline
 
-The post-repair grouped-holdout baseline is recorded in
-[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **84.96% accuracy / 85.24%
+The post-repair, post-tuning grouped-holdout baseline is recorded in
+[`evaluation/BASELINE.md`](evaluation/BASELINE.md): **89.44% accuracy / 89.50%
 macro-F1** on 1,543 utterances from 31 unseen batches, with no train/test batch
-overlap and all 31 intents trained and evaluated. Read the caveats there before
-treating it as production accuracy.
+overlap and all 31 intents trained and evaluated. The model is SetFit on
+`sentence-transformers/all-MiniLM-L12-v2` with `--iterations 32 --epochs 1
+--head-epochs 16`; tuning history and per-class results are in that file. Read
+the caveats there before treating it as production accuracy.
 
 ## Split modes
 
@@ -118,6 +125,10 @@ some intents out of test, so check `data/processed/split_report.json`.
 | `data/processed/label_map.json` | Intent → class index |
 | `evaluation/report.json` | Accuracy, macro-F1, per-class report, leakage |
 | `evaluation/confusion_matrix.csv` | Confusion matrix |
+| `evaluation/BASELINE.md` | Current baseline, tuning history, weak classes |
+| `evaluation/tuning/results.json` | Sweep results (validation macro-F1 per config) |
+| `models/intent_classifier/` | Promoted model served by the API (weights via release asset, see `BASELINE.md`) |
+| `tests/test_metrics.py` | Regression test for metric averaging |
 
 ## Quarantine and regeneration
 
@@ -167,6 +178,7 @@ python data_pipeline/clean_data.py --include-quarantined
 2. Add real user utterances and active-learning review.
 3. Generate a second batch for `NOISE_SOUND_UNCOMFORTABLE` and
    `SOUND_TOO_MUCH_BASS` so both can appear in validation/test.
-4. Tune the model only after the corrected baseline is measured
-   (`--iterations`, `--epochs`, stronger encoder, hierarchical topic→intent).
+4. ~~Tune the model only after the corrected baseline is measured.~~ Done:
+   MiniLM-L12 + `iterations 32` lifted test macro-F1 85.24% → 89.50%. Next gains
+   need targeted data for the quiet/bass/boominess boundary, not more iterations.
 5. Evaluate end-to-end DSP-action accuracy, not only intent accuracy.

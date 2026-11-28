@@ -43,8 +43,7 @@ def load_jsonl(path: str) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def check_leakage(split: str, test_df: pd.DataFrame) -> dict:
-    train_path = os.path.join(SPLIT_DIR, "train.jsonl")
+def check_leakage(split: str, test_df: pd.DataFrame, train_path: str) -> dict:
     if split == "train" or not os.path.exists(train_path):
         return {"checked": False}
     train_df = load_jsonl(train_path)
@@ -68,15 +67,43 @@ def save_confusion_matrix(labels: list[str], matrix, path: str) -> None:
             writer.writerow([label] + [int(value) for value in row])
 
 
+def compute_metrics(y_true: list[str], y_pred: list[str]):
+    """Score predictions, averaging only over classes present in ``y_true``.
+
+    Averaging over the union of true and predicted labels adds support-0
+    classes and silently deflates macro/weighted F1: an 11-intent validation
+    split read 45.15% instead of 90.31% after one spurious prediction.
+    """
+    labels = sorted(set(y_true))
+    accuracy = accuracy_score(y_true, y_pred)
+    macro_f1 = f1_score(y_true, y_pred, labels=labels, average="macro", zero_division=0)
+    weighted_f1 = f1_score(y_true, y_pred, labels=labels, average="weighted", zero_division=0)
+    report = classification_report(
+        y_true, y_pred, labels=labels, output_dict=True, zero_division=0
+    )
+    matrix = confusion_matrix(y_true, y_pred, labels=labels)
+    return accuracy, macro_f1, weighted_f1, report, matrix, labels
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--split", default="test_holdout")
+    parser.add_argument(
+        "--data",
+        default=None,
+        help="Explicit evaluation jsonl (overrides --split lookup).",
+    )
+    parser.add_argument(
+        "--train",
+        default=os.path.join(SPLIT_DIR, "train.jsonl"),
+        help="Train jsonl used only for the batch-leakage check.",
+    )
     parser.add_argument("--model-dir", default=MODEL_DIR)
     parser.add_argument("--report-out", default=REPORT_PATH)
     parser.add_argument("--matrix-out", default=MATRIX_PATH)
     args = parser.parse_args()
 
-    test_path = os.path.join(SPLIT_DIR, f"{args.split}.jsonl")
+    test_path = args.data or os.path.join(SPLIT_DIR, f"{args.split}.jsonl")
     if not os.path.exists(test_path):
         raise SystemExit(f"Missing split: {test_path}. Run data_pipeline/clean_data.py first.")
     if not os.path.isdir(args.model_dir):
@@ -92,7 +119,7 @@ def main() -> None:
 
     model = SetFitModel.from_pretrained(args.model_dir)
 
-    leakage = check_leakage(args.split, test_df)
+    leakage = check_leakage(args.split, test_df, args.train)
     if leakage.get("leak"):
         print("\nWARNING: train/test batch leakage detected:")
         print("  ", leakage["overlap"])
@@ -102,14 +129,9 @@ def main() -> None:
     y_true = list(test_df["intent_code"])
     y_pred = list(model.predict(list(test_df["utterance"])))
 
-    labels = sorted(set(y_true) | set(y_pred))
-    accuracy = accuracy_score(y_true, y_pred)
-    macro_f1 = f1_score(y_true, y_pred, average="macro", zero_division=0)
-    weighted_f1 = f1_score(y_true, y_pred, average="weighted", zero_division=0)
-    report = classification_report(
-        y_true, y_pred, labels=labels, output_dict=True, zero_division=0
-    )
-    matrix = confusion_matrix(y_true, y_pred, labels=labels)
+    # Macro/weighted metrics must average over the classes actually present in
+    # this split; see compute_metrics for why.
+    accuracy, macro_f1, weighted_f1, report, matrix, labels = compute_metrics(y_true, y_pred)
 
     print(f"\nAccuracy:    {accuracy * 100:.2f}%")
     print(f"Macro F1:    {macro_f1 * 100:.2f}%")
@@ -147,6 +169,8 @@ def main() -> None:
 
     payload = {
         "split": args.split,
+        "data": test_path,
+        "train": args.train,
         "model": args.model_dir,
         "rows": len(test_df),
         "accuracy": round(accuracy, 6),

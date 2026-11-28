@@ -1,0 +1,208 @@
+{
+  "split": "val",
+  "data": "data/processed/val.jsonl",
+  "train": "data/processed/train.jsonl",
+  "model": "models/experiments/minilm12_it32_ep1_h16",
+  "rows": 549,
+  "accuracy": 0.939891,
+  "macro_f1": 0.958168,
+  "weighted_f1": 0.958299,
+  "labels": [
+    "LOUDNESS_ALARMS_CRYING_LOUD",
+    "LOUDNESS_CHEWING_TOO_LOUD",
+    "LOUDNESS_LOUD_DISTORTED",
+    "LOUDNESS_LOUD_TOO_LOUD",
+    "LOUDNESS_NEARBY_TOO_LOUD",
+    "LOUDNESS_SOFT_TOO_SOFT",
+    "LOUDNESS_SUDDEN_SOUNDS_LOUD",
+    "LOUDNESS_WATER_FAN_LOUD",
+    "NOISE_BACKGROUND_RESTAURANT",
+    "NOISE_CROWD_TOO_LOUD",
+    "NOISE_WIND_TOO_LOUD"
+  ],
+  "support": {
+    "LOUDNESS_ALARMS_CRYING_LOUD": 50,
+    "LOUDNESS_CHEWING_TOO_LOUD": 50,
+    "LOUDNESS_LOUD_DISTORTED": 50,
+    "LOUDNESS_LOUD_TOO_LOUD": 50,
+    "LOUDNESS_NEARBY_TOO_LOUD": 50,
+    "LOUDNESS_SOFT_TOO_SOFT": 49,
+    "LOUDNESS_SUDDEN_SOUNDS_LOUD": 50,
+    "LOUDNESS_WATER_FAN_LOUD": 50,
+    "NOISE_BACKGROUND_RESTAURANT": 50,
+    "NOISE_CROWD_TOO_LOUD": 50,
+    "NOISE_WIND_TOO_LOUD": 50
+  },
+  "per_class": {
+    "LOUDNESS_ALARMS_CRYING_LOUD": {
+      "precision": 0.9803921568627451,
+      "recall": 1.0,
+      "f1-score": 0.9900990099009901,
+      "support": 50.0
+    },
+    "LOUDNESS_CHEWING_TOO_LOUD": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 50.0
+    },
+    "LOUDNESS_LOUD_DISTORTED": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1-score": 0.9583333333333334,
+      "support": 50.0
+    },
+    "LOUDNESS_LOUD_TOO_LOUD": {
+      "precision": 0.9245283018867925,
+      "recall": 0.98,
+      "f1-score": 0.9514563106796117,
+      "support": 50.0
+    },
+    "LOUDNESS_NEARBY_TOO_LOUD": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1-score": 0.9583333333333334,
+      "support": 50.0
+    },
+    "LOUDNESS_SOFT_TOO_SOFT": {
+      "precision": 1.0,
+      "recall": 0.7959183673469388,
+      "f1-score": 0.8863636363636364,
+      "support": 49.0
+    },
+    "LOUDNESS_SUDDEN_SOUNDS_LOUD": {
+      "precision": 1.0,
+      "recall": 0.88,
+      "f1-score": 0.9361702127659575,
+      "support": 50.0
+    },
+    "LOUDNESS_WATER_FAN_LOUD": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1-score": 0.98989898989899,
+      "support": 50.0
+    },
+    "NOISE_BACKGROUND_RESTAURANT": {
+      "precision": 0.9245283018867925,
+      "recall": 0.98,
+      "f1-score": 0.9514563106796117,
+      "support": 50.0
+    },
+    "NOISE_CROWD_TOO_LOUD": {
+      "precision": 0.9574468085106383,
+      "recall": 0.9,
+      "f1-score": 0.9278350515463918,
+      "support": 50.0
+    },
+    "NOISE_WIND_TOO_LOUD": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1-score": 0.98989898989899,
+      "support": 50.0
+    },
+    "micro avg": {
+      "precision": 0.9791271347248577,
+      "recall": 0.9398907103825137,
+      "f1-score": 0.9591078066914498,
+      "support": 549.0
+    },
+    "macro avg": {
+      "precision": 0.9806268699224517,
+      "recall": 0.9396289424860854,
+      "f1-score": 0.958167743490986,
+      "support": 549.0
+    },
+    "weighted avg": {
+      "precision": 0.9805915818895236,
+      "recall": 0.9398907103825137,
+      "f1-score": 0.958298534214351,
+      "support": 549.0
+    }
+  },
+  "per_batch": {
+    "hearing_aid_prompt_regenerated_v0_3_batch2": {
+      "rows": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "true_intent": "LOUDNESS_LOUD_TOO_LOUD",
+      "majority_prediction": "LOUDNESS_LOUD_TOO_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch20": {
+      "rows": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "true_intent": "NOISE_BACKGROUND_RESTAURANT",
+      "majority_prediction": "NOISE_BACKGROUND_RESTAURANT"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch32": {
+      "rows": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "true_intent": "LOUDNESS_WATER_FAN_LOUD",
+      "majority_prediction": "LOUDNESS_WATER_FAN_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch4": {
+      "rows": 50,
+      "correct": 46,
+      "accuracy": 0.92,
+      "true_intent": "LOUDNESS_NEARBY_TOO_LOUD",
+      "majority_prediction": "LOUDNESS_NEARBY_TOO_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch5": {
+      "rows": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "true_intent": "LOUDNESS_ALARMS_CRYING_LOUD",
+      "majority_prediction": "LOUDNESS_ALARMS_CRYING_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch53": {
+      "rows": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "true_intent": "NOISE_WIND_TOO_LOUD",
+      "majority_prediction": "NOISE_WIND_TOO_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch54": {
+      "rows": 50,
+      "correct": 45,
+      "accuracy": 0.9,
+      "true_intent": "NOISE_CROWD_TOO_LOUD",
+      "majority_prediction": "NOISE_CROWD_TOO_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch55": {
+      "rows": 49,
+      "correct": 39,
+      "accuracy": 0.7959,
+      "true_intent": "LOUDNESS_SOFT_TOO_SOFT",
+      "majority_prediction": "LOUDNESS_SOFT_TOO_SOFT"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch57": {
+      "rows": 50,
+      "correct": 46,
+      "accuracy": 0.92,
+      "true_intent": "LOUDNESS_LOUD_DISTORTED",
+      "majority_prediction": "LOUDNESS_LOUD_DISTORTED"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch60": {
+      "rows": 50,
+      "correct": 44,
+      "accuracy": 0.88,
+      "true_intent": "LOUDNESS_SUDDEN_SOUNDS_LOUD",
+      "majority_prediction": "LOUDNESS_SUDDEN_SOUNDS_LOUD"
+    },
+    "hearing_aid_prompt_regenerated_v0_3_batch7": {
+      "rows": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "true_intent": "LOUDNESS_CHEWING_TOO_LOUD",
+      "majority_prediction": "LOUDNESS_CHEWING_TOO_LOUD"
+    }
+  },
+  "leakage": {
+    "checked": true,
+    "train_batches": 35,
+    "test_batches": 11,
+    "overlap": [],
+    "leak": false
+  }
+}

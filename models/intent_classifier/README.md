@@ -16,12 +16,12 @@ metrics:
 pipeline_tag: text-classification
 library_name: setfit
 inference: true
-base_model: sentence-transformers/all-MiniLM-L6-v2
+base_model: sentence-transformers/all-MiniLM-L12-v2
 ---
 
-# SetFit with sentence-transformers/all-MiniLM-L6-v2
+# SetFit with sentence-transformers/all-MiniLM-L12-v2
 
-This is a [SetFit](https://github.com/huggingface/setfit) model that can be used for Text Classification. This SetFit model uses [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) as the Sentence Transformer embedding model. A [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) instance is used for classification.
+This is a [SetFit](https://github.com/huggingface/setfit) model that can be used for Text Classification. This SetFit model uses [sentence-transformers/all-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2) as the Sentence Transformer embedding model. A [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) instance is used for classification.
 
 The model has been trained using an efficient few-shot learning technique that involves:
 
@@ -32,9 +32,9 @@ The model has been trained using an efficient few-shot learning technique that i
 
 ### Model Description
 - **Model Type:** SetFit
-- **Sentence Transformer body:** [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+- **Sentence Transformer body:** [sentence-transformers/all-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2)
 - **Classification head:** a [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) instance
-- **Maximum Sequence Length:** 256 tokens
+- **Maximum Sequence Length:** 128 tokens
 - **Number of Classes:** 31 classes
 <!-- - **Training Dataset:** [Unknown](https://huggingface.co/datasets/unknown) -->
 <!-- - **Language:** Unknown -->
@@ -172,7 +172,7 @@ preds = model("Running water sounds too loud when I wear my hearing aid.")
 - num_epochs: (1, 16)
 - max_steps: -1
 - sampling_strategy: oversampling
-- num_iterations: 4
+- num_iterations: 32
 - body_learning_rate: (2e-05, 1e-05)
 - head_learning_rate: 0.01
 - loss: CosineSimilarityLoss
@@ -189,25 +189,147 @@ preds = model("Running water sounds too loud when I wear my hearing aid.")
 ### Training Results
 | Epoch  | Step | Training Loss | Validation Loss |
 |:------:|:----:|:-------------:|:---------------:|
-| 0.0011 | 1    | 0.2327        | -               |
-| 0.0574 | 50   | 0.1967        | -               |
-| 0.1148 | 100  | 0.1752        | -               |
-| 0.1722 | 150  | 0.1434        | -               |
-| 0.2296 | 200  | 0.1322        | -               |
-| 0.2870 | 250  | 0.1225        | -               |
-| 0.3444 | 300  | 0.1091        | -               |
-| 0.4018 | 350  | 0.1051        | -               |
-| 0.4592 | 400  | 0.0910        | -               |
-| 0.5166 | 450  | 0.0954        | -               |
-| 0.5741 | 500  | 0.0820        | -               |
-| 0.6315 | 550  | 0.0792        | -               |
-| 0.6889 | 600  | 0.0843        | -               |
-| 0.7463 | 650  | 0.0837        | -               |
-| 0.8037 | 700  | 0.0728        | -               |
-| 0.8611 | 750  | 0.0775        | -               |
-| 0.9185 | 800  | 0.0717        | -               |
-| 0.9759 | 850  | 0.0849        | -               |
-| 1.0    | 871  | -             | 0.0741          |
+| 0.0001 | 1    | 0.2297        | -               |
+| 0.0072 | 50   | 0.1975        | -               |
+| 0.0144 | 100  | 0.1922        | -               |
+| 0.0215 | 150  | 0.1850        | -               |
+| 0.0287 | 200  | 0.1655        | -               |
+| 0.0359 | 250  | 0.1450        | -               |
+| 0.0431 | 300  | 0.1341        | -               |
+| 0.0502 | 350  | 0.1279        | -               |
+| 0.0574 | 400  | 0.1136        | -               |
+| 0.0646 | 450  | 0.1059        | -               |
+| 0.0718 | 500  | 0.0908        | -               |
+| 0.0789 | 550  | 0.0847        | -               |
+| 0.0861 | 600  | 0.0697        | -               |
+| 0.0933 | 650  | 0.0762        | -               |
+| 0.1005 | 700  | 0.0659        | -               |
+| 0.1076 | 750  | 0.0584        | -               |
+| 0.1148 | 800  | 0.0542        | -               |
+| 0.1220 | 850  | 0.0551        | -               |
+| 0.1292 | 900  | 0.0515        | -               |
+| 0.1363 | 950  | 0.0525        | -               |
+| 0.1435 | 1000 | 0.0441        | -               |
+| 0.1507 | 1050 | 0.0454        | -               |
+| 0.1579 | 1100 | 0.0467        | -               |
+| 0.1650 | 1150 | 0.0405        | -               |
+| 0.1722 | 1200 | 0.0435        | -               |
+| 0.1794 | 1250 | 0.0385        | -               |
+| 0.1866 | 1300 | 0.0345        | -               |
+| 0.1937 | 1350 | 0.0320        | -               |
+| 0.2009 | 1400 | 0.0318        | -               |
+| 0.2081 | 1450 | 0.0350        | -               |
+| 0.2153 | 1500 | 0.0295        | -               |
+| 0.2224 | 1550 | 0.0293        | -               |
+| 0.2296 | 1600 | 0.0273        | -               |
+| 0.2368 | 1650 | 0.0236        | -               |
+| 0.2440 | 1700 | 0.0233        | -               |
+| 0.2511 | 1750 | 0.0256        | -               |
+| 0.2583 | 1800 | 0.0234        | -               |
+| 0.2655 | 1850 | 0.0207        | -               |
+| 0.2727 | 1900 | 0.0222        | -               |
+| 0.2799 | 1950 | 0.0187        | -               |
+| 0.2870 | 2000 | 0.0198        | -               |
+| 0.2942 | 2050 | 0.0212        | -               |
+| 0.3014 | 2100 | 0.0207        | -               |
+| 0.3086 | 2150 | 0.0151        | -               |
+| 0.3157 | 2200 | 0.0173        | -               |
+| 0.3229 | 2250 | 0.0186        | -               |
+| 0.3301 | 2300 | 0.0190        | -               |
+| 0.3373 | 2350 | 0.0178        | -               |
+| 0.3444 | 2400 | 0.0184        | -               |
+| 0.3516 | 2450 | 0.0162        | -               |
+| 0.3588 | 2500 | 0.0154        | -               |
+| 0.3660 | 2550 | 0.0129        | -               |
+| 0.3731 | 2600 | 0.0122        | -               |
+| 0.3803 | 2650 | 0.0193        | -               |
+| 0.3875 | 2700 | 0.0163        | -               |
+| 0.3947 | 2750 | 0.0163        | -               |
+| 0.4018 | 2800 | 0.0153        | -               |
+| 0.4090 | 2850 | 0.0118        | -               |
+| 0.4162 | 2900 | 0.0127        | -               |
+| 0.4234 | 2950 | 0.0164        | -               |
+| 0.4305 | 3000 | 0.0109        | -               |
+| 0.4377 | 3050 | 0.0101        | -               |
+| 0.4449 | 3100 | 0.0109        | -               |
+| 0.4521 | 3150 | 0.0085        | -               |
+| 0.4592 | 3200 | 0.0124        | -               |
+| 0.4664 | 3250 | 0.0133        | -               |
+| 0.4736 | 3300 | 0.0090        | -               |
+| 0.4808 | 3350 | 0.0101        | -               |
+| 0.4879 | 3400 | 0.0097        | -               |
+| 0.4951 | 3450 | 0.0120        | -               |
+| 0.5023 | 3500 | 0.0074        | -               |
+| 0.5095 | 3550 | 0.0067        | -               |
+| 0.5166 | 3600 | 0.0072        | -               |
+| 0.5238 | 3650 | 0.0080        | -               |
+| 0.5310 | 3700 | 0.0103        | -               |
+| 0.5382 | 3750 | 0.0076        | -               |
+| 0.5454 | 3800 | 0.0082        | -               |
+| 0.5525 | 3850 | 0.0120        | -               |
+| 0.5597 | 3900 | 0.0076        | -               |
+| 0.5669 | 3950 | 0.0082        | -               |
+| 0.5741 | 4000 | 0.0060        | -               |
+| 0.5812 | 4050 | 0.0063        | -               |
+| 0.5884 | 4100 | 0.0084        | -               |
+| 0.5956 | 4150 | 0.0100        | -               |
+| 0.6028 | 4200 | 0.0071        | -               |
+| 0.6099 | 4250 | 0.0038        | -               |
+| 0.6171 | 4300 | 0.0070        | -               |
+| 0.6243 | 4350 | 0.0074        | -               |
+| 0.6315 | 4400 | 0.0064        | -               |
+| 0.6386 | 4450 | 0.0054        | -               |
+| 0.6458 | 4500 | 0.0071        | -               |
+| 0.6530 | 4550 | 0.0041        | -               |
+| 0.6602 | 4600 | 0.0045        | -               |
+| 0.6673 | 4650 | 0.0071        | -               |
+| 0.6745 | 4700 | 0.0062        | -               |
+| 0.6817 | 4750 | 0.0058        | -               |
+| 0.6889 | 4800 | 0.0058        | -               |
+| 0.6960 | 4850 | 0.0035        | -               |
+| 0.7032 | 4900 | 0.0035        | -               |
+| 0.7104 | 4950 | 0.0074        | -               |
+| 0.7176 | 5000 | 0.0044        | -               |
+| 0.7247 | 5050 | 0.0067        | -               |
+| 0.7319 | 5100 | 0.0086        | -               |
+| 0.7391 | 5150 | 0.0057        | -               |
+| 0.7463 | 5200 | 0.0036        | -               |
+| 0.7534 | 5250 | 0.0051        | -               |
+| 0.7606 | 5300 | 0.0032        | -               |
+| 0.7678 | 5350 | 0.0031        | -               |
+| 0.7750 | 5400 | 0.0036        | -               |
+| 0.7821 | 5450 | 0.0055        | -               |
+| 0.7893 | 5500 | 0.0067        | -               |
+| 0.7965 | 5550 | 0.0049        | -               |
+| 0.8037 | 5600 | 0.0035        | -               |
+| 0.8108 | 5650 | 0.0037        | -               |
+| 0.8180 | 5700 | 0.0056        | -               |
+| 0.8252 | 5750 | 0.0042        | -               |
+| 0.8324 | 5800 | 0.0025        | -               |
+| 0.8396 | 5850 | 0.0033        | -               |
+| 0.8467 | 5900 | 0.0026        | -               |
+| 0.8539 | 5950 | 0.0044        | -               |
+| 0.8611 | 6000 | 0.0047        | -               |
+| 0.8683 | 6050 | 0.0035        | -               |
+| 0.8754 | 6100 | 0.0041        | -               |
+| 0.8826 | 6150 | 0.0038        | -               |
+| 0.8898 | 6200 | 0.0042        | -               |
+| 0.8970 | 6250 | 0.0033        | -               |
+| 0.9041 | 6300 | 0.0043        | -               |
+| 0.9113 | 6350 | 0.0030        | -               |
+| 0.9185 | 6400 | 0.0032        | -               |
+| 0.9257 | 6450 | 0.0030        | -               |
+| 0.9328 | 6500 | 0.0028        | -               |
+| 0.9400 | 6550 | 0.0021        | -               |
+| 0.9472 | 6600 | 0.0019        | -               |
+| 0.9544 | 6650 | 0.0020        | -               |
+| 0.9615 | 6700 | 0.0021        | -               |
+| 0.9687 | 6750 | 0.0030        | -               |
+| 0.9759 | 6800 | 0.0040        | -               |
+| 0.9831 | 6850 | 0.0019        | -               |
+| 0.9902 | 6900 | 0.0021        | -               |
+| 0.9974 | 6950 | 0.0020        | -               |
+| 1.0    | 6968 | -             | 0.0354          |
 
 ### Framework Versions
 - Python: 3.10.12

@@ -1,0 +1,170 @@
+{
+  "bge_it32_ep1_h16": {
+    "config": {
+      "base_model": "BAAI/bge-small-en-v1.5",
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 32,
+      "name": "bge_it32_ep1_h16"
+    },
+    "model_dir": "models/experiments/bge_it32_ep1_h16",
+    "name": "bge_it32_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.923497,
+    "val_macro_f1": 0.946,
+    "val_rows": 549,
+    "val_weighted_f1": 0.946156
+  },
+  "it16_ep1_h16": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 16,
+      "name": "it16_ep1_h16"
+    },
+    "model_dir": "models/experiments/it16_ep1_h16",
+    "name": "it16_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.929829,
+    "val_rows": 549,
+    "val_weighted_f1": 0.93003
+  },
+  "it16_ep1_h16_bs32": {
+    "config": {
+      "batch_size": 32,
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 16,
+      "name": "it16_ep1_h16_bs32"
+    },
+    "model_dir": "models/experiments/it16_ep1_h16_bs32",
+    "name": "it16_ep1_h16_bs32",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.928525,
+    "val_rows": 549,
+    "val_weighted_f1": 0.928698
+  },
+  "it16_ep1_h32": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 32,
+      "iterations": 16,
+      "name": "it16_ep1_h32"
+    },
+    "model_dir": "models/experiments/it16_ep1_h32",
+    "name": "it16_ep1_h32",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.929829,
+    "val_rows": 549,
+    "val_weighted_f1": 0.93003
+  },
+  "it16_ep1_h8": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 8,
+      "iterations": 16,
+      "name": "it16_ep1_h8"
+    },
+    "model_dir": "models/experiments/it16_ep1_h8",
+    "name": "it16_ep1_h8",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.929829,
+    "val_rows": 549,
+    "val_weighted_f1": 0.93003
+  },
+  "it16_ep2_h16": {
+    "config": {
+      "epochs": 2,
+      "head_epochs": 16,
+      "iterations": 16,
+      "name": "it16_ep2_h16"
+    },
+    "model_dir": "models/experiments/it16_ep2_h16",
+    "name": "it16_ep2_h16",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.929922,
+    "val_rows": 549,
+    "val_weighted_f1": 0.930124
+  },
+  "it32_ep1_h16": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 32,
+      "name": "it32_ep1_h16"
+    },
+    "model_dir": "models/experiments/it32_ep1_h16",
+    "name": "it32_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.925319,
+    "val_macro_f1": 0.94185,
+    "val_rows": 549,
+    "val_weighted_f1": 0.942022
+  },
+  "it64_ep1_h16": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 64,
+      "name": "it64_ep1_h16"
+    },
+    "model_dir": "models/experiments/it64_ep1_h16",
+    "name": "it64_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.923497,
+    "val_macro_f1": 0.943193,
+    "val_rows": 549,
+    "val_weighted_f1": 0.943368
+  },
+  "it8_ep1_h16": {
+    "config": {
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 8,
+      "name": "it8_ep1_h16"
+    },
+    "model_dir": "models/experiments/it8_ep1_h16",
+    "name": "it8_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.89071,
+    "val_macro_f1": 0.913587,
+    "val_rows": 549,
+    "val_weighted_f1": 0.913708
+  },
+  "it8_ep2_h16": {
+    "config": {
+      "epochs": 2,
+      "head_epochs": 16,
+      "iterations": 8,
+      "name": "it8_ep2_h16"
+    },
+    "model_dir": "models/experiments/it8_ep2_h16",
+    "name": "it8_ep2_h16",
+    "status": "ok",
+    "val_accuracy": 0.907104,
+    "val_macro_f1": 0.929542,
+    "val_rows": 549,
+    "val_weighted_f1": 0.929717
+  },
+  "minilm12_it32_ep1_h16": {
+    "config": {
+      "base_model": "sentence-transformers/all-MiniLM-L12-v2",
+      "epochs": 1,
+      "head_epochs": 16,
+      "iterations": 32,
+      "name": "minilm12_it32_ep1_h16"
+    },
+    "model_dir": "models/experiments/minilm12_it32_ep1_h16",
+    "name": "minilm12_it32_ep1_h16",
+    "status": "ok",
+    "val_accuracy": 0.939891,
+    "val_macro_f1": 0.958168,
+    "val_rows": 549,
+    "val_weighted_f1": 0.958299
+  }
+}

@@ -7,7 +7,7 @@
   "local_files_only": false,
   "mask_token": "[MASK]",
   "max_length": 128,
-  "model_max_length": 256,
+  "model_max_length": 128,
   "never_split": null,
   "pad_to_multiple_of": null,
   "pad_token": "[PAD]",

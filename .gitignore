@@ -8,3 +8,15 @@ venv/
 # Optional semantic audit outputs (large, not part of the baseline)
 data/processed/semantic_audit.json
 data/processed/semantic_audit.jsonl
+
+# Tuning sweep models (large; regenerate with `python training/tune.py --set all`)
+models/experiments/
+
+# Tuning run logs (large; results.json and the per-run *_val.json reports are kept)
+evaluation/tuning/*.log
+
+# Model weights: 133 MB exceeds GitHub's 100 MB blob limit, so the promoted
+# weights are published as a release asset instead of a tracked blob:
+#   gh release download model-v1 -p model.safetensors -D models/intent_classifier
+# They can also be regenerated with the training command in README.md.
+models/intent_classifier/model.safetensors

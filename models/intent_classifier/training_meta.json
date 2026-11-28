@@ -1,8 +1,8 @@
 {
-  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "base_model": "sentence-transformers/all-MiniLM-L12-v2",
   "epochs": 1,
   "head_epochs": 16,
-  "iterations": 4,
+  "iterations": 32,
   "batch_size": 16,
   "seed": 42,
   "train_rows": 1742,
